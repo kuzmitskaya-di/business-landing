@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOREMIPSUM</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width" />
+</head>
+<div class="background">
+    <!--/Header-->
+<header class="header">
+    <div class="header_container">
+        <div class="header_row">
+            <div class="header_logo">
+                <p>LOREMIPSUM.<span>NET</span></p>
+            </div>
+                <nav>
+                    <ul class="header_menu">
+                        <li class="header_menu--items"><a class="business" href="#">БИЗНЕС</a></li>
+                        <li class="header_menu--items"><a href="#">О НАС</a></li>
+                        <li class="header_menu--items"><a href="#">ЦЕНЫ</a></li>
+                        <li class="header_menu--items"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
+                    </ul>
+                </nav>
+        </div>
+</header>
+    <!--/Header-->
+
+        <!--Description-->
+    <div class="description">
+    <div class="description_bigText">
+        <p>
+            <span style="color:#3E9CDC">LOREM IPSUM</span> DOLOR SIT AMET
+            <br />
+            CONSECTETUR <span style="color:#3E9CDC">ADIPISCING</span>
+        </p>
+    </div>
+    <div class="description_about">
+        <p class="description_about--item"><strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong></p>
+        <p class="description_about--item">- Totam rem aperiam eaque ipsa</p>
+        <p class="description_about--item">- Sit voluptatem accusantium doloremque laudantium</p>
+        <p class="description_about--item">- Sed ut perspiciatis, unde omnis iste natus error</p>
+    </div>
+    <div class="description_button">
+        <button class="description_button--item1">ЗАКАЗАТЬ</button>
+        <button class="description_button--item2">ПОДРОБНЕЕ</button>
+    </div>
+    </div>
+        <!--/Description-->
+</div>
+
+
+    <!--Form-->
+<div class="background2">
+    <div class="form">
+        <div class="form_order"><p><strong>ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></strong></p></div>
+        <div class="form_learn"><p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p></div>
+            <div class="form_img">
+                <img src="img/dis.png"/>
+            </div>
+        <div class="form_text">
+                <div class="form_text--items1"><p>Lorem ipsum dolor
+                    <br/>sit amet</p></div>
+                <div class="form_text--items2"><p>Сonsecteturadipiscing elit</p></div>
+                <div class="form_text--items3"><p>Sed do eiusmod tempor</p></div>
+                <div class="form_text--items4"><p>Esse cillum dolore
+                    <br/>eu fugiat</p></div>
+                <div class="form_text--items5"><p>Excepteur sint occaecat <br/>cupidatat non proident</p>
+        </div>
+    </div>
+
+        <!--select-->
+        <div class="form_inputsel">
+            <div class="select " >
+                <div class="select__header" id="active">
+                    <span class="select__current">Выберите тип системы</span>
+                    <div class="select__icon" id="icon1">&times</div>
+                </div>
+                <div class="select__body" >
+                    <div class="select__item" id="item">Set ut perspiciatis</div>
+                    <div class="select__item" id="item1">Nemo enim ipsam</div>
+                    <div class="select__item" id="item2">Et harum quidem</div>
+                    <div class="select__item" id="item3">Temporibus autem</div>
+                    <div class="select__item" id="item4">Itaque earum rerum</div>
+                </div>
+            </div>
+
+            <!--/select-->
+
+            <!--validation-->
+            <form id="nameEmail" class="form_val" onsubmit="return validation()">
+
+            <div class="input_val1">
+                <input  placeholder="Ваш e-mail" id="email">
+                <div id="error_message" ></div>
+            </div>
+            <div class="input_val">
+                <input type="name" placeholder="Ваше имя" id="name">
+            </div>
+        </div>
+
+        <!--/validation-->
+
+
+            <!--range-->
+        <div class="form_range">
+            <div class="form_range--items1">
+                <div class="style_text">
+                <div class="style_text--sed">
+                <label>Sed ut perspiciatis, unde omnis iste natus</label>
+                </div>
+                <div class="style_text--75">
+                <label>75%</label>
+                </div>
+                </div>
+                <input class="range" type="range" value="75"/>
+            </div>
+            <!--/range-->
+
+            <!--file-->
+            <div class="form_range--items2">
+                <label for="file">ПРИКРЕПИТЬ ФАИЛ</label>
+                <input type="file" id="file" class="hide"/>
+            </div>
+            <!--/file-->
+        </div>
+
+            <!--send form-->
+
+        <div class="button">
+            <input type="submit">
+        </div>
+        </form>
+        <!--/send form-->
+    </div>
+</div>
+ <!--/Form-->
+<script src="js/select.js"></script>
+<script src="js/validation.js"></script>
+</body>
+</html>

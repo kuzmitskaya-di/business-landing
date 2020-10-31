@@ -1,0 +1,103 @@
+
+@media only screen and (max-width: 800px) {
+  .background .background2 .header {
+    width: 60%;
+  }
+  .header_container {
+    width: 50%;
+  }
+  .form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    .form_text {
+      display: none;
+
+      .form_text--items1 {
+        display: none;
+      }
+
+      .form_text--items2 {
+        display: none;
+      }
+
+      .form_text--items3 {
+        display: none;
+      }
+
+      .form_text--items4 {
+        display: none;
+      }
+
+      .form_text--items5 {
+        display: none;
+      }
+    }
+
+    .form_img {
+      display: none;
+    }
+
+    .form_inputsel {
+      display: flex;
+      flex-direction: column;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-left: 30%;
+
+        .input_val1 {
+          display: flex;
+          flex-direction: column;
+
+          #error_message {
+            width: 30%;
+            margin-right: 70%;
+          }
+        }
+      }
+    }
+
+    //ВОПРОС
+    .form_range {
+      flex-direction: column;
+
+      .form_range--items1 {
+        flex: 1;
+        padding-left: 20%;
+        padding-bottom: 3%;
+        //??????
+        .style_text {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 4%;
+
+          .style_text--sed {
+            flex: 1;
+          }
+
+          .style_text--75 {
+            flex: 1;
+          }
+
+          .range {
+            justify-items: center;
+          }
+        }
+
+        //????
+
+      }
+
+      .form_range--items2 {
+        padding-left: 30%;
+      }
+    }
+  }
+}
+
+
+

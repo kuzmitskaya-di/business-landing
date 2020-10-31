@@ -1,1 +1,6 @@
+### WebStorm ###
 .idea/
+
+### Files ####
+*.css
+*.map
