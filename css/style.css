@@ -349,76 +349,76 @@ ul, li {
   padding: 0;
 }
 
-.background {
+.wrapper {
   max-width: 1920px;
   background-image: url("../img/background1.jpg");
   width: 1920px;
   height: 849px;
 }
-.background .header {
+.wrapper .header {
   display: flex;
   width: 1920px;
   height: 100px;
   background-color: rgba(16, 16, 29, 0.9);
 }
-.background .header_container {
+.wrapper .header_container {
   width: 1171px;
   height: 100vh;
   margin: 0 auto;
   padding: 0 15px;
   display: inline-block;
 }
-.background .header_row {
+.wrapper .header_row {
   display: flex;
 }
-.background .header_logo {
+.wrapper .header_logo {
   padding-top: 3%;
 }
-.background .header_logo p {
+.wrapper .header_logo p {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 2em;
 }
-.background .header_logo span {
+.wrapper .header_logo span {
   color: #42A9ED;
 }
-.background .header_menu {
+.wrapper .header_menu {
   padding-top: 7%;
   display: flex;
   justify-content: end;
 }
-.background .header_menu .business {
+.wrapper .header_menu .business {
   color: #43ABF0;
 }
-.background .header_menu li {
+.wrapper .header_menu li {
   padding-left: 1%;
   text-decoration: none;
   font-family: "Lato", sans-serif;
   font-size: 0.8em;
 }
-.background .header_menu a {
+.wrapper .header_menu a {
   text-decoration: none;
   color: white;
 }
-.background .description {
+.wrapper .description {
   width: 1171px;
 }
-.background .description_bigText {
+.wrapper .description_bigText {
   font-family: "Lato", sans-serif;
   padding-top: 144px;
   padding-bottom: 68px;
   font-size: 4em;
 }
-.background .description_about--item {
+.wrapper .description_about--item {
   padding-top: 1%;
   font-family: "Lato", sans-serif;
   font-size: 1.7em;
 }
-.background .description_button {
+.wrapper .description_button {
   display: flex;
   padding-top: 5%;
 }
-.background .description_button--item1 {
+.wrapper .description_button--item1 {
   height: 42px;
   width: 17%;
   background-color: #3E9CDC;
@@ -428,7 +428,7 @@ ul, li {
   font-size: 1em;
   border: 1px solid white;
 }
-.background .description_button--item2 {
+.wrapper .description_button--item2 {
   margin-left: 1%;
   padding-left: 17px;
   height: 42px;
@@ -439,82 +439,82 @@ ul, li {
   border: 1px solid black;
 }
 
-.background2 {
+.wrapperForm {
   max-width: 1920px;
   background-image: url("../img/background2.jpg");
   width: 1920px;
   height: 849px;
 }
-.background2 .form {
+.wrapperForm .form {
   max-width: 1171px;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
-.background2 .form_order {
+.wrapperForm .form_order {
   padding-top: 7%;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 2.3em;
 }
-.background2 .form_order p {
+.wrapperForm .form_order p {
   color: white;
 }
-.background2 .form_order span {
+.wrapperForm .form_order span {
   color: #3E9CDC;
 }
-.background2 .form_learn {
+.wrapperForm .form_learn {
   padding-top: 3%;
   text-align: center;
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: #BBBBBB;
 }
-.background2 .form_img {
+.wrapperForm .form_img {
   padding-top: 5%;
 }
-.background2 .form_img img {
+.wrapperForm .form_img img {
   height: 98px;
   width: 1171px;
 }
-.background2 .form_text {
+.wrapperForm .form_text {
   padding-top: 2%;
   display: flex;
   flex-direction: row;
 }
-.background2 .form_text .form_text--items1 {
+.wrapperForm .form_text .form_text--items1 {
   flex: 1;
   text-align: left;
 }
-.background2 .form_text .form_text--items2 {
+.wrapperForm .form_text .form_text--items2 {
   flex: 1;
 }
-.background2 .form_text .form_text--items3 {
+.wrapperForm .form_text .form_text--items3 {
   text-align: center;
   flex: 1;
 }
-.background2 .form_text .form_text--items4 {
+.wrapperForm .form_text .form_text--items4 {
   flex: 1;
   text-align: center;
 }
-.background2 .form_text .form_text--items5 {
+.wrapperForm .form_text .form_text--items5 {
   flex: 1;
   text-align: right;
   padding-right: 1%;
 }
-.background2 .form_text p {
+.wrapperForm .form_text p {
   color: white;
 }
-.background2 .form_inputsel {
+.wrapperForm .form_inputsel {
   display: flex;
   justify-content: center;
   padding-top: 5%;
 }
-.background2 .form_inputsel .select {
+.wrapperForm .form_inputsel .select {
   margin: 0;
   position: relative;
 }
-.background2 .form_inputsel .select__header {
+.wrapperForm .form_inputsel .select__header {
   border: 1px solid silver;
   cursor: pointer;
   display: flex;
@@ -524,7 +524,7 @@ ul, li {
   height: 45px;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_inputsel .select__header:hover {
+.wrapperForm .form_inputsel .select__header:hover {
   color: white;
   background-color: #3d4050;
   border-bottom: 0;
@@ -533,12 +533,12 @@ ul, li {
   border-left: 2px solid #3E9CDC;
   border-radius: 0;
 }
-.background2 .form_inputsel .select__header .select__current {
+.wrapperForm .form_inputsel .select__header .select__current {
   font-size: 1.1em;
   line-height: 24px;
   padding: 8px;
 }
-.background2 .form_inputsel .select__header .select__icon {
+.wrapperForm .form_inputsel .select__header .select__icon {
   align-items: center;
   display: flex;
   flex-shrink: 0;
@@ -548,7 +548,7 @@ ul, li {
   text-align: center;
   width: 40px;
 }
-.background2 .form_inputsel .select__body {
+.wrapperForm .form_inputsel .select__body {
   display: none;
   width: 368px;
   border: 2px solid #3E9CDC;
@@ -559,7 +559,7 @@ ul, li {
   top: 100%;
   background-color: rgba(39, 39, 51, 0.9);
 }
-.background2 .form_inputsel .select__body .select__item {
+.wrapperForm .form_inputsel .select__body .select__item {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -567,55 +567,55 @@ ul, li {
   color: white;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_inputsel .select__body .select__item:hover {
+.wrapperForm .form_inputsel .select__body .select__item:hover {
   color: #3E9CDC;
 }
-.background2 .form_inputsel .form_val {
+.wrapperForm .form_inputsel .form_val {
   display: flex;
   flex-direction: row;
 }
-.background2 .form_inputsel #email {
+.wrapperForm .form_inputsel #email {
   margin-left: 0;
 }
-.background2 .form_inputsel .input_111 {
+.wrapperForm .form_inputsel .input_111 {
   display: flex;
   flex-direction: row;
 }
-.background2 .form_inputsel input {
+.wrapperForm .form_inputsel input {
   width: 368px;
   height: 45px;
   border-radius: 5px;
   background-color: rgba(225, 225, 225, 0.8);
 }
-.background2 .form_inputsel input::placeholder {
+.wrapperForm .form_inputsel input::placeholder {
   color: black;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_range {
+.wrapperForm .form_range {
   padding-top: 4%;
   display: flex;
 }
-.background2 .form_range .form_range--items1 {
+.wrapperForm .form_range .form_range--items1 {
   flex: 2;
 }
-.background2 .form_range .form_range--items1 .style_text {
+.wrapperForm .form_range .form_range--items1 .style_text {
   display: flex;
   flex-direction: row;
   padding-bottom: 4%;
 }
-.background2 .form_range .form_range--items1 .style_text .style_text--sed {
+.wrapperForm .form_range .form_range--items1 .style_text .style_text--sed {
   flex: 15;
 }
-.background2 .form_range .form_range--items1 .style_text .style_text--75 {
+.wrapperForm .form_range .form_range--items1 .style_text .style_text--75 {
   flex: 1;
 }
-.background2 .form_range .form_range--items1 label {
+.wrapperForm .form_range .form_range--items1 label {
   color: white;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_range .form_range--items1 .range {
+.wrapperForm .form_range .form_range--items1 .range {
   -webkit-appearance: none;
   border: 2px solid white;
   border-radius: 10px;
@@ -624,7 +624,7 @@ ul, li {
   background-color: rgba(225, 225, 225, 0.8);
   outline: none;
 }
-.background2 .form_range .form_range--items1 .range::-webkit-slider-thumb {
+.wrapperForm .form_range .form_range--items1 .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 25px;
   height: 25px;
@@ -632,10 +632,10 @@ ul, li {
   border-radius: 20px;
   border: 5px solid #286690;
 }
-.background2 .form_range .form_range--items2 {
+.wrapperForm .form_range .form_range--items2 {
   flex: 1;
 }
-.background2 .form_range .form_range--items2 .hide {
+.wrapperForm .form_range .form_range--items2 .hide {
   position: absolute;
   overflow: hidden;
   z-index: 1;
@@ -643,7 +643,7 @@ ul, li {
   height: 0.1px;
   opacity: 0;
 }
-.background2 .form_range .form_range--items2 label {
+.wrapperForm .form_range .form_range--items2 label {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   padding-top: 14px;
@@ -655,13 +655,13 @@ ul, li {
   border-radius: 5px;
   background-color: white;
 }
-.background2 .form .button {
+.wrapperForm .form .button {
   display: flex;
   padding-top: 3%;
   width: 370px;
   height: 47px;
 }
-.background2 .form .button input {
+.wrapperForm .form .button input {
   border: 3px solid white;
   background-color: #3E9CDC;
   border-radius: 3px;
