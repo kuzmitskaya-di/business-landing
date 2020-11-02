@@ -1,10 +1,5 @@
 @import "normalize.scss";
-@import "adaptive.css";
 
-* {
-  width: 100%;
-  margin: 0 auto;
-}
 
 ul, li {
   display: block;
@@ -12,25 +7,20 @@ ul, li {
   padding: 0;
 }
 
-.wrapper {
-  max-width: 1920px;
+.background {
   background-image: url("../img/background1.jpg");
-  width: 1920px;
-  height: 849px;
-//стилизуем header
+  width: 100%;
+  height: 847px;
+  //стилизуем header
   .header {
     display: flex;
-    width: 1920px;
+    width: 100%;
     height: 100px;
     background-color: rgba(16, 16, 29, .9);
 
     &_container {
-      width: 1171px;
-      height: 100vh;
-      margin: 0 auto;
-      padding: 0 15px;
-      display: inline-block;
-
+      width: 100%;
+      padding: 0 375px;
     }
 
     &_row {
@@ -38,7 +28,6 @@ ul, li {
     }
 
     &_logo {
-      padding-top: 3%;
 
       p {
         font-family: "Raleway", sans-serif;
@@ -50,21 +39,33 @@ ul, li {
         color: #42A9ED;
       }
     }
-
+    //навигация
+    nav{
+      width: auto;
+      padding-left: 150px;
+      align-items: center;
+      box-sizing: border-box;
+      ul{
+        box-sizing: border-box;
+      }
+    }
     &_menu {
       padding-top: 7%;
       display: flex;
-      justify-content: end;
+      flex-direction: row;
+      box-sizing: border-box;
+
 
       .business {
         color: #43ABF0;
       }
 
       li {
-        padding-left: 1%;
+        padding-top: 10px;
+        padding-left: 40px;
         text-decoration: none;
         font-family: "Lato", sans-serif;
-        font-size: 0.8em;
+        font-size: 1em;
       }
 
       a {
@@ -72,347 +73,361 @@ ul, li {
         color: white;
       }
     }
+
   }
   //описание сайта
-    .description{
-      width: 1171px;
+  .description{
+    width: 100%;
 
-      &_bigText{
-        font-family: "Lato", sans-serif;
-        padding-top: 144px;
-        padding-bottom: 68px;
-        font-size: 4em;
-      }
-      &_about--item{
-        padding-top: 1%;
-        font-family: "Lato", sans-serif;
-        font-size: 1.7em;
-      }
-      //стилизуем кнопки
-      &_button{
-        display: flex;
-        padding-top: 5%;
-      }
-      &_button--item1{
-        height: 42px;
-        width: 17%;
-        background-color: #3E9CDC;
-        border-radius: 7px;
-        color: white;
-        font-family: "Lato", sans-serif;
-        font-size: 1em;
-        border: 1px solid white;
-      }
-      &_button--item2 {
-        margin-left: 1%;
-        padding-left: 17px;
-        height: 42px;
-        width: 17%;
-        border-radius: 7px;
-        font-family: "Lato", sans-serif;
-        font-size: 1em;
-        border: 1px solid black;
-      }
+
+    &_bigText{
+      font-family: "Lato", sans-serif;
+      padding-top: 115px;
+      padding-left:375px;
+      font-size: 3em;
+    }
+    &_about{
 
     }
+    &_about--item{
+      padding-left:375px;
+      font-family: "Lato", sans-serif;
+      font-size: 1.2em;
+    }
+    //стилизуем кнопки
+    &_button{
+      display: flex;
+      padding-left:375px;
+      padding-top: 30px;
+    }
+    &_button--item1{
+      height: 42px;
+      width: 178px;
+      background-color: #3E9CDC;
+      border-radius: 7px;
+      color: white;
+      font-family: "Lato", sans-serif;
+      font-size: 1em;
+      border: 1px solid white;
+    }
+    &_button--item2 {
+      margin-left: 1%;
+      padding-left: 17px;
+      height: 42px;
+      width: 178px;
+      border-radius: 7px;
+      font-family: "Lato", sans-serif;
+      font-size: 1em;
+      border: 1px solid black;
+    }
+
+  }
 }
 
 //блок с вводом данных
-  .wrapperForm {
-    max-width: 1920px;
-    background-image: url("../img/background2.jpg");
-    width: 1920px;
-    height: 849px;
+.background2 {
+  background-image: url("../img/background2.jpg");
+  width: 100%;
+  height: 100%;
 
-    .form {
-      max-width: 1171px;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
+  .form {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-left:375px;
 
-      &_order {
-        padding-top: 7%;
-        text-align: center;
-        font-family: "Lato", sans-serif;
-        font-size: 2.3em;
+    &_order {
+      padding-left: 255px;
+      padding-top: 25px;
+      font-family: "Lato", sans-serif;
+      font-size: 2.3em;
 
-        p {
-          color: white;
-        }
-
-        span {
-          color: #3E9CDC;
-        }
-
+      p {
+        color: white;
       }
 
-      &_learn {
-        padding-top: 3%;
-        text-align: center;
-        font-family: 'Lato', sans-serif;
-        font-size: 1.1em;
-        color: #BBBBBB;
-
-      }
-
-      &_img {
-        padding-top: 5%;
-
-        img {
-          height: 98px;
-          width: 1171px;
-        }
-      }
-
-      &_text {
-        padding-top: 2%;
-        display: flex;
-        flex-direction: row;
-
-        .form_text--items1 {
-          flex: 1;
-          text-align: left;
-
-
-        }
-
-        .form_text--items2 {
-
-          flex: 1;
-        }
-
-        .form_text--items3 {
-          text-align: center;
-          flex: 1;
-        }
-
-        .form_text--items4 {
-          flex: 1;
-          text-align: center;
-        }
-
-        .form_text--items5 {
-          flex: 1;
-          text-align: right;
-          padding-right: 1%;
-        }
-
-        p {
-          color: white;
-        }
-      }
-// селект
-      &_inputsel {
-        display: flex;
-        justify-content: center;
-        padding-top: 5%;
-
-        .select {
-          margin: 0;
-          position: relative;
-
-
-
-          &__header {
-            border: 1px solid silver;
-            cursor: pointer;
-            display: flex;
-            width: 368px;
-            background-color: rgba(225, 225, 225, .8);
-            border-radius: 5px;
-            height: 45px;
-            font-family: "Lato", sans-serif;
-
-            &:hover{
-              color: white;
-              background-color: #3d4050;
-              border-bottom: 0;
-              border-top: 2px solid #3E9CDC;
-              border-right: 2px solid #3E9CDC;
-              border-left: 2px solid #3E9CDC;
-              border-radius: 0;
-
-            }
-
-
-
-            .select__current {
-              font-size: 1.1em;
-              line-height: 24px;
-              padding: 8px;
-            }
-
-            .select__icon {
-              align-items: center;
-              display: flex;
-              flex-shrink: 0;
-              justify-content: end;
-              height: 40px;
-              padding-left: auto;
-              text-align: center;
-              width: 40px;
-            }
-          }
-        }
-
-            .select__body{
-              display: none;
-              width: 368px;
-              border: 2px solid #3E9CDC;
-              border-top: 0;
-              position: absolute;
-              left:0;
-              right: 0;
-              top:100%;
-              background-color: rgba(39,39,51, .9);
-              .select__item{
-                cursor: pointer;
-                font-size: 16px;
-                line-height: 24px;
-                padding: 8px;
-                color: white;
-                font-family: "Lato", sans-serif;
-                &:hover{
-                  color: #3E9CDC;
-                }
-              }
-            }
-
-
-//поля ввода
-        .form_val{
-          display: flex;
-          flex-direction: row;
-
-        }
-        #email{
-          margin-left: 0;
-        }
-
-        .input_111 {
-          display: flex;
-          flex-direction: row;
-
-        }
-        input {
-          width: 368px;
-          height: 45px;
-          border-radius: 5px;
-          background-color: rgba(225, 225, 225, .8);
-
-          &::placeholder {
-            color: black;
-            font-size: 1.1em;
-            font-family: "Lato", sans-serif;
-          }
-
-        }
-      }
-//ползунок
-      &_range {
-        padding-top: 4%;
-        display: flex;
-
-        .form_range--items1 {
-          flex: 2;
-
-          .style_text {
-            display: flex;
-            flex-direction: row;
-            padding-bottom: 4%;
-
-            .style_text--sed {
-              flex: 15;
-            }
-
-            .style_text--75 {
-              flex: 1;
-            }
-          }
-
-          label {
-            color: white;
-            font-size: 1.1em;
-            font-family: "Lato", sans-serif;
-          }
-
-          .range {
-            -webkit-appearance: none; //обновляем стиль и рисуем заново
-            border: 2px solid white;
-            border-radius: 10px;
-            width: 764px;
-            height: 2px;
-            background-color: rgba(225, 225, 225, .8);
-            outline: none;
-          }
-
-          //стилизуем ползунок
-          .range::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 25px;
-            height: 25px;
-            background-color: #3E9CDC;
-            border-radius: 20px;
-            border: 5px solid #286690;
-
-          }
-
-        }
-//прикрепить фаил
-        .form_range--items2 {
-          flex: 1;
-//прячем кнопку
-          .hide {
-            position: absolute;
-            overflow: hidden;
-            z-index: 1;
-            width: 0.1px;
-            height: 0.1px;
-            opacity: 0;
-          }
-//стилизуем текст
-          label {
-            font-family: "Lato", sans-serif;
-            font-size: 15px;
-            padding-top: 14px;
-            padding-left: 100px;
-            border: 3px solid #3E9CDC;
-            display: inline-block;
-            width: 273px;
-            height: 38px;
-            border-radius: 5px;
-            background-color: white;
-
-          }
-        }
-      }
-//кнопка отправить
-      .button {
-        display: flex;
-        padding-top: 3%;
-        width: 370px;
-        height: 47px;
-
-        input {
-          border: 3px solid white;
-          background-color: #3E9CDC;
-          border-radius: 3px;
-          font-size: 15px;
-          font-family: "Lato", sans-serif;
-          color: white;
-        }
+      span {
+        color: #3E9CDC;
       }
 
     }
+
+    &_learn {
+      padding-top: 5px;
+      padding-left: 205px;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.1em;
+      color: #BBBBBB;
+
+    }
+
+    &_img {
+      padding-top: 5%;
+
+      img {
+        height: 88px;
+        width: 1000px;
+      }
+    }
+    //текст описание
+    &_text {
+      padding-top: 2%;
+      display: flex;
+      flex-direction: row;
+      padding-right: 20%;
+
+      .form_text--items1 {
+        flex: 1;
+        text-align: left;
+
+
+      }
+
+      .form_text--items2 {
+
+        flex: 1;
+      }
+
+      .form_text--items3 {
+        text-align: center;
+        flex: 1;
+      }
+
+      .form_text--items4 {
+        flex: 1;
+        text-align: center;
+      }
+
+      .form_text--items5 {
+        flex: 1;
+        text-align: right;
+        padding-right: 1%;
+      }
+
+      p {
+        color: white;
+      }
+    }
+    // селект
+    &_inputsel {
+      display: flex;
+      padding-top: 5%;
+      justify-content: flex-start;
+
+      .select {
+        margin: 0;
+        position: relative;
+        padding-right: 10px;
+
+
+        &__header {
+          border: 1px solid silver;
+          cursor: pointer;
+          display: flex;
+          width: 300px;
+          background-color: rgba(225, 225, 225, .8);
+          border-radius: 5px;
+          height: 45px;
+          font-family: "Lato", sans-serif;
+
+          &:hover{
+            color: white;
+            background-color: #3d4050;
+            border-bottom: 0;
+            border-top: 2px solid #3E9CDC;
+            border-right: 2px solid #3E9CDC;
+            border-left: 2px solid #3E9CDC;
+            border-radius: 0;
+
+          }
+
+
+
+          .select__current {
+            font-size: 1.1em;
+            line-height: 24px;
+            padding: 8px;
+          }
+
+          .select__icon {
+            align-items: center;
+            display: flex;
+            flex-shrink: 0;
+            justify-content: end;
+            height: 40px;
+            padding-left: auto;
+            text-align: center;
+            width: 40px;
+          }
+        }
+      }
+
+      .select__body{
+        display: none;
+        width: 300px;
+        border: 2px solid #3E9CDC;
+        border-top: 0;
+        position: absolute;
+        left:0;
+        right: 0;
+        top:100%;
+        background-color: rgba(39,39,51, .9);
+        .select__item{
+          cursor: pointer;
+          font-size: 16px;
+          line-height: 24px;
+          padding: 8px;
+          color: white;
+          font-family: "Lato", sans-serif;
+          &:hover{
+            color: #3E9CDC;
+          }
+        }
+      }
+
+
+      //поля ввода
+      .form_val{
+        display: flex;
+        flex-direction: row;
+
+        .input_val1{
+          padding-right: 10px;
+        }
+
+      }
+      #email{
+        margin-left: 0;
+      }
+
+      .input_111 {
+        display: flex;
+        flex-direction: row;
+
+      }
+      input {
+        width: 300px;
+        height: 42px;
+        border-radius: 5px;
+        background-color: rgba(225, 225, 225, .8);
+        padding-right: 10px;
+
+        &::placeholder {
+          color: black;
+          font-size: 1.1em;
+          font-family: "Lato", sans-serif;
+        }
+
+      }
+    }
+    //ползунок
+    &_range {
+      padding-top: 3%;
+      display: flex;
+
+      .form_range--items1 {
+
+
+        .style_text {
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 4%;
+
+
+
+          .style_text--75 {
+            padding-left: 44%;
+          }
+        }
+
+        label {
+          color: white;
+          font-size: 1.1em;
+          font-family: "Lato", sans-serif;
+        }
+
+        .range {
+          -webkit-appearance: none; //обновляем стиль и рисуем заново
+          border: 2px solid white;
+          border-radius: 10px;
+          width: 619px;
+          height: 2px;
+          background-color: rgba(225, 225, 225, .8);
+          outline: none;
+        }
+
+        //стилизуем ползунок
+        .range::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 25px;
+          height: 25px;
+          background-color: #3E9CDC;
+          border-radius: 20px;
+          border: 5px solid #286690;
+
+        }
+
+      }
+      //прикрепить фаил
+      .form_range--items2 {
+        padding-left: 15px;
+
+        //прячем кнопку
+        .hide {
+          position: absolute;
+          overflow: hidden;
+          z-index: 1;
+          width: 0.1px;
+          height: 0.1px;
+          opacity: 0;
+        }
+        //стилизуем текст
+        label {
+          font-family: "Lato", sans-serif;
+          font-size: 15px;
+          padding-top: 14px;
+          text-align: center;
+
+          border: 3px solid #3E9CDC;
+          display: inline-block;
+          width: 314px;
+          height: 38px;
+          border-radius: 5px;
+          background-color: white;
+
+        }
+      }
+    }
+    //кнопка отправить
+    .button {
+      display: flex;
+      padding-top: 3%;
+      align-items: center;
+      padding-left: 319px;
+
+      input {
+
+        border: 3px solid white;
+        background-color: #3E9CDC;
+        border-radius: 3px;
+        font-size: 15px;
+        font-family: "Lato", sans-serif;
+        color: white;
+        width: 305px;
+        height: 47px;
+      }
+    }
+
   }
+}
 
 
-  //дополнительные стили для js
+//дополнительные стили для js
 .click{
   cursor: pointer;
   display: flex;
   align-items: center;
-  width: 368px;
+  width: 300px;
   height: 45px;
   font-family: "Lato", sans-serif;
   color: white;
@@ -435,6 +450,15 @@ ul, li {
 }
 
 #error_message{
+  margin-bottom: 20px;
+  padding: 0;
+  background-color: brown;
+  text-align: center;
+  font-size: 0.7em;
+  transition: all 0.5s ease;
+}
+
+#error_message2{
   margin-bottom: 20px;
   padding: 0;
   background-color: brown;
