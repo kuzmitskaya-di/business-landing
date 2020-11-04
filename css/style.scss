@@ -219,6 +219,7 @@ ul, li {
         padding-right: 10px;
 
 
+
         &__header {
           border: 1px solid silver;
           cursor: pointer;
@@ -261,6 +262,11 @@ ul, li {
           }
         }
       }
+      .is-active{
+        .select__body{
+          display: block;
+        }
+      }
 
       .select__body{
         display: none;
@@ -284,7 +290,14 @@ ul, li {
             color: #3E9CDC;
           }
         }
+
       }
+      .is-active{
+
+          display: block;
+
+      }
+
 
 
       //поля ввода

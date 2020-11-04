@@ -548,6 +548,9 @@ ul, li {
   width: 40px;
   border-radius: 5px;
 }
+.background2 .form_inputsel .is-active .select__body {
+  display: block;
+}
 .background2 .form_inputsel .select__body {
   display: none;
   position: absolute;
@@ -570,6 +573,9 @@ ul, li {
 }
 .background2 .form_inputsel .select__body .select__item:hover {
   color: #3E9CDC;
+}
+.background2 .form_inputsel .is-active {
+  display: block;
 }
 .background2 .form_inputsel .form_val {
   display: flex;
