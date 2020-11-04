@@ -215,7 +215,6 @@ ul, li {
       justify-content: flex-start;
 
       .select {
-        margin: 0;
         position: relative;
         padding-right: 10px;
 
@@ -237,7 +236,7 @@ ul, li {
             border-top: 2px solid #3E9CDC;
             border-right: 2px solid #3E9CDC;
             border-left: 2px solid #3E9CDC;
-            border-radius: 0;
+            border-radius: 5px;
 
           }
 
@@ -255,22 +254,24 @@ ul, li {
             flex-shrink: 0;
             justify-content: end;
             height: 40px;
-            padding-left: auto;
+            padding-left:  58px;
             text-align: center;
             width: 40px;
+            border-radius: 5px;
           }
         }
       }
 
       .select__body{
         display: none;
+        position: absolute;
         width: 300px;
         border: 2px solid #3E9CDC;
         border-top: 0;
-        position: absolute;
         left:0;
         right: 0;
         top:100%;
+        border-radius: 5px;
         background-color: rgba(39,39,51, .9);
         .select__item{
           cursor: pointer;
@@ -436,7 +437,7 @@ ul, li {
   border-top: 2px solid #3E9CDC;
   border-right: 2px solid #3E9CDC;
   border-left: 2px solid #3E9CDC;
-  border-radius: 0;
+  border-radius: 5px;
 }
 .icon{
   align-items: center;
@@ -444,12 +445,13 @@ ul, li {
   flex-shrink: 0;
   justify-content: end;
   height: 40px;
-  padding-left: auto;
+  padding-left: 78px;
   text-align: center;
   width: 40px;
 }
 
-#error_message{
+
+#error_email{
   margin-bottom: 20px;
   padding: 0;
   background-color: brown;
@@ -458,7 +460,7 @@ ul, li {
   transition: all 0.5s ease;
 }
 
-#error_message2{
+#error_name{
   margin-bottom: 20px;
   padding: 0;
   background-color: brown;

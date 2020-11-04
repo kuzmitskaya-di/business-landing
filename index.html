@@ -71,70 +71,68 @@
             </div>
         </div>
 
-        <!--select-->
-        <div class="form_inputsel">
-            <div class="select " >
+        <!--form-->
+        <form id="nameEmail" class="form_val">
+            <!--select-->
+            <div class="form_inputsel">
+            <div class="select is-active" >
                 <div class="select__header" id="active">
                     <span class="select__current">Выберите тип системы</span>
-                    <div class="select__icon" id="icon1">&times</div>
+                    <div class="select__icon" id="icon1">&rsaquo;</div>
                 </div>
                 <div class="select__body" >
-                    <div class="select__item" id="item">Set ut perspiciatis</div>
-                    <div class="select__item" id="item1">Nemo enim ipsam</div>
-                    <div class="select__item" id="item2">Et harum quidem</div>
-                    <div class="select__item" id="item3">Temporibus autem</div>
-                    <div class="select__item" id="item4">Itaque earum rerum</div>
+                    <div class="select__item">Set ut perspiciatis</div>
+                    <div class="select__item">Nemo enim ipsam</div>
+                    <div class="select__item">Et harum quidem</div>
+                    <div class="select__item">Temporibus autem</div>
+                    <div class="select__item">Itaque earum rerum</div>
                 </div>
-            </div>
+                </div>
+                <!--/select-->
 
-            <!--/select-->
+                <!--validation-->
 
-            <!--validation-->
-            <form id="nameEmail" class="form_val" onsubmit="return validation()">
 
                 <div class="input_val1">
-                    <input type="text"  placeholder="Ваш e-mail" id="email">
-                    <div id="error_message" ></div>
+                    <input type="text"  placeholder="Ваш e-mail" class="form_name field" id="email">
+                    <span id="error_email" ></span>
                 </div>
                 <div class="input_val">
-                    <input type="text"  placeholder="Ваше имя" id="name">
-                    <div id="error_message2" ></div>
+                    <input type="text"  placeholder="Ваше имя" class="form_email field" id="name">
+                    <div id="error_name" ></div>
                 </div>
-        </div>
-
-        <!--/validation-->
-
-
-        <!--range-->
-        <div class="form_range">
-            <div class="form_range--items1">
-                <div class="style_text">
-                    <div class="style_text--sed">
-                        <label>Sed ut perspiciatis, unde omnis iste natus</label>
+                <!--validation-->
+            </div>
+            <!--range-->
+            <div class="form_range">
+                <div class="form_range--items1">
+                    <div class="style_text">
+                        <div class="style_text--sed">
+                            <label>Sed ut perspiciatis, unde omnis iste natus</label>
+                        </div>
+                        <div class="style_text--75">
+                            <label>75%</label>
+                        </div>
                     </div>
-                    <div class="style_text--75">
-                        <label>75%</label>
-                    </div>
+                    <input class="range" type="range" value="75"/>
                 </div>
-                <input class="range" type="range" value="75"/>
+                <!--/range-->
+
+                <!--file-->
+                <div class="form_range--items2">
+                    <label for="file">ПРИКРЕПИТЬ ФАИЛ</label>
+                    <input type="file" id="file" class="hide"/>
+                </div>
+                <!--/file-->
             </div>
-            <!--/range-->
 
-            <!--file-->
-            <div class="form_range--items2">
-                <label for="file">ПРИКРЕПИТЬ ФАИЛ</label>
-                <input type="file" id="file" class="hide"/>
+            <!--send form-->
+
+            <div class="button">
+                <input type="submit" class="validateBtn">
             </div>
-            <!--/file-->
-        </div>
 
-        <!--send form-->
-
-        <div class="button">
-            <input type="submit">
-        </div>
         </form>
-        <!--/send form-->
     </div>
 </div>
 <!--/Form-->
