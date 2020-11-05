@@ -1,80 +1,236 @@
-@media only screen and (max-width: 800px) {
-  .wrapper .wrapperForm .header {
-    width: 60%;
+@media only screen and (max-width: 600px) {
+  ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
-  .header_container {
-    width: 50%;
+  .background {
+    background-image: url("../img/background1.jpg");
+    width: 100%;
+    height: 950px;
   }
-
-  .form {
-    width: 50%;
+  .background .header {
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(16, 16, 29, 0.9);
   }
-  .form .form_text {
-    display: none;
+  .background .header_container {
+    width: 100%;
+    padding: 0 50px;
   }
-  .form .form_text .form_text--items1 {
-    display: none;
-  }
-  .form .form_text .form_text--items2 {
-    display: none;
-  }
-  .form .form_text .form_text--items3 {
-    display: none;
-  }
-  .form .form_text .form_text--items4 {
-    display: none;
-  }
-  .form .form_text .form_text--items5 {
-    display: none;
-  }
-  .form .form_img {
-    display: none;
-  }
-  .form .form_inputsel {
+  .background .header_row {
     display: flex;
-    flex-direction: column;
   }
-  .form .form_inputsel form {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 30%;
+  .background .header_logo p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 2em;
   }
-  .form .form_inputsel form .input_val1 {
-    display: flex;
-    flex-direction: column;
+  .background .header_logo span {
+    color: #42A9ED;
   }
-  .form .form_inputsel form .input_val1 #error_message {
-    width: 30%;
-    margin-right: 70%;
+  .background .header nav {
+    width: auto;
+    padding-left: 150px;
+    align-items: center;
+    box-sizing: border-box;
   }
-  .form .form_range {
-    flex-direction: column;
+  .background .header nav ul {
+    box-sizing: border-box;
   }
-  .form .form_range .form_range--items1 {
-    flex: 1;
-    padding-left: 20%;
-    padding-bottom: 3%;
-  }
-  .form .form_range .form_range--items1 .style_text {
+  .background .header_menu {
+    padding-top: 7%;
     display: flex;
     flex-direction: row;
-    padding-bottom: 4%;
+    box-sizing: border-box;
   }
-  .form .form_range .form_range--items1 .style_text .style_text--sed {
-    flex: 1;
+  .background .header_menu .business {
+    color: #43ABF0;
   }
-  .form .form_range .form_range--items1 .style_text .style_text--75 {
-    flex: 1;
+  .background .header_menu li {
+    padding-top: 10px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
   }
-  .form .form_range .form_range--items1 .style_text .range {
-    justify-items: center;
+  .background .header_menu a {
+    text-decoration: none;
+    color: white;
   }
-  .form .form_range .form_range--items2 {
-    padding-left: 30%;
+  .background .description {
+    width: 100%;
+  }
+  .background .description_bigText {
+    font-family: "Lato", sans-serif;
+    padding-top: 115px;
+    padding-left: 50px;
+    font-size: 3em;
+  }
+  .background .description_about--item {
+    padding-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+  }
+  .background .description_button {
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .background .description_button--item1 {
+    height: 42px;
+    width: 178px;
+    background-color: #3E9CDC;
+    border-radius: 7px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    border: 1px solid white;
+  }
+  .background .description_button--item2 {
+    margin-left: 1%;
+    padding-left: 17px;
+    height: 42px;
+    width: 178px;
+    border-radius: 7px;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    border: 1px solid black;
+  }
+
+  .background2 .form {
+    padding-left: 50px;
+  }
+  .background2 .form .form_text {
+    display: none;
+  }
+}
+@media only screen and (max-width: 375px) {
+  ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background {
+    background-image: url("../img/background1.jpg");
+    width: 100%;
+    height: 950px;
+  }
+  .background .header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(16, 16, 29, 0.9);
+  }
+  .background .header_container {
+    width: 100%;
+    padding: 0;
+  }
+  .background .header_row {
+    display: flex;
+  }
+  .background .header_logo p {
+    font-family: "Raleway", sans-serif;
+    color: white;
+    font-size: 2em;
+  }
+  .background .header_logo span {
+    color: #42A9ED;
+  }
+  .background .header nav {
+    width: auto;
+    padding-left: 150px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .background .header nav ul {
+    box-sizing: border-box;
+  }
+  .background .header_menu {
+    padding-top: 7%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+  .background .header_menu .business {
+    color: #43ABF0;
+  }
+  .background .header_menu li {
+    padding-top: 10px;
+    padding-left: 40px;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+  }
+  .background .header_menu a {
+    text-decoration: none;
+    color: white;
+  }
+  .background .description {
+    width: 100%;
+  }
+  .background .description_bigText {
+    font-family: "Lato", sans-serif;
+    padding-top: 115px;
+    padding-left: 50px;
+    font-size: 3em;
+  }
+  .background .description_about--item {
+    padding-left: 50px;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+  }
+  .background .description_button {
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+  }
+  .background .description_button--item1 {
+    height: 42px;
+    width: 178px;
+    background-color: #3E9CDC;
+    border-radius: 7px;
+    color: white;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    border: 1px solid white;
+  }
+  .background .description_button--item2 {
+    margin-left: 1%;
+    padding-left: 17px;
+    height: 42px;
+    width: 178px;
+    border-radius: 7px;
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    border: 1px solid black;
+  }
+
+  .background2 .form {
+    padding-left: 50px;
+  }
+  .background2 .form .form_text {
+    display: none;
+  }
+  .background2 .form .form_learn {
+    display: none;
+  }
+  .background2 .form .form_img {
+    display: none;
+  }
+  .background2 .form form .form_inputsel {
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+  }
+  .background2 .form form .form_inputsel .select .select__header {
+    width: 500px;
+  }
+  .background2 .form form .form_inputsel input {
+    width: 488px;
   }
 }
 

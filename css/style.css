@@ -577,19 +577,15 @@ ul, li {
 .background2 .form_inputsel .is-active {
   display: block;
 }
+.background2 .form_inputsel .input_val1 {
+  padding-right: 10px;
+}
 .background2 .form_inputsel .form_val {
   display: flex;
   flex-direction: row;
 }
-.background2 .form_inputsel .form_val .input_val1 {
-  padding-right: 10px;
-}
 .background2 .form_inputsel #email {
   margin-left: 0;
-}
-.background2 .form_inputsel .input_111 {
-  display: flex;
-  flex-direction: row;
 }
 .background2 .form_inputsel input {
   width: 300px;
