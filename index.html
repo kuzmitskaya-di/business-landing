@@ -54,7 +54,7 @@
 
 <!--Form-->
 <div class="background2">
-    <div class="form">
+    <div class="form" id="form_id" >
         <div class="form_order"><p><strong>ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></strong></p></div>
         <div class="form_learn"><p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p></div>
         <div class="form_img">
@@ -94,11 +94,11 @@
 
 
                 <div class="input_val1">
-                    <input type="text"  placeholder="Ваш e-mail" class="form_name field" id="email">
-                    <span id="error_email" ></span>
+                    <input type="text"  placeholder="Ваш e-mail" class="form_email" data-rule="email">
+                    <span class="error_email" ></span>
                 </div>
                 <div class="input_val">
-                    <input type="text"  placeholder="Ваше имя" class="form_email field" id="name">
+                    <input type="text"  placeholder="Ваше имя" class="form_name" id="name">
                     <div id="error_name" ></div>
                 </div>
                 <!--validation-->
@@ -129,7 +129,7 @@
             <!--send form-->
 
             <div class="button">
-                <input type="submit" class="validateBtn">
+                <input type="submit">
             </div>
 
         </form>

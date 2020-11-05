@@ -1,27 +1,8 @@
-(function() {
-        (".validateBtn").on("click", validate);
+let inputs = document.querySelectorAll("input[data-rule]");
 
-        // Validate email
-        function validateEmail(email) {
-                let re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
-                return re.test(String(email).toLowerCase());
-        }
-        function sendForm() {
-                (".error_email").text("Данные введены верно").fadeIn();
-        }
-        function validate() {
-                let email = (".form_email").val();
-                let error = (".error_email");
-                error.text("");
-
-                if (validateEmail(email)) {
-                        error.fade();
-                        sendForm();
-                } else {
-                        error.fadeIn();
-                        error.text(" Email введён не верно!");
-                }
-                return false;
-        }
-});
-
+for (input of inputs) {
+        input.addEventListener("blur", function () {
+                let rule = this.dataset.rule;
+                console.log(rule);
+        });
+}
