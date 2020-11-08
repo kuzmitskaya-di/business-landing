@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>LOREMIPSUM</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/adaptive.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/adaptive.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width"/>
 </head>
-<div class="background">
+<div class="wrapper">
     <!--/Header-->
     <header class="header">
-        <div class="header_container">
-            <div class="header_row">
-                <div class="header_logo">
+        <div class="container">
+            <div class="header__item">
+                <div class="header__logo">
                     <p>LOREMIPSUM.<span>NET</span></p>
                 </div>
-                <nav>
-                    <ul class="header_menu">
-                        <li class="header_menu--items"><a class="business" href="#">БИЗНЕС</a></li>
-                        <li class="header_menu--items"><a href="#">О НАС</a></li>
-                        <li class="header_menu--items"><a href="#">ЦЕНЫ</a></li>
-                        <li class="header_menu--items"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></li>
-                    </ul>
+                <nav class="nav">
+                    <a class="nav__link business" href="#">бизнес</a>
+                    <a class="nav__link" href="#">о нас</a>
+                    <a class="nav__link" href="#">цены</a>
+                    <a class="nav__link" href="#">оформить заказ</a>
                 </nav>
             </div>
         </div>
@@ -30,88 +29,92 @@
     <!--/Header-->
 
     <!--Description-->
-    <div class="description">
-        <div class="description_bigText">
-            <p>
-                <span style="color:#3E9CDC"><strong>LOREM IPSUM</strong></span><strong>DOLOR SIT AMET
-                <br />
-                CONSECTETUR </strong><span style="color:#3E9CDC"><strong>ADIPISCING</strong></span>
-            </p>
-        </div>
-        <div class="description_about">
-            <p class="description_about--item"><strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong></p>
-            <p class="description_about--item">- Totam rem aperiam eaque ipsa</p>
-            <p class="description_about--item">- Sit voluptatem accusantium doloremque laudantium</p>
-            <p class="description_about--item">- Sed ut perspiciatis, unde omnis iste natus error</p>
-        </div>
-        <div class="description_button">
-            <button class="description_button--item1">ЗАКАЗАТЬ</button>
-            <button class="description_button--item2">ПОДРОБНЕЕ</button>
+    <div class="container">
+        <div class="description">
+            <div class="description__bigText">
+                <p>
+                    <span style="color:#3E9CDC"><strong>LOREM IPSUM</strong></span><strong>DOLOR SIT AMET
+                    <br/>
+                    CONSECTETUR </strong><span style="color:#3E9CDC"><strong>ADIPISCING</strong></span>
+                </p>
+            </div>
+            <div class="description__about">
+                <p class="description__about--item"><strong>At vero eos et accusamus et iusto odio dignissimos
+                    ducimus!</strong></p>
+                <p class="description__about--item">- Totam rem aperiam eaque ipsa</p>
+                <p class="description__about--item">- Sit voluptatem accusantium doloremque laudantium</p>
+                <p class="description__about--item">- Sed ut perspiciatis, unde omnis iste natus error</p>
+            </div>
+            <div class="description__button">
+                <button class="description__button--item1">ЗАКАЗАТЬ</button>
+                <button class="description__button--item2">ПОДРОБНЕЕ</button>
+            </div>
         </div>
     </div>
     <!--/Description-->
 </div>
 
 
-<!--Form-->
-<div class="background2">
-    <div class="form" id="form_id" >
-        <div class="form_order"><p><strong>ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></strong></p></div>
-        <div class="form_learn"><p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p></div>
-        <div class="form_img">
-            <img src="img/dis.png"/>
-        </div>
-        <div class="form_text">
-            <div class="form_text--items1"><p>Lorem ipsum dolor
-                <br/>sit amet</p></div>
-            <div class="form_text--items2"><p>Сonsecteturadipiscing elit</p></div>
-            <div class="form_text--items3"><p>Sed do eiusmod tempor</p></div>
-            <div class="form_text--items4"><p>Esse cillum dolore
-                <br/>eu fugiat</p></div>
-            <div class="form_text--items5"><p>Excepteur sint occaecat <br/>cupidatat non proident</p>
+<!--Description form-->
+<div class="wrapper-input">
+    <div class="container">
+        <div class="description">
+            <div class="description__order-registration"><p><strong>ОФОРМЛЕНИЕ <span>ЗАКАЗА</span></strong></p></div>
+            <div class="description__learn"><p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p></div>
+            <div class="description__img">
+                <img src="img/dis.png"/>
+            </div>
+            <div class="description__text">
+                <div class="description__text--items1"><p>Lorem ipsum dolor
+                    <br/>sit amet</p></div>
+                <div class="description__text--items2"><p>Сonsecteturadipiscing elit</p></div>
+                <div class="description__text--items3"><p>Sed do eiusmod tempor</p></div>
+                <div class="description__text--items4"><p>Esse cillum dolore
+                    <br/>eu fugiat</p></div>
+                <div class="description__text--items5"><p>Excepteur sint occaecat <br/>cupidatat non proident</p>
+                </div>
             </div>
         </div>
 
-        <!--form-->
-        <form id="nameEmail" class="form_val">
+        <!--Input form-->
+        <form id="NameEmail" class="form">
             <!--select-->
-            <div class="form_inputsel">
-            <div class="select" >
-                <div class="select__header" onclick="myFunction()">
-                    <span class="select__current">Выберите тип системы</span>
-                    <div class="select__icon" id="icon1">&rsaquo;</div>
-                </div>
-                <div class="select__body" >
-                    <div class="select__item">Set ut perspiciatis</div>
-                    <div class="select__item">Nemo enim ipsam</div>
-                    <div class="select__item">Et harum quidem</div>
-                    <div class="select__item">Temporibus autem</div>
-                    <div class="select__item">Itaque earum rerum</div>
-                </div>
+            <div class="InputSelect">
+                <div class="select">
+                    <div class="select__header">
+                        <span class="select__current">Выберите тип системы</span>
+                        <div class="select__icon" id="icon1">&rsaquo;</div>
+                    </div>
+                    <div class="select__body">
+                        <div class="select__item">Set ut perspiciatis</div>
+                        <div class="select__item">Nemo enim ipsam</div>
+                        <div class="select__item">Et harum quidem</div>
+                        <div class="select__item">Temporibus autem</div>
+                        <div class="select__item">Itaque earum rerum</div>
+                    </div>
                 </div>
                 <!--/select-->
 
                 <!--validation-->
 
-
-                <div class="input_val1 valid" >
-                    <input type="text"  placeholder="Ваш e-mail" class="valid" >
-                    <span class="error_email" ></span>
+                <div class="input_Email">
+                    <input type="text" placeholder="Ваш e-mail" class="Email">
+                    <span class="error_email"></span>
                 </div>
-                <div class="input_val valid">
-                    <input type="text"  placeholder="Ваше имя" class="valid"  data-rule="email">
-                    <div id="error_name" ></div>
+                <div class="input_Name">
+                    <input type="text" placeholder="Ваше имя" class="Email">
+                    <div id="error_name"></div>
                 </div>
                 <!--validation-->
             </div>
             <!--range-->
-            <div class="form_range">
-                <div class="form_range--items1">
-                    <div class="style_text">
-                        <div class="style_text--sed">
+            <div class="slider">
+                <div class="slider__form">
+                    <div class="text">
+                        <div class="text__descr">
                             <label>Sed ut perspiciatis, unde omnis iste natus</label>
                         </div>
-                        <div class="style_text--75">
+                        <div class="text__75">
                             <label>75%</label>
                         </div>
                     </div>
@@ -120,19 +123,18 @@
                 <!--/range-->
 
                 <!--file-->
-                <div class="form_range--items2">
+                <div class="slider__attach">
                     <label for="file">ПРИКРЕПИТЬ ФАИЛ</label>
                     <input type="file" id="file" class="hide"/>
                 </div>
                 <!--/file-->
             </div>
 
-            <!--send form-->
 
             <div class="button">
-                <input type="submit">
+                <button type="submit">Отправить</button>
             </div>
-
+            <!--send form-->
         </form>
     </div>
 </div>

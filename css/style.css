@@ -19,6 +19,7 @@ html {
  */
 body {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -337,87 +338,77 @@ template {
   display: none;
 }
 
-ul, li {
-  display: block;
-  margin: 0;
-  padding: 0;
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 
-.background {
+.wrapper {
   background-image: url("../img/background1.jpg");
   width: 100%;
   height: 847px;
 }
-.background .header {
+.wrapper .header {
   display: flex;
   width: 100%;
   height: 100px;
   background-color: rgba(16, 16, 29, 0.9);
 }
-.background .header_container {
+.wrapper .header .container {
   width: 100%;
-  padding: 0 375px;
+  max-width: 1170px;
+  margin: 0 auto;
 }
-.background .header_row {
+.wrapper .header__item {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.background .header_logo p {
+.wrapper .header__logo p {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 2em;
 }
-.background .header_logo span {
+.wrapper .header__logo span {
   color: #42A9ED;
 }
-.background .header nav {
-  width: auto;
-  padding-left: 150px;
-  align-items: center;
-  box-sizing: border-box;
-}
-.background .header nav ul {
-  box-sizing: border-box;
-}
-.background .header_menu {
-  padding-top: 7%;
+.wrapper .header .nav {
   display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
 }
-.background .header_menu .business {
+.wrapper .header .nav__link {
+  margin-left: 50px;
+}
+.wrapper .header .nav .business {
   color: #43ABF0;
 }
-.background .header_menu li {
-  padding-top: 10px;
-  padding-left: 40px;
-  text-decoration: none;
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
-}
-.background .header_menu a {
+.wrapper .header .nav a {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
 }
-.background .description {
+
+.description {
   width: 100%;
 }
-.background .description_bigText {
+.description__bigText {
   font-family: "Lato", sans-serif;
-  padding-top: 115px;
-  padding-left: 375px;
+  margin-top: 11%;
   font-size: 3em;
 }
-.background .description_about--item {
-  padding-left: 375px;
+.description__about {
+  margin-top: 5%;
+}
+.description__about--item {
+  margin-top: 2%;
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
 }
-.background .description_button {
+.description__button {
   display: flex;
-  padding-left: 375px;
-  padding-top: 30px;
+  margin-top: 12%;
 }
-.background .description_button--item1 {
+.description__button--item1 {
   height: 42px;
   width: 178px;
   background-color: #3E9CDC;
@@ -427,7 +418,7 @@ ul, li {
   font-size: 1em;
   border: 1px solid white;
 }
-.background .description_button--item2 {
+.description__button--item2 {
   margin-left: 1%;
   padding-left: 17px;
   height: 42px;
@@ -438,92 +429,70 @@ ul, li {
   border: 1px solid black;
 }
 
-.background2 {
+.wrapper-input {
   background-image: url("../img/background2.jpg");
   width: 100%;
   height: 100%;
 }
-.background2 .form {
-  height: 100vh;
+.wrapper-input .description {
   display: flex;
   flex-direction: column;
-  padding-left: 375px;
+  align-items: center;
 }
-.background2 .form_order {
-  padding-left: 255px;
-  padding-top: 25px;
+.wrapper-input .description__order-registration {
   font-family: "Lato", sans-serif;
   font-size: 2.3em;
 }
-.background2 .form_order p {
+.wrapper-input .description__order-registration p {
   color: white;
 }
-.background2 .form_order span {
+.wrapper-input .description__order-registration span {
   color: #3E9CDC;
 }
-.background2 .form_learn {
-  padding-top: 5px;
-  padding-left: 205px;
+.wrapper-input .description__learn {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: #BBBBBB;
 }
-.background2 .form_img {
+.wrapper-input .description__img {
   padding-top: 5%;
 }
-.background2 .form_img img {
-  height: 88px;
-  width: 1000px;
+.wrapper-input .description__img img {
+  height: 100%;
+  width: 100%;
+  max-width: 1170px;
 }
-.background2 .form_text {
+.wrapper-input .description__text {
+  width: 100%;
+  max-width: 1170px;
   padding-top: 2%;
   display: flex;
   flex-direction: row;
-  padding-right: 20%;
+  justify-content: space-between;
 }
-.background2 .form_text .form_text--items1 {
-  flex: 1;
-  text-align: left;
-}
-.background2 .form_text .form_text--items2 {
-  flex: 1;
-}
-.background2 .form_text .form_text--items3 {
-  text-align: center;
-  flex: 1;
-}
-.background2 .form_text .form_text--items4 {
-  flex: 1;
-  text-align: center;
-}
-.background2 .form_text .form_text--items5 {
-  flex: 1;
-  text-align: right;
-  padding-right: 1%;
-}
-.background2 .form_text p {
+.wrapper-input .description__text p {
   color: white;
 }
-.background2 .form_inputsel {
+.wrapper-input .InputSelect {
   display: flex;
   padding-top: 5%;
   justify-content: flex-start;
 }
-.background2 .form_inputsel .select {
+.wrapper-input .InputSelect .select {
   position: relative;
-  padding-right: 10px;
+  flex: 1;
 }
-.background2 .form_inputsel .select__header {
+.wrapper-input .InputSelect .select__header {
   border: 1px solid silver;
   cursor: pointer;
   display: flex;
-  width: 300px;
+  width: 90%;
   background-color: rgba(225, 225, 225, 0.8);
   border-radius: 5px;
   height: 45px;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_inputsel .select__header:hover {
+.wrapper-input .InputSelect .select__header:hover {
   color: white;
   background-color: #3d4050;
   border-bottom: 0;
@@ -532,38 +501,36 @@ ul, li {
   border-left: 2px solid #3E9CDC;
   border-radius: 5px;
 }
-.background2 .form_inputsel .select__header .select__current {
+.wrapper-input .InputSelect .select__header .select__current {
   font-size: 1.1em;
   line-height: 24px;
   padding: 8px;
 }
-.background2 .form_inputsel .select__header .select__icon {
+.wrapper-input .InputSelect .select__header .select__icon {
   align-items: center;
   display: flex;
   flex-shrink: 0;
-  justify-content: end;
+  justify-items: end;
   height: 40px;
-  padding-left: 58px;
-  text-align: center;
+  margin-left: 100px;
   width: 40px;
   border-radius: 5px;
 }
-.background2 .form_inputsel .is-active .select__body {
+.wrapper-input .InputSelect .is-active .select__body {
   display: block;
 }
-.background2 .form_inputsel .select__body {
+.wrapper-input .InputSelect .select__body {
   display: none;
   position: absolute;
-  width: 300px;
+  width: 90%;
   border: 2px solid #3E9CDC;
   border-top: 0;
   left: 0;
   right: 0;
-  top: 100%;
   border-radius: 5px;
   background-color: rgba(39, 39, 51, 0.9);
 }
-.background2 .form_inputsel .select__body .select__item {
+.wrapper-input .InputSelect .select__body .select__item {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -571,61 +538,63 @@ ul, li {
   color: white;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_inputsel .select__body .select__item:hover {
+.wrapper-input .InputSelect .select__body .select__item:hover {
   color: #3E9CDC;
 }
-.background2 .form_inputsel .is-active {
-  display: block;
+.wrapper-input .InputSelect .input_Email {
+  flex: 1;
 }
-.background2 .form_inputsel .input_val1 {
-  padding-right: 10px;
+.wrapper-input .InputSelect .input_Name {
+  flex: 1;
 }
-.background2 .form_inputsel .form_val {
-  display: flex;
-  flex-direction: row;
-}
-.background2 .form_inputsel #email {
+.wrapper-input .InputSelect #email {
   margin-left: 0;
 }
-.background2 .form_inputsel input {
-  width: 300px;
+.wrapper-input .InputSelect input {
+  width: 90%;
   height: 42px;
   border-radius: 5px;
   background-color: rgba(225, 225, 225, 0.8);
   padding-right: 10px;
 }
-.background2 .form_inputsel input::placeholder {
+.wrapper-input .InputSelect input::placeholder {
   color: black;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_range {
+.wrapper-input .slider {
   padding-top: 3%;
   display: flex;
 }
-.background2 .form_range .form_range--items1 .style_text {
+.wrapper-input .slider__form {
+  width: 66%;
+}
+.wrapper-input .slider__form .text {
   display: flex;
   flex-direction: row;
   padding-bottom: 4%;
 }
-.background2 .form_range .form_range--items1 .style_text .style_text--75 {
-  padding-left: 44%;
+.wrapper-input .slider__form .text__descr {
+  flex: 15;
 }
-.background2 .form_range .form_range--items1 label {
+.wrapper-input .slider__form .text__75 {
+  flex: 1;
+}
+.wrapper-input .slider__form .text label {
   color: white;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
 }
-.background2 .form_range .form_range--items1 .range {
+.wrapper-input .slider__form .range {
   -webkit-appearance: none;
   border: 2px solid white;
   border-radius: 10px;
-  width: 619px;
+  width: 98%;
   height: 2px;
   background-color: rgba(225, 225, 225, 0.8);
   outline: none;
 }
-.background2 .form_range .form_range--items1 .range::-webkit-slider-thumb {
+.wrapper-input .slider__form .range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 25px;
   height: 25px;
@@ -633,10 +602,10 @@ ul, li {
   border-radius: 20px;
   border: 5px solid #286690;
 }
-.background2 .form_range .form_range--items2 {
-  padding-left: 15px;
+.wrapper-input .slider__attach {
+  padding-left: 1%;
 }
-.background2 .form_range .form_range--items2 .hide {
+.wrapper-input .slider__attach .hide {
   position: absolute;
   overflow: hidden;
   z-index: 1;
@@ -644,25 +613,24 @@ ul, li {
   height: 0.1px;
   opacity: 0;
 }
-.background2 .form_range .form_range--items2 label {
+.wrapper-input .slider__attach label {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   padding-top: 14px;
   text-align: center;
   border: 3px solid #3E9CDC;
   display: inline-block;
-  width: 314px;
+  width: 355px;
   height: 38px;
   border-radius: 5px;
   background-color: white;
 }
-.background2 .form .button {
+.wrapper-input .button {
   display: flex;
   padding-top: 3%;
-  align-items: center;
-  padding-left: 319px;
+  justify-content: center;
 }
-.background2 .form .button input {
+.wrapper-input .button button {
   border: 3px solid white;
   background-color: #3E9CDC;
   border-radius: 3px;
