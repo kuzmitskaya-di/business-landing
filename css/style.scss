@@ -61,6 +61,7 @@
     }
   }
 }
+
 //Description
 .description {
   width: 100%;
@@ -71,19 +72,21 @@
     margin-top: 11%;
     font-size: 3em;
   }
-  &__about{
-    margin-top:5%;
+
+  &__about {
+    margin-top: 5%;
   }
 
   &__about--item {
-    margin-top:2%;
+    margin-top: 2%;
     font-family: "Lato", sans-serif;
     font-size: 1.2em;
   }
-//Button
+
+  //Button
   &__button {
     display: flex;
-    margin-top:12%;
+    margin-top: 12%;
   }
 
   &__button--item1 {
@@ -115,7 +118,7 @@
 .wrapper-input {
   background-image: url("../img/background2.jpg");
   width: 100%;
-  height: 100%;
+  height: 880px;
 
   .description {
     display: flex;
@@ -168,233 +171,278 @@
     }
   }
 
-//Select and Input
-    .InputSelect {
-      display: flex;
-      padding-top: 5%;
-      justify-content: flex-start;
+  //Select and Input
+  .InputSelect {
+    display: flex;
+    padding-top: 5%;
+    justify-content: flex-start;
 
-      .select {
-        position: relative;
-        flex:1;
+    .select {
+      position: relative;
+      flex: 1;
 
-        &__header {
-          border: 1px solid silver;
-          cursor: pointer;
-          display: flex;
-          width: 90%;
-          background-color: rgba(225, 225, 225, .8);
-          border-radius: 5px;
-          height: 45px;
-          font-family: "Lato", sans-serif;
-
-          &:hover {
-            color: white;
-            background-color: #3d4050;
-            border-bottom: 0;
-            border-top: 2px solid #3E9CDC;
-            border-right: 2px solid #3E9CDC;
-            border-left: 2px solid #3E9CDC;
-            border-radius: 5px;
-
-          }
-
-
-          .select__current {
-            font-size: 1.1em;
-            line-height: 24px;
-            padding: 8px;
-          }
-
-          .select__icon {
-            align-items: center;
-            display: flex;
-            flex-shrink: 0;
-            justify-items: end;
-            height: 40px;
-            margin-left: 100px;
-            width: 40px;
-            border-radius: 5px;
-          }
-        }
-      }
-
-      .is-active {
-        .select__body {
-          display: block;
-        }
-      }
-
-      .select__body {
-        display: none;
-        position: absolute;
+      &__header {
+        border: 1px solid silver;
+        cursor: pointer;
+        display: flex;
         width: 90%;
-        border: 2px solid #3E9CDC;
-        border-top: 0;
-        left: 0;
-        right: 0;
+        background-color: rgba(225, 225, 225, .8);
         border-radius: 5px;
-        background-color: rgba(39, 39, 51, .9);
+        height: 45px;
+        font-family: "Lato", sans-serif;
 
-        .select__item {
-          cursor: pointer;
-          font-size: 16px;
+        &:hover {
+          color: white;
+          background-color: #3d4050;
+          border-bottom: 0;
+          border-top: 2px solid #3E9CDC;
+          border-right: 2px solid #3E9CDC;
+          border-left: 2px solid #3E9CDC;
+          border-radius: 5px;
+
+        }
+
+
+        .select__current {
+          font-size: 1.1em;
           line-height: 24px;
           padding: 8px;
-          color: white;
-          font-family: "Lato", sans-serif;
+        }
 
-          &:hover {
-            color: #3E9CDC;
-          }
+        .select__icon {
+          align-items: center;
+          display: flex;
+          flex-shrink: 0;
+          justify-items: end;
+          height: 40px;
+          margin-left: 100px;
+          width: 40px;
+          border-radius: 5px;
         }
       }
-//Inputs with validation
-      .input_Email {
-        flex:1;
+    }
+
+    .is-active {
+      .select__body {
+        display: block;
+      }
+    }
+
+    .select__body {
+      display: none;
+      position: absolute;
+      width: 90%;
+      border: 2px solid #3E9CDC;
+      border-top: 0;
+      left: 0;
+      right: 0;
+      border-radius: 5px;
+      background-color: rgba(39, 39, 51, .9);
+
+      .select__item {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px;
+        color: white;
+        font-family: "Lato", sans-serif;
+
+        &:hover {
+          color: #3E9CDC;
+        }
+      }
+    }
+
+    //Inputs with validation
+    .input_Email {
+      flex: 1;
+    }
+
+    .input_Name {
+      flex: 1;
+    }
+
+
+    #email {
+      margin-left: 0;
+    }
+
+
+    input {
+
+      width: 90%;
+      height: 42px;
+      border-radius: 5px;
+      background-color: rgba(225, 225, 225, .8);
+      padding-right: 10px;
+
+
+      &::placeholder {
+        color: black;
+        font-size: 1.1em;
+        font-family: "Lato", sans-serif;
       }
 
-      .input_Name {
-       flex:1;
-      }
+
+    }
+
+  }
+
+  //Range
+  .slider {
+    padding-top: 3%;
+    display: flex;
 
 
-      #email {
-        margin-left: 0;
-      }
+    &__form {
+      width: 66%;
 
 
-      input {
+      .text {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 4%;
 
-        width: 90%;
-        height: 42px;
-        border-radius: 5px;
-        background-color: rgba(225, 225, 225, .8);
-        padding-right: 10px;
+        &__descr {
+          flex: 15
+        }
 
+        &__75 {
+          flex: 1;
+        }
 
-        &::placeholder {
-          color: black;
+        label {
+          color: white;
           font-size: 1.1em;
           font-family: "Lato", sans-serif;
         }
-
-
       }
 
-    }
-
-    //Range
-    .slider {
-      padding-top: 3%;
-      display: flex;
-
-
-
-      &__form {
-        width: 66%;
-
-
-        .text {
-          display: flex;
-          flex-direction: row;
-          padding-bottom: 4%;
-
-          &__descr {
-            flex: 15
-          }
-
-          &__75 {
-            flex: 1;
-          }
-
-          label {
-            color: white;
-            font-size: 1.1em;
-            font-family: "Lato", sans-serif;
-          }
-        }
-          .range {
-            -webkit-appearance: none; //update the style and draw the range again
-            border: 2px solid white;
-            border-radius: 10px;
-            width: 98%;
-            height: 2px;
-            background-color: rgba(225, 225, 225, .8);
-            outline: none;
-          }
-
-          //стилизуем ползунок
-          .range::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 25px;
-            height: 25px;
-            background-color: #3E9CDC;
-            border-radius: 20px;
-            border: 5px solid #286690;
-
-          }
-
-        }
-
-
-
-
-
-      //attached file
-      &__attach {
-        padding-left: 1%;
-
-
-        //hiding the button
-        .hide {
-          position: absolute;
-          overflow: hidden;
-          z-index: 1;
-          width: 0.1px;
-          height: 0.1px;
-          opacity: 0;
-        }
-
-        //stylizing the text
-        label {
-          font-family: "Lato", sans-serif;
-          font-size: 15px;
-          padding-top: 14px;
-          text-align: center;
-
-          border: 3px solid #3E9CDC;
-          display: inline-block;
-          width: 355px;
-          height: 38px;
-          border-radius: 5px;
-          background-color: white;
-
-        }
+      .range {
+        -webkit-appearance: none; //update the style and draw the range again
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 98%;
+        height: 2px;
+        background-color: rgba(225, 225, 225, .8);
+        outline: none;
       }
-    }
 
-    //the send button
-    .button {
-      display: flex;
-      padding-top: 3%;
-      justify-content: center;
-
-
-      button {
-
-        border: 3px solid white;
+      //стилизуем ползунок
+      .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 25px;
+        height: 25px;
         background-color: #3E9CDC;
-        border-radius: 3px;
-        font-size: 15px;
-        font-family: "Lato", sans-serif;
-        color: white;
-        width: 305px;
-        height: 47px;
+        border-radius: 20px;
+        border: 5px solid #286690;
+
       }
+
     }
 
+    //attached file
+    &__attach {
+      padding-left: 1%;
 
+
+      //hiding the button
+      .hide {
+        position: absolute;
+        overflow: hidden;
+        z-index: 1;
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+      }
+
+      //stylizing the text
+      label {
+        font-family: "Lato", sans-serif;
+        font-size: 15px;
+        padding-top: 14px;
+        text-align: center;
+
+        border: 3px solid #3E9CDC;
+        display: inline-block;
+        width: 355px;
+        height: 38px;
+        border-radius: 5px;
+        background-color: white;
+
+      }
+    }
+  }
+
+  //the send button
+  .button {
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
+
+
+    button {
+
+      border: 3px solid white;
+      background-color: #3E9CDC;
+      border-radius: 3px;
+      font-size: 15px;
+      font-family: "Lato", sans-serif;
+      color: white;
+      width: 305px;
+      height: 47px;
+    }
+  }
+}
+//footer
+.footer{
+  background-image: url("../img/footer.png");
+  width: 100%;
+  height: 80px;
+  .container {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    &__rights{
+      color: white;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+      flex:1;
+    }
+    &__payment{
+      color: white;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.9em;
+      flex:1;
+      &--img{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex: 1;
+      }
+    }
+    &__communication{
+      display: flex;
+      flex-direction: row;
+      font-size: 0.9em;
+      justify-content: flex-end;
+      flex:1;
+      a{
+        text-decoration: none;
+        color: white;
+      }
+
+      .social{
+        padding-right: 18%;
+      }
+    }
+  }
 }
 
 
