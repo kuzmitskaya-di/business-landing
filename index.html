@@ -77,7 +77,7 @@
         </div>
 
         <!--Input form-->
-        <form id="NameEmail" class="form">
+        <form id="NameEmail" name="formNE" method="post" action=""  class="form">
             <!--select-->
             <div class="InputSelect">
                 <div class="select">
@@ -98,12 +98,10 @@
                 <!--validation-->
 
                 <div class="input_Email">
-                    <input type="text" placeholder="Ваш e-mail" class="Email">
-                    <span class="error_email"></span>
+                    <input type="text" placeholder="Ваш e-mail" data-rule="email" name="email">
                 </div>
                 <div class="input_Name">
-                    <input type="text" placeholder="Ваше имя" class="Email">
-                    <div id="error_name"></div>
+                    <input type="text" placeholder="Ваше имя" class="Name" id="name">
                 </div>
                 <!--validation-->
             </div>
@@ -158,6 +156,6 @@
 </footer>
 <!--/Footer-->
 <script src="js/select.js"></script>
-<script src="js/validation.js"></script>
+<script src="js/validationEmail.js"></script>
 </body>
 </html>
