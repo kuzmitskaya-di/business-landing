@@ -419,15 +419,15 @@ template {
 }
 @media only screen and (max-width: 778px) {
   .wrapper {
-    width: 120%;
+    width: 120% !important;
   }
 
   .wrapper-input {
-    width: 120%;
+    width: 120% !important;
   }
 
   .footer {
-    width: 120%;
+    width: 120% !important;
   }
 
   .header__logo {
@@ -523,15 +523,15 @@ template {
 @media only screen and (max-width: 480px) {
   .wrapper {
     height: 550px !important;
-    width: 120%;
+    width: 120% !important;
   }
 
   .wrapper-input {
-    width: 120%;
+    width: 120% !important;
   }
 
   .footer {
-    width: 120%;
+    width: 120% !important;
   }
 
   .header__logo {
