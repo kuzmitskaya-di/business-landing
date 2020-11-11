@@ -62,7 +62,15 @@
   }
 }
 @media only screen and (max-width: 778px) {
-
+  .wrapper{
+    width: 120%;
+  }
+  .wrapper-input{
+    width: 120%;
+  }
+  .footer{
+    width: 120%;
+  }
   .header__logo{
     display: none !important;
   }
