@@ -523,6 +523,15 @@ template {
 @media only screen and (max-width: 480px) {
   .wrapper {
     height: 550px !important;
+    width: 120%;
+  }
+
+  .wrapper-input {
+    width: 120%;
+  }
+
+  .footer {
+    width: 120%;
   }
 
   .header__logo {
