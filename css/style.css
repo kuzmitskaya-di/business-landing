@@ -338,6 +338,280 @@ template {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header__item {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .description__bigText {
+    text-align: center;
+  }
+
+  .description__about {
+    text-align: center;
+  }
+
+  .description__button {
+    justify-content: center;
+  }
+
+  .description__img {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .description__text--items1 {
+    margin-left: 3%;
+  }
+
+  .description__text--items5 {
+    margin-right: 3%;
+  }
+
+  .InputSelect {
+    display: block !important;
+    padding-left: 33%;
+  }
+
+  .select {
+    position: center;
+  }
+
+  .select__header {
+    width: 55% !important;
+  }
+
+  .select__body {
+    width: 55% !important;
+  }
+
+  #email {
+    margin-top: 3%;
+    width: 53% !important;
+    margin-bottom: 1%;
+  }
+
+  #name {
+    width: 53% !important;
+  }
+
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__attach {
+    margin-top: 2%;
+  }
+
+  .container__payment {
+    display: none !important;
+  }
+
+  .container__rights {
+    margin-left: 3%;
+  }
+
+  .container__communication {
+    margin-right: 3%;
+  }
+}
+@media only screen and (max-width: 778px) {
+  .header__logo {
+    display: none !important;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .header__item {
+    padding-top: 4%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .description__bigText {
+    text-align: justify !important;
+    padding-left: 2%;
+  }
+
+  .description__about {
+    text-align: justify !important;
+    padding-left: 2%;
+  }
+
+  .description__button {
+    justify-content: start;
+    padding-left: 2%;
+  }
+
+  .description__img {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .description__text {
+    display: none !important;
+  }
+
+  .InputSelect {
+    display: block !important;
+    padding-left: 10%;
+  }
+
+  .select__icon {
+    display: none !important;
+  }
+
+  .select__header {
+    width: 80% !important;
+  }
+
+  .select__body {
+    width: 80% !important;
+  }
+
+  #email {
+    margin-top: 3%;
+    width: 78% !important;
+    margin-bottom: 1%;
+  }
+
+  #name {
+    width: 78% !important;
+  }
+
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__form {
+    width: 80% !important;
+  }
+
+  .slider__attach {
+    margin-top: 4%;
+  }
+
+  .container__payment {
+    display: none !important;
+  }
+
+  .container__rights {
+    margin-left: 3%;
+  }
+
+  .container__communication {
+    margin-right: 3%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .wrapper {
+    height: 550px !important;
+  }
+
+  .header__logo {
+    display: none !important;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  .header__item {
+    padding-top: 4%;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .description__bigText {
+    text-align: justify !important;
+    padding-left: 2%;
+    font-size: 1.5em !important;
+  }
+
+  .description__about {
+    text-align: justify !important;
+    padding-left: 2%;
+  }
+
+  .description__button {
+    justify-content: start;
+    padding-left: 2%;
+  }
+
+  .description__img {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .description__learn {
+    font-size: 0.9em !important;
+  }
+
+  .wrapper-input {
+    height: 680px !important;
+  }
+
+  .description__text {
+    display: none !important;
+  }
+
+  .InputSelect {
+    display: block !important;
+    padding-left: 10%;
+  }
+
+  .select__icon {
+    display: none !important;
+  }
+
+  .select__header {
+    width: 80% !important;
+  }
+
+  .select__body {
+    width: 80% !important;
+  }
+
+  #email {
+    margin-top: 3%;
+    width: 78% !important;
+    margin-bottom: 1%;
+  }
+
+  #name {
+    width: 78% !important;
+  }
+
+  .slider {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .slider__form {
+    width: 80% !important;
+  }
+
+  .slider__attach {
+    margin-top: 4%;
+  }
+
+  .container__payment {
+    display: none !important;
+  }
+
+  .container__rights {
+    display: none !important;
+  }
+
+  .container__communication {
+    justify-content: center !important;
+  }
+}
 .container {
   width: 100%;
   max-width: 1170px;
