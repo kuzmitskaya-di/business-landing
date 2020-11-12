@@ -14,9 +14,9 @@
     <header class="header">
         <div class="container">
             <div class="header__item">
-                <p class="header__logo">LOREMIPSUM.<span class="basic_color">NET</span></p>
+                <p class="header__logo">LOREMIPSUM.<span class="header__logo--blue">NET</span></p>
                 <nav class="nav">
-                    <a class="nav__link basic_color" href="#">бизнес</a>
+                    <a class="nav__link nav__link--active" href="#">бизнес</a>
                     <a class="nav__link" href="#">о нас</a>
                     <a class="nav__link" href="#">цены</a>
                     <a class="nav__link" href="#">оформить заказ</a>
@@ -29,10 +29,10 @@
     <!--Description-->
     <div class="container">
         <div class="description">
-            <p class="description__bigtext">
-                <span class="basic_color">LOREM IPSUM</span> DOLOR SIT AMET
+            <p class="description__big-text">
+                <span class="description__big-text--blue">LOREM IPSUM</span> DOLOR SIT AMET
                 <br/>
-                CONSECTETUR <span class="basic_color"><strong>ADIPISCING</strong></span>
+                CONSECTETUR <span class="description__big-text--blue"><strong>ADIPISCING</strong></span>
             </p>
             <p class="description__about--content1">At vero eos et accusamus et iusto odio dignissimos
                 ducimus!</p>
@@ -40,7 +40,7 @@
             <p class="description__about--content">- Sit voluptatem accusantium doloremque laudantium</p>
             <p class="description__about--content">- Sed ut perspiciatis, unde omnis iste natus error</p>
             <button class="description__button--order">ЗАКАЗАТЬ</button>
-            <button class="description__button--more">ПОДРОБНЕЕ</button>
+            <button class="description__button--secondary">ПОДРОБНЕЕ</button>
         </div>
     </div>
     <!--/Description-->
@@ -51,7 +51,7 @@
 <div class="wrapper-input">
     <div class="container">
         <div class="description">
-            <p class="description__order-registration">ОФОРМЛЕНИЕ <span class="basic_color">ЗАКАЗА</span></p>
+            <p class="description__order-registration">ОФОРМЛЕНИЕ <span class="description__order-registration--blue">ЗАКАЗА</span></p>
             <p class="description__learn">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
             <!--Переделать картинку-->
             <div class="description__img">
@@ -68,9 +68,9 @@
         </div>
 
         <!--Input form-->
-        <form name="form_input" class="form">
+        <form name="form-input" class="form">
             <!--select-->
-            <div class="form_select">
+            <div class="form-select">
                 <div class="select">
                     <div class="select__header">
                         <span class="select__current">Выберите тип системы</span>
@@ -86,16 +86,16 @@
                 </div>
                 <!--/select-->
                 <!--validation-->
-                <input class="input_Email" type="text" placeholder="Ваш e-mail" id="email" data-rule="email"
+                <input class="input-Email" type="text" placeholder="Ваш e-mail" id="email" data-rule="email"
                        name="email">
-                <input type="text" class="input_Name" placeholder="Ваше имя" id="name" data-rule="name" name="name">
+                <input type="text" class="input-Name" placeholder="Ваше имя" id="name" data-rule="name" name="name">
                 <!--validation-->
             </div>
             <!--range-->
             <div class="slider">
                 <div class="slider__form">
                     <div class="text">
-                        <label class="text__for_slider">Sed ut perspiciatis, unde omnis iste natus</label>
+                        <label class="text__for-slider">Sed ut perspiciatis, unde omnis iste natus</label>
                         <label class="text__icon-slider">75%</label>
                     </div>
                     <input class="range" type="range" value="75"/>
@@ -119,13 +119,13 @@
     <div class="container">
         <div class="container__rights">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
         <div class="container__payment">
-            <div class="container__payment_method"><img class="img_payment" src="img/qiwi.png"/>Qiwi wallet</div>
-            <div class="container__payment_method"><img class="img_payment" src="img/cash.png"/>Yandex Money</div>
-            <div class="container__payment_method"><img class="img_payment" src="img/webmoney.png"/>Web Money</div>
+            <div class="container__payment-method"><img class="img-payment" src="img/qiwi.png"/>Qiwi wallet</div>
+            <div class="container__payment-method"><img class="img-payment" src="img/cash.png"/>Yandex Money</div>
+            <div class="container__payment-method"><img class="img-payment" src="img/webmoney.png"/>Web Money</div>
         </div>
         <div class="container__communication">
-            <img class="img_contact" src="img/email.png"/><a class="container__communication--contact_us contact_us" href="">info@ipsum228.com</a>
-            <img class="img_contact" src="img/vk.png"/><a class="container__communication--contact_us" href="">Мы
+            <img class="img-contact" src="img/email.png"/><a class="container__communication--mail mail" href="">info@ipsum228.com</a>
+            <img class="img-contact" src="img/vk.png"/><a class="container__communication--vk" href="">Мы
                 вконтакте</a>
         </div>
     </div>

@@ -8,7 +8,7 @@ for (let input of inputs) {
         switch (rule) {
             case "email":
                 const regEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                let addressE = document.forms["form_input"].elements["email"].value;
+                let addressE = document.forms["form-input"].elements["email"].value;
                 if (regEmail.test(addressE) == false) {
                     alert("Выыедите корректный e-mail!");
                     return false;
@@ -16,7 +16,7 @@ for (let input of inputs) {
                 break;
             case "name":
                 const regName = /^[A-Za-z]+$/;
-                let addressN = document.forms["form_input"].elements["name"].value;
+                let addressN = document.forms["form-input"].elements["name"].value;
                 if (regName.test(addressN) == false) {
                     alert("Выыедите корректное имя!");
                     return false;

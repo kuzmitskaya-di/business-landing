@@ -1,15 +1,21 @@
 @import "normalize.scss";
 @import "responsive.scss";
 
+@mixin font($font-size, $font-family){ ///вопрос
+  font-family: $font-family;
+  font-size: $font-size;
+  color:white;
+}
+
+$primary-color: #3E9CDC;
+
+
 .container {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
 }
 
-.basic_color {
-  color: #3E9CDC !important;
-}
 
 .wrapper {
   background-image: url("../img/background1.jpg");
@@ -35,9 +41,11 @@
     }
 
     &__logo {
-      font-family: "Raleway", sans-serif;
-      color: white;
-      font-size: 2em;
+      @include font(2em, "Raleway" sans-serif); //?????? вопрос
+
+      &--blue{
+        color:$primary-color;
+      }
     }
 
     // Navigation
@@ -49,6 +57,9 @@
         text-decoration: none;
         color: white;
         text-transform: uppercase;
+        &--active{
+          color:$primary-color;
+        }
       }
     }
   }
@@ -58,11 +69,14 @@
 .description {
   width: 100%;
 
-  &__bigtext {
+  &__big-text {
     font-family: "Lato", sans-serif;
     margin-top: 11%;
     font-size: 3em;
     font-weight: bold;
+    &--blue{
+      color:$primary-color;
+    }
   }
 
   &__about--content1 {
@@ -83,7 +97,7 @@
     margin-top: 5%;
     height: 42px;
     width: 178px;
-    background-color: #3E9CDC;
+    background-color: $primary-color;
     border-radius: 7px;
     color: white;
     font-family: "Lato", sans-serif;
@@ -91,7 +105,7 @@
     border: 1px solid white;
   }
 
-  &__button--more {
+  &__button--secondary {
     margin-top: 5%;
     margin-left: 1%;
     padding-left: 17px;
@@ -120,6 +134,10 @@
       font-size: 2.3em;
       color: white;
       font-weight: bold;
+      &--blue{
+        color:$primary-color;
+      }
+
     }
 
     &__learn {
@@ -154,7 +172,7 @@
   }
 
   //Select and Input
-  .form_select {
+  .form-select {
     display: flex;
     padding-top: 5%;
     justify-content: flex-start;
@@ -178,9 +196,9 @@
           color: white;
           background-color: #3d4050;
           border-bottom: 0;
-          border-top: 2px solid #3E9CDC;
-          border-right: 2px solid #3E9CDC;
-          border-left: 2px solid #3E9CDC;
+          border-top: 2px solid $primary-color;
+          border-right: 2px solid $primary-color;
+          border-left: 2px solid $primary-color;
           border-radius: 5px;
         }
 
@@ -212,7 +230,7 @@
       display: none;
       position: absolute;
       width: 90%;
-      border: 2px solid #3E9CDC;
+      border: 2px solid $primary-color;
       border-top: 0;
       left: 0;
       right: 0;
@@ -237,13 +255,13 @@
         font-family: "Lato", sans-serif;
 
         &:hover {
-          color: #3E9CDC;
+          color: $primary-color;
         }
       }
     }
 
     //Inputs with validation
-    .input_Email {
+    .input-Email {
       flex: 1;
       width: 90%;
       height: 42px;
@@ -258,7 +276,7 @@
       }
     }
 
-    .input_Name {
+    .input-Name {
       flex: 1;
       width: 90%;
       height: 42px;
@@ -286,7 +304,7 @@
         flex-direction: row;
         padding-bottom: 4%;
 
-        &__for_slider {
+        &__for-slider {
           flex: 15;
           color: white;
           font-size: 1.1em;
@@ -316,9 +334,9 @@
         -webkit-appearance: none;
         width: 25px;
         height: 25px;
-        background-color: #3E9CDC;
+        background-color: $primary-color;
         border-radius: 20px;
-        border: 5px solid #286690;
+        border: 5px solid $primary-color;
       }
     }
 
@@ -341,7 +359,7 @@
         font-size: 15px;
         padding-top: 14px;
         text-align: center;
-        border: 3px solid #3E9CDC;
+        border: 3px solid $primary-color;
         display: inline-block;
         width: 372px;
         height: 38px;
@@ -360,7 +378,7 @@
     justify-content: center;
     align-items: center;
     border: 3px solid white;
-    background-color: #3E9CDC;
+    background-color: $primary-color;
     border-radius: 3px;
     font-size: 15px;
     font-family: "Lato", sans-serif;
@@ -404,13 +422,13 @@
       font-size: 0.9em;
       flex: 1;
 
-      &__payment_method {
+      &__payment-method {
         display: flex;
         flex-direction: row;
         flex: 1;
       }
 
-      .img_payment {
+      .img-payment {
         margin-right: 5px;
       }
     }
@@ -424,16 +442,20 @@
       border-left:1px solid white;
       margin-left: 2%;
 
-      .container__communication--contact_us {
+      &--mail {
+        text-decoration: none;
+        color: white;
+      }
+      &--vk{
         text-decoration: none;
         color: white;
       }
 
-      .contact_us {
+      .mail {
         padding-right: 18%;
       }
 
-      .img_contact {
+      .img-contact {
         margin-right: 5px;
       }
     }
@@ -452,9 +474,9 @@
   color: white;
   background-color: #3d4050;
   border-bottom: 0;
-  border-top: 2px solid #3E9CDC;
-  border-right: 2px solid #3E9CDC;
-  border-left: 2px solid #3E9CDC;
+  border-top: 2px solid $primary-color;
+  border-right: 2px solid $primary-color;
+  border-left: 2px solid $primary-color;
   border-radius: 5px;
 }
 

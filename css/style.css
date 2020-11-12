@@ -640,10 +640,6 @@ template {
   margin: 0 auto;
 }
 
-.basic_color {
-  color: #3E9CDC !important;
-}
-
 .wrapper {
   background-image: url("../img/background1.jpg");
   width: 100%;
@@ -666,9 +662,12 @@ template {
   justify-content: space-between;
 }
 .wrapper .header__logo {
-  font-family: "Raleway", sans-serif;
-  color: white;
+  font-family: "Raleway" sans-serif;
   font-size: 2em;
+  color: white;
+}
+.wrapper .header__logo--blue {
+  color: #3E9CDC;
 }
 .wrapper .header .nav {
   display: flex;
@@ -679,15 +678,21 @@ template {
   color: white;
   text-transform: uppercase;
 }
+.wrapper .header .nav__link--active {
+  color: #3E9CDC;
+}
 
 .description {
   width: 100%;
 }
-.description__bigtext {
+.description__big-text {
   font-family: "Lato", sans-serif;
   margin-top: 11%;
   font-size: 3em;
   font-weight: bold;
+}
+.description__big-text--blue {
+  color: #3E9CDC;
 }
 .description__about--content1 {
   margin-top: 2%;
@@ -711,7 +716,7 @@ template {
   font-size: 1em;
   border: 1px solid white;
 }
-.description__button--more {
+.description__button--secondary {
   margin-top: 5%;
   margin-left: 1%;
   padding-left: 17px;
@@ -739,6 +744,9 @@ template {
   color: white;
   font-weight: bold;
 }
+.wrapper-input .description__order-registration--blue {
+  color: #3E9CDC;
+}
 .wrapper-input .description__learn {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
@@ -761,16 +769,16 @@ template {
   justify-content: space-between;
   color: white;
 }
-.wrapper-input .form_select {
+.wrapper-input .form-select {
   display: flex;
   padding-top: 5%;
   justify-content: flex-start;
 }
-.wrapper-input .form_select .select {
+.wrapper-input .form-select .select {
   position: relative;
   flex: 1;
 }
-.wrapper-input .form_select .select__header {
+.wrapper-input .form-select .select__header {
   justify-content: space-between;
   border: 1px solid silver;
   cursor: pointer;
@@ -781,7 +789,7 @@ template {
   height: 45px;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .form_select .select__header:hover {
+.wrapper-input .form-select .select__header:hover {
   color: white;
   background-color: #3d4050;
   border-bottom: 0;
@@ -790,12 +798,12 @@ template {
   border-left: 2px solid #3E9CDC;
   border-radius: 5px;
 }
-.wrapper-input .form_select .select__header .select__current {
+.wrapper-input .form-select .select__header .select__current {
   font-size: 1.1em;
   line-height: 24px;
   padding: 8px;
 }
-.wrapper-input .form_select .select__header .select__icon {
+.wrapper-input .form-select .select__header .select__icon {
   align-items: center;
   display: flex;
   flex-shrink: 0;
@@ -804,10 +812,10 @@ template {
   width: 40px;
   border-radius: 5px;
 }
-.wrapper-input .form_select .is-active .select__body {
+.wrapper-input .form-select .is-active .select__body {
   display: block;
 }
-.wrapper-input .form_select .select__body {
+.wrapper-input .form-select .select__body {
   display: none;
   position: absolute;
   width: 90%;
@@ -818,7 +826,7 @@ template {
   border-radius: 5px;
   background-color: rgba(39, 39, 51, 0.9);
 }
-.wrapper-input .form_select .select__body .select__item {
+.wrapper-input .form-select .select__body .select__item {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -826,7 +834,7 @@ template {
   color: white;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .form_select .select__body .select__caption {
+.wrapper-input .form-select .select__body .select__caption {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -834,10 +842,10 @@ template {
   color: white;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .form_select .select__body .select__caption:hover {
+.wrapper-input .form-select .select__body .select__caption:hover {
   color: #3E9CDC;
 }
-.wrapper-input .form_select .input_Email {
+.wrapper-input .form-select .input-Email {
   flex: 1;
   width: 90%;
   height: 42px;
@@ -845,19 +853,19 @@ template {
   background-color: rgba(225, 225, 225, 0.8);
   margin-right: 2%;
 }
-.wrapper-input .form_select .input_Email::placeholder {
+.wrapper-input .form-select .input-Email::placeholder {
   color: black;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .form_select .input_Name {
+.wrapper-input .form-select .input-Name {
   flex: 1;
   width: 90%;
   height: 42px;
   border-radius: 5px;
   background-color: rgba(225, 225, 225, 0.8);
 }
-.wrapper-input .form_select .input_Name::placeholder {
+.wrapper-input .form-select .input-Name::placeholder {
   color: black;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
@@ -874,7 +882,7 @@ template {
   flex-direction: row;
   padding-bottom: 4%;
 }
-.wrapper-input .slider__form .text__for_slider {
+.wrapper-input .slider__form .text__for-slider {
   flex: 15;
   color: white;
   font-size: 1.1em;
@@ -901,7 +909,7 @@ template {
   height: 25px;
   background-color: #3E9CDC;
   border-radius: 20px;
-  border: 5px solid #286690;
+  border: 5px solid #3E9CDC;
 }
 .wrapper-input .slider__attach--hide {
   padding-left: 2%;
@@ -974,12 +982,12 @@ template {
   font-size: 0.9em;
   flex: 1;
 }
-.footer .container__payment__payment_method {
+.footer .container__payment__payment-method {
   display: flex;
   flex-direction: row;
   flex: 1;
 }
-.footer .container__payment .img_payment {
+.footer .container__payment .img-payment {
   margin-right: 5px;
 }
 .footer .container__communication {
@@ -991,14 +999,18 @@ template {
   border-left: 1px solid white;
   margin-left: 2%;
 }
-.footer .container__communication .container__communication--contact_us {
+.footer .container__communication--mail {
   text-decoration: none;
   color: white;
 }
-.footer .container__communication .contact_us {
+.footer .container__communication--vk {
+  text-decoration: none;
+  color: white;
+}
+.footer .container__communication .mail {
   padding-right: 18%;
 }
-.footer .container__communication .img_contact {
+.footer .container__communication .img-contact {
   margin-right: 5px;
 }
 
