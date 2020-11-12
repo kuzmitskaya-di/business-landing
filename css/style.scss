@@ -1,11 +1,12 @@
 @import "normalize.scss";
 @import "responsive.scss";
 
-@mixin font($font-size, $font-family){ ///вопрос
+@mixin font($font-size, $font-family, $color, $font-style:sans-serif){
   font-family: $font-family;
   font-size: $font-size;
-  color:white;
+  color:$color;
 }
+
 
 $primary-color: #3E9CDC;
 
@@ -41,7 +42,7 @@ $primary-color: #3E9CDC;
     }
 
     &__logo {
-      @include font(2em, "Raleway" sans-serif); //?????? вопрос
+      @include font(2em, "Raleway", white);
 
       &--blue{
         color:$primary-color;
@@ -55,7 +56,7 @@ $primary-color: #3E9CDC;
       &__link {
         margin-left: 50px;
         text-decoration: none;
-        color: white;
+        @include font(0.9em, "Lato",white);
         text-transform: uppercase;
         &--active{
           color:$primary-color;
@@ -70,9 +71,8 @@ $primary-color: #3E9CDC;
   width: 100%;
 
   &__big-text {
-    font-family: "Lato", sans-serif;
     margin-top: 11%;
-    font-size: 3em;
+    @include font(3em, "Lato", black);
     font-weight: bold;
     &--blue{
       color:$primary-color;
@@ -81,8 +81,8 @@ $primary-color: #3E9CDC;
 
   &__about--content1 {
     margin-top: 2%;
-    font-family: "Lato", sans-serif, bo;
-    font-size: 1.2em;
+    @include font(1.2em, "Lato", black);
+    color: black !important;
     font-weight: bold;
   }
 
@@ -90,6 +90,7 @@ $primary-color: #3E9CDC;
     margin-top: 2%;
     font-family: "Lato", sans-serif;
     font-size: 1.2em;
+    @include font(1.2em, "Lato", black);
   }
 
   //Button
@@ -99,9 +100,7 @@ $primary-color: #3E9CDC;
     width: 178px;
     background-color: $primary-color;
     border-radius: 7px;
-    color: white;
-    font-family: "Lato", sans-serif;
-    font-size: 1em;
+    @include font(1em, "Lato", white);
     border: 1px solid white;
   }
 
@@ -112,9 +111,8 @@ $primary-color: #3E9CDC;
     height: 42px;
     width: 178px;
     border-radius: 7px;
-    font-family: "Lato", sans-serif;
-    font-size: 1em;
     border: 1px solid black;
+    @include font(1em, "Lato", black);
   }
 }
 
