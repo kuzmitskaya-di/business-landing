@@ -361,11 +361,11 @@ template {
     padding-right: 3%;
   }
 
-  .description__text--items1 {
+  .description__text--caption {
     margin-left: 3%;
   }
 
-  .description__text--items5 {
+  .description__text--caption {
     margin-right: 3%;
   }
 
@@ -401,7 +401,7 @@ template {
     align-items: center;
   }
 
-  .slider__attach {
+  .slider__attach--hide {
     margin-top: 2%;
   }
 
@@ -419,15 +419,16 @@ template {
 }
 @media only screen and (max-width: 778px) {
   .wrapper {
-    width: 120% !important;
+    width: 130% !important;
   }
 
   .wrapper-input {
-    width: 120% !important;
+    width: 130% !important;
+    height: 750px !important;
   }
 
   .footer {
-    width: 120% !important;
+    width: 130% !important;
   }
 
   .header__logo {
@@ -504,7 +505,7 @@ template {
     width: 80% !important;
   }
 
-  .slider__attach {
+  .slider__attach--hide {
     margin-top: 4%;
   }
 
@@ -523,15 +524,15 @@ template {
 @media only screen and (max-width: 480px) {
   .wrapper {
     height: 550px !important;
-    width: 120% !important;
+    width: 170% !important;
   }
 
   .wrapper-input {
-    width: 120% !important;
+    width: 170% !important;
   }
 
   .footer {
-    width: 120% !important;
+    width: 170% !important;
   }
 
   .header__logo {
@@ -617,7 +618,7 @@ template {
     width: 80% !important;
   }
 
-  .slider__attach {
+  .slider__attach--hide {
     margin-top: 4%;
   }
 
@@ -637,6 +638,10 @@ template {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+}
+
+.basic_color {
+  color: #3E9CDC !important;
 }
 
 .wrapper {
@@ -660,24 +665,16 @@ template {
   align-items: center;
   justify-content: space-between;
 }
-.wrapper .header__logo p {
+.wrapper .header__logo {
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 2em;
-}
-.wrapper .header__logo span {
-  color: #42A9ED;
 }
 .wrapper .header .nav {
   display: flex;
 }
 .wrapper .header .nav__link {
   margin-left: 50px;
-}
-.wrapper .header .nav .business {
-  color: #43ABF0;
-}
-.wrapper .header .nav a {
   text-decoration: none;
   color: white;
   text-transform: uppercase;
@@ -686,24 +683,25 @@ template {
 .description {
   width: 100%;
 }
-.description__bigText {
+.description__bigtext {
   font-family: "Lato", sans-serif;
   margin-top: 11%;
   font-size: 3em;
+  font-weight: bold;
 }
-.description__about {
-  margin-top: 5%;
+.description__about--content1 {
+  margin-top: 2%;
+  font-family: "Lato", sans-serif, bo;
+  font-size: 1.2em;
+  font-weight: bold;
 }
-.description__about--item {
+.description__about--content {
   margin-top: 2%;
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
 }
-.description__button {
-  display: flex;
-  margin-top: 12%;
-}
-.description__button--item1 {
+.description__button--order {
+  margin-top: 5%;
   height: 42px;
   width: 178px;
   background-color: #3E9CDC;
@@ -713,7 +711,8 @@ template {
   font-size: 1em;
   border: 1px solid white;
 }
-.description__button--item2 {
+.description__button--more {
+  margin-top: 5%;
   margin-left: 1%;
   padding-left: 17px;
   height: 42px;
@@ -737,12 +736,8 @@ template {
 .wrapper-input .description__order-registration {
   font-family: "Lato", sans-serif;
   font-size: 2.3em;
-}
-.wrapper-input .description__order-registration p {
   color: white;
-}
-.wrapper-input .description__order-registration span {
-  color: #3E9CDC;
+  font-weight: bold;
 }
 .wrapper-input .description__learn {
   font-family: "Lato", sans-serif;
@@ -757,27 +752,26 @@ template {
   width: 100%;
   max-width: 1170px;
 }
-.wrapper-input .description__text {
+.wrapper-input .description__information {
   width: 100%;
   max-width: 1170px;
   padding-top: 2%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-.wrapper-input .description__text p {
   color: white;
 }
-.wrapper-input .InputSelect {
+.wrapper-input .form_select {
   display: flex;
   padding-top: 5%;
   justify-content: flex-start;
 }
-.wrapper-input .InputSelect .select {
+.wrapper-input .form_select .select {
   position: relative;
   flex: 1;
 }
-.wrapper-input .InputSelect .select__header {
+.wrapper-input .form_select .select__header {
+  justify-content: space-between;
   border: 1px solid silver;
   cursor: pointer;
   display: flex;
@@ -787,7 +781,7 @@ template {
   height: 45px;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .InputSelect .select__header:hover {
+.wrapper-input .form_select .select__header:hover {
   color: white;
   background-color: #3d4050;
   border-bottom: 0;
@@ -796,25 +790,24 @@ template {
   border-left: 2px solid #3E9CDC;
   border-radius: 5px;
 }
-.wrapper-input .InputSelect .select__header .select__current {
+.wrapper-input .form_select .select__header .select__current {
   font-size: 1.1em;
   line-height: 24px;
   padding: 8px;
 }
-.wrapper-input .InputSelect .select__header .select__icon {
+.wrapper-input .form_select .select__header .select__icon {
   align-items: center;
   display: flex;
   flex-shrink: 0;
   justify-items: end;
   height: 40px;
-  margin-left: 100px;
   width: 40px;
   border-radius: 5px;
 }
-.wrapper-input .InputSelect .is-active .select__body {
+.wrapper-input .form_select .is-active .select__body {
   display: block;
 }
-.wrapper-input .InputSelect .select__body {
+.wrapper-input .form_select .select__body {
   display: none;
   position: absolute;
   width: 90%;
@@ -825,7 +818,7 @@ template {
   border-radius: 5px;
   background-color: rgba(39, 39, 51, 0.9);
 }
-.wrapper-input .InputSelect .select__body .select__item {
+.wrapper-input .form_select .select__body .select__item {
   cursor: pointer;
   font-size: 16px;
   line-height: 24px;
@@ -833,26 +826,38 @@ template {
   color: white;
   font-family: "Lato", sans-serif;
 }
-.wrapper-input .InputSelect .select__body .select__item:hover {
+.wrapper-input .form_select .select__body .select__caption {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+.wrapper-input .form_select .select__body .select__caption:hover {
   color: #3E9CDC;
 }
-.wrapper-input .InputSelect .input_Email {
+.wrapper-input .form_select .input_Email {
   flex: 1;
-}
-.wrapper-input .InputSelect .input_Name {
-  flex: 1;
-}
-.wrapper-input .InputSelect #email {
-  margin-left: 0;
-}
-.wrapper-input .InputSelect input {
   width: 90%;
   height: 42px;
   border-radius: 5px;
   background-color: rgba(225, 225, 225, 0.8);
-  padding-right: 10px;
+  margin-right: 2%;
 }
-.wrapper-input .InputSelect input::placeholder {
+.wrapper-input .form_select .input_Email::placeholder {
+  color: black;
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
+}
+.wrapper-input .form_select .input_Name {
+  flex: 1;
+  width: 90%;
+  height: 42px;
+  border-radius: 5px;
+  background-color: rgba(225, 225, 225, 0.8);
+}
+.wrapper-input .form_select .input_Name::placeholder {
   color: black;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
@@ -869,13 +874,14 @@ template {
   flex-direction: row;
   padding-bottom: 4%;
 }
-.wrapper-input .slider__form .text__descr {
+.wrapper-input .slider__form .text__for_slider {
   flex: 15;
+  color: white;
+  font-size: 1.1em;
+  font-family: "Lato", sans-serif;
 }
-.wrapper-input .slider__form .text__75 {
+.wrapper-input .slider__form .text__icon-slider {
   flex: 1;
-}
-.wrapper-input .slider__form .text label {
   color: white;
   font-size: 1.1em;
   font-family: "Lato", sans-serif;
@@ -897,10 +903,10 @@ template {
   border-radius: 20px;
   border: 5px solid #286690;
 }
-.wrapper-input .slider__attach {
-  padding-left: 1%;
+.wrapper-input .slider__attach--hide {
+  padding-left: 2%;
 }
-.wrapper-input .slider__attach .hide {
+.wrapper-input .slider__attach--hide .hide {
   position: absolute;
   overflow: hidden;
   z-index: 1;
@@ -908,24 +914,24 @@ template {
   height: 0.1px;
   opacity: 0;
 }
-.wrapper-input .slider__attach label {
+.wrapper-input .slider__attach--hide .slider__attach--visible {
   font-family: "Lato", sans-serif;
   font-size: 15px;
   padding-top: 14px;
   text-align: center;
   border: 3px solid #3E9CDC;
   display: inline-block;
-  width: 355px;
+  width: 372px;
   height: 38px;
   border-radius: 5px;
   background-color: white;
 }
 .wrapper-input .button {
   display: flex;
-  padding-top: 3%;
+  text-align: center;
+  margin-top: 3%;
   justify-content: center;
-}
-.wrapper-input .button button {
+  align-items: center;
   border: 3px solid white;
   background-color: #3E9CDC;
   border-radius: 3px;
@@ -934,6 +940,9 @@ template {
   color: white;
   width: 305px;
   height: 47px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 .footer {
@@ -953,21 +962,25 @@ template {
   align-items: center;
   font-size: 0.9em;
   flex: 1;
+  border-right: 1px solid white;
+  margin-right: 2%;
 }
 .footer .container__payment {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   font-size: 0.9em;
   flex: 1;
 }
-.footer .container__payment--img {
+.footer .container__payment__payment_method {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex: 1;
+}
+.footer .container__payment .img_payment {
+  margin-right: 5px;
 }
 .footer .container__communication {
   display: flex;
@@ -975,13 +988,18 @@ template {
   font-size: 0.9em;
   justify-content: flex-end;
   flex: 1;
+  border-left: 1px solid white;
+  margin-left: 2%;
 }
-.footer .container__communication a {
+.footer .container__communication .container__communication--contact_us {
   text-decoration: none;
   color: white;
 }
-.footer .container__communication .social {
+.footer .container__communication .contact_us {
   padding-right: 18%;
+}
+.footer .container__communication .img_contact {
+  margin-right: 5px;
 }
 
 .click {
@@ -998,35 +1016,6 @@ template {
   border-right: 2px solid #3E9CDC;
   border-left: 2px solid #3E9CDC;
   border-radius: 5px;
-}
-
-.icon {
-  align-items: center;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: end;
-  height: 40px;
-  padding-left: 78px;
-  text-align: center;
-  width: 40px;
-}
-
-#error_email {
-  margin-bottom: 20px;
-  padding: 0;
-  background-color: brown;
-  text-align: center;
-  font-size: 0.7em;
-  transition: all 0.5s ease;
-}
-
-#error_name {
-  margin-bottom: 20px;
-  padding: 0;
-  background-color: brown;
-  text-align: center;
-  font-size: 0.7em;
-  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=style.css.map */

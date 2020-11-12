@@ -7,6 +7,10 @@
   margin: 0 auto;
 }
 
+.basic_color {
+  color: #3E9CDC !important;
+}
+
 .wrapper {
   background-image: url("../img/background1.jpg");
   width: 100%;
@@ -31,15 +35,9 @@
     }
 
     &__logo {
-      p {
-        font-family: "Raleway", sans-serif;
-        color: white;
-        font-size: 2em;
-      }
-
-      span {
-        color: #42A9ED;
-      }
+      font-family: "Raleway", sans-serif;
+      color: white;
+      font-size: 2em;
     }
 
     // Navigation
@@ -48,13 +46,6 @@
 
       &__link {
         margin-left: 50px;
-      }
-
-      .business {
-        color: #43ABF0;
-      }
-
-      a {
         text-decoration: none;
         color: white;
         text-transform: uppercase;
@@ -67,30 +58,29 @@
 .description {
   width: 100%;
 
-
-  &__bigText {
+  &__bigtext {
     font-family: "Lato", sans-serif;
     margin-top: 11%;
     font-size: 3em;
+    font-weight: bold;
   }
 
-  &__about {
-    margin-top: 5%;
+  &__about--content1 {
+    margin-top: 2%;
+    font-family: "Lato", sans-serif, bo;
+    font-size: 1.2em;
+    font-weight: bold;
   }
 
-  &__about--item {
+  &__about--content {
     margin-top: 2%;
     font-family: "Lato", sans-serif;
     font-size: 1.2em;
   }
 
   //Button
-  &__button {
-    display: flex;
-    margin-top: 12%;
-  }
-
-  &__button--item1 {
+  &__button--order {
+    margin-top: 5%;
     height: 42px;
     width: 178px;
     background-color: #3E9CDC;
@@ -101,7 +91,8 @@
     border: 1px solid white;
   }
 
-  &__button--item2 {
+  &__button--more {
+    margin-top: 5%;
     margin-left: 1%;
     padding-left: 17px;
     height: 42px;
@@ -111,9 +102,7 @@
     font-size: 1em;
     border: 1px solid black;
   }
-
 }
-
 
 //Block with input form
 .wrapper-input {
@@ -129,24 +118,17 @@
     &__order-registration {
       font-family: "Lato", sans-serif;
       font-size: 2.3em;
-
-      p {
-        color: white;
-      }
-
-      span {
-        color: #3E9CDC;
-      }
-
+      color: white;
+      font-weight: bold;
     }
 
     &__learn {
       font-family: 'Lato', sans-serif;
       font-size: 1.1em;
       color: #BBBBBB;
-
     }
 
+    //убрать
     &__img {
       padding-top: 5%;
 
@@ -157,23 +139,22 @@
       }
     }
 
+    //убрать img
+
     // Text description
-    &__text {
+    &__information {
       width: 100%;
       max-width: 1170px;
       padding-top: 2%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-
-      p {
-        color: white;
-      }
+      color: white;
     }
   }
 
   //Select and Input
-  .InputSelect {
+  .form_select {
     display: flex;
     padding-top: 5%;
     justify-content: flex-start;
@@ -183,6 +164,7 @@
       flex: 1;
 
       &__header {
+        justify-content: space-between;
         border: 1px solid silver;
         cursor: pointer;
         display: flex;
@@ -200,9 +182,7 @@
           border-right: 2px solid #3E9CDC;
           border-left: 2px solid #3E9CDC;
           border-radius: 5px;
-
         }
-
 
         .select__current {
           font-size: 1.1em;
@@ -216,7 +196,6 @@
           flex-shrink: 0;
           justify-items: end;
           height: 40px;
-          margin-left: 100px;
           width: 40px;
           border-radius: 5px;
         }
@@ -247,6 +226,15 @@
         padding: 8px;
         color: white;
         font-family: "Lato", sans-serif;
+      }
+
+      .select__caption {
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px;
+        color: white;
+        font-family: "Lato", sans-serif;
 
         &:hover {
           color: #3E9CDC;
@@ -257,36 +245,32 @@
     //Inputs with validation
     .input_Email {
       flex: 1;
-    }
-
-    .input_Name {
-      flex: 1;
-    }
-
-
-    #email {
-      margin-left: 0;
-    }
-
-
-    input {
-
       width: 90%;
       height: 42px;
       border-radius: 5px;
       background-color: rgba(225, 225, 225, .8);
-      padding-right: 10px;
-
+      margin-right: 2%;
 
       &::placeholder {
         color: black;
         font-size: 1.1em;
         font-family: "Lato", sans-serif;
       }
-
-
     }
 
+    .input_Name {
+      flex: 1;
+      width: 90%;
+      height: 42px;
+      border-radius: 5px;
+      background-color: rgba(225, 225, 225, .8);
+
+      &::placeholder {
+        color: black;
+        font-size: 1.1em;
+        font-family: "Lato", sans-serif;
+      }
+    }
   }
 
   //Range
@@ -294,25 +278,23 @@
     padding-top: 3%;
     display: flex;
 
-
     &__form {
       width: 66%;
-
 
       .text {
         display: flex;
         flex-direction: row;
         padding-bottom: 4%;
 
-        &__descr {
-          flex: 15
+        &__for_slider {
+          flex: 15;
+          color: white;
+          font-size: 1.1em;
+          font-family: "Lato", sans-serif;
         }
 
-        &__75 {
+        &__icon-slider {
           flex: 1;
-        }
-
-        label {
           color: white;
           font-size: 1.1em;
           font-family: "Lato", sans-serif;
@@ -337,16 +319,12 @@
         background-color: #3E9CDC;
         border-radius: 20px;
         border: 5px solid #286690;
-
       }
-
     }
 
     //attached file
-    &__attach {
-      padding-left: 1%;
-
-
+    &__attach--hide {
+      padding-left: 2%;
       //hiding the button
       .hide {
         position: absolute;
@@ -358,15 +336,14 @@
       }
 
       //stylizing the text
-      label {
+      .slider__attach--visible {
         font-family: "Lato", sans-serif;
         font-size: 15px;
         padding-top: 14px;
         text-align: center;
-
         border: 3px solid #3E9CDC;
         display: inline-block;
-        width: 355px;
+        width: 372px;
         height: 38px;
         border-radius: 5px;
         background-color: white;
@@ -378,69 +355,86 @@
   //the send button
   .button {
     display: flex;
-    padding-top: 3%;
+    text-align: center;
+    margin-top: 3%;
     justify-content: center;
-
-
-    button {
-
-      border: 3px solid white;
-      background-color: #3E9CDC;
-      border-radius: 3px;
-      font-size: 15px;
-      font-family: "Lato", sans-serif;
-      color: white;
-      width: 305px;
-      height: 47px;
-    }
+    align-items: center;
+    border: 3px solid white;
+    background-color: #3E9CDC;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    width: 305px;
+    height: 47px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
+
 //footer
-.footer{
+.footer {
   background-image: url("../img/footer.png");
   width: 100%;
   height: 80px;
+
   .container {
     height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    &__rights{
+    &__rights {
       color: white;
       display: flex;
       align-items: center;
       font-size: 0.9em;
-      flex:1;
+      flex: 1;
+      border-right:1px solid white;
+      margin-right: 2%;
     }
-    &__payment{
+
+    &__payment {
       color: white;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       font-size: 0.9em;
-      flex:1;
-      &--img{
+      flex: 1;
+
+      &__payment_method {
         display: flex;
         flex-direction: row;
-        justify-content: center;
         flex: 1;
       }
+
+      .img_payment {
+        margin-right: 5px;
+      }
     }
-    &__communication{
+
+    &__communication {
       display: flex;
       flex-direction: row;
       font-size: 0.9em;
       justify-content: flex-end;
-      flex:1;
-      a{
+      flex: 1;
+      border-left:1px solid white;
+      margin-left: 2%;
+
+      .container__communication--contact_us {
         text-decoration: none;
         color: white;
       }
 
-      .social{
+      .contact_us {
         padding-right: 18%;
+      }
+
+      .img_contact {
+        margin-right: 5px;
       }
     }
   }
@@ -464,32 +458,5 @@
   border-radius: 5px;
 }
 
-.icon {
-  align-items: center;
-  display: flex;
-  flex-shrink: 0;
-  justify-content: end;
-  height: 40px;
-  padding-left: 78px;
-  text-align: center;
-  width: 40px;
-}
 
 
-#error_email {
-  margin-bottom: 20px;
-  padding: 0;
-  background-color: brown;
-  text-align: center;
-  font-size: 0.7em;
-  transition: all 0.5s ease;
-}
-
-#error_name {
-  margin-bottom: 20px;
-  padding: 0;
-  background-color: brown;
-  text-align: center;
-  font-size: 0.7em;
-  transition: all 0.5s ease;
-}
