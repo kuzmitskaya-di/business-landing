@@ -1,4 +1,4 @@
-function select() {
+window.onload = function select() {
     const select = document.querySelector(".select");
     const selectItem = document.querySelectorAll(".select__item");
 
@@ -21,6 +21,6 @@ function select() {
     }
 }
 
-select();
+
 
 
