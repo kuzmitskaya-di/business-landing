@@ -7,22 +7,19 @@ for (let input of inputs) {
 
 
         switch (rule) {
+
             case "email":
+            case "name":
+                function valid(param) {
+                    return document.forms["form-input"].elements[param].value;
+                }
                 const regEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                let addressE = document.forms["form-input"].elements["email"].value;
-                if (regEmail.test(addressE) == false) {
+                if (regEmail.test(valid("email")) === false) {
                     alert("Введите корректный e-mail!");
                     return false;
                 }
-                break;
-            case "name":
                 const regName = /^[A-Za-z]+$/;
-                let addressN = document.forms["form-input"].elements["name"].value;
-                if (regName.test(addressN) == false) {
-                    alert("Введите корректное имя!");
-                    return false;
-                }
-                if(addressN.length <=5 || addressN.length >=15) {
+                if (regName.test(valid("name")) === false && valid("name").length >=5 && valid("name").length <=15 ) {
                     alert("Введите корректное имя!");
                     return false;
                 }
