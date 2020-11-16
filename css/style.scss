@@ -79,6 +79,10 @@ $primary-color: #3E9CDC;
         text-decoration: none;
         @include font(1em, "Lato", white);
         text-transform: uppercase;
+        @media only screen and (max-width: 650px) {
+          padding-bottom: 3%;
+
+        }
 
         &--active {
           color: $primary-color;
@@ -97,7 +101,8 @@ $primary-color: #3E9CDC;
         flex-direction: column;
         position: absolute;
         background-color: #3d4050;
-        @include font(2em, "Raleway", white);
+        @include font(1.3em, "Raleway", white);
+        width: 55%;
 
       }
     }

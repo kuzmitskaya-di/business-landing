@@ -414,6 +414,11 @@ template {
   color: white;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 650px) {
+  .wrapper .header .nav__link {
+    padding-bottom: 3%;
+  }
+}
 .wrapper .header .nav__link--active {
   color: #3E9CDC;
 }
@@ -427,8 +432,9 @@ template {
     position: absolute;
     background-color: #3d4050;
     font-family: "Raleway", sans-serif;
-    font-size: 2em;
+    font-size: 1.3em;
     color: white;
+    width: 55%;
   }
 }
 .wrapper .header .mobile-menu {
