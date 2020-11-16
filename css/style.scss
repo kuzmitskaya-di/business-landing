@@ -20,13 +20,13 @@ $primary-color: #3E9CDC;
   background-image: url("../img/background1.jpg");
   width: 100%;
   height: 847px;
-  @media only screen and (max-width : 1024px){
+  @media only screen and (max-width: 1024px) {
     width: 150%;
   }
-  @media only screen and (max-width : 650px){
+  @media only screen and (max-width: 650px) {
     width: 190%;
   }
-  @media only screen and (max-width : 380px){
+  @media only screen and (max-width: 380px) {
     width: 210%;
   }
   // Header
@@ -46,12 +46,16 @@ $primary-color: #3E9CDC;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @media only screen and (max-width: 650px) {
+        justify-content: center !important;
+      }
+
 
     }
 
     &__logo {
       @include font(2em, "Raleway", white);
-      @media only screen and (max-width : 380px){
+      @media only screen and (max-width: 380px) {
         margin-left: 3%;
       }
 
@@ -60,45 +64,48 @@ $primary-color: #3E9CDC;
       }
     }
 
+
+
     // Navigation
-      .nav {
-        display: flex;
-        @media only screen and (max-width: 650px) {
-          display: none;
-        }
+    .nav {
+      display: flex;
+      @media only screen and (max-width: 650px) {
+        display: none;
+      }
 
 
-        &__link {
-          margin-left: 50px;
-          text-decoration: none;
-          @include font(1em, "Lato", white);
-          text-transform: uppercase;
+      &__link {
+        margin-left: 50px;
+        text-decoration: none;
+        @include font(1em, "Lato", white);
+        text-transform: uppercase;
 
-          &--active {
-            color: $primary-color;
+        &--active {
+          color: $primary-color;
 
-            &:hover {
-              color: white;
-            }
+          &:hover {
+            color: white;
           }
+        }
 
       }
     }
-    .active{
-        @media only screen and (max-width : 650px){
-          display: flex !important;
-          flex-direction: column;
-          position: absolute;
-          background-color: #3d4050;
-          @include font(2em, "Raleway", white);
 
-        }
+    .active {
+      @media only screen and (max-width: 650px) {
+        display: flex !important;
+        flex-direction: column;
+        position: absolute;
+        background-color: #3d4050;
+        @include font(2em, "Raleway", white);
+
+      }
     }
 
     //burger menu
     .mobile-menu {
-        display: none;
-      @media only screen and (max-width : 650px){
+      display: none;
+      @media only screen and (max-width: 650px) {
         display: block !important;
         padding-right: 3%;
       }
@@ -143,6 +150,7 @@ $primary-color: #3E9CDC;
           }
         }
       }
+
       .burger-active {
         .menu-btn__open {
           width: 0;
@@ -150,17 +158,18 @@ $primary-color: #3E9CDC;
 
           &:before {
             width: 20px !important;
-            transform:translateY(0) rotate(45deg) !important;
+            transform: translateY(0) rotate(45deg) !important;
           }
+
           &:after {
             width: 20px;
-            transform:translateY(0)  rotate(-45deg);
+            transform: translateY(0) rotate(-45deg);
           }
 
         }
 
 
-        }
+      }
 
     }
   }
@@ -169,7 +178,7 @@ $primary-color: #3E9CDC;
 //Description
 .description {
   width: 100%;
-  @media only screen and (max-device-width : 1024px){
+  @media only screen and (max-device-width: 1024px) {
     text-align: center;
   }
 
@@ -226,13 +235,13 @@ $primary-color: #3E9CDC;
   background-image: url("../img/background2.jpg");
   width: 100%;
   height: 880px;
-  @media only screen and (max-device-width : 1024px){
+  @media only screen and (max-device-width: 1024px) {
     width: 150%;
   }
-  @media only screen and (max-width : 650px){
+  @media only screen and (max-width: 650px) {
     width: 190%;
   }
-  @media only screen and (max-width : 380px){
+  @media only screen and (max-width: 380px) {
     width: 210%;
     height: 750px;
   }
@@ -265,7 +274,7 @@ $primary-color: #3E9CDC;
       display: flex;
       flex-direction: row !important;
       overflow: hidden;
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         display: none;
       }
 
@@ -300,7 +309,7 @@ $primary-color: #3E9CDC;
     display: flex;
     padding-top: 5%;
     justify-content: flex-start;
-    @media only screen and (max-width : 650px){
+    @media only screen and (max-width: 650px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -309,7 +318,7 @@ $primary-color: #3E9CDC;
     .select {
       position: relative;
       flex: 1;
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         width: 60%;
         margin-bottom: 3%;
       }
@@ -324,7 +333,7 @@ $primary-color: #3E9CDC;
         background-color: rgba(225, 225, 225, .8);
         border-radius: 5px;
         height: 45px;
-        @media only screen and (max-width : 650px){
+        @media only screen and (max-width: 650px) {
           width: 100% !important;
         }
 
@@ -372,7 +381,7 @@ $primary-color: #3E9CDC;
       right: 0;
       border-radius: 5px;
       background-color: rgba(39, 39, 51, .9);
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         width: 100% !important;
       }
 
@@ -403,7 +412,7 @@ $primary-color: #3E9CDC;
       border-radius: 5px;
       background-color: rgba(225, 225, 225, .8);
       margin-right: 2%;
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         margin-right: 0 !important;
         width: 60% !important;
         height: 42px;
@@ -422,7 +431,7 @@ $primary-color: #3E9CDC;
       height: 42px;
       border-radius: 5px;
       background-color: rgba(225, 225, 225, .8);
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         margin-right: 0 !important;
         width: 60% !important;
         height: 42px;
@@ -440,7 +449,7 @@ $primary-color: #3E9CDC;
   .slider {
     padding-top: 3%;
     display: flex;
-    @media only screen and (max-width : 650px){
+    @media only screen and (max-width: 650px) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -457,7 +466,7 @@ $primary-color: #3E9CDC;
         &__for-slider {
           flex: 15;
           @include font(1.1em, "Lato", white);
-          @media only screen and (max-width : 650px){
+          @media only screen and (max-width: 650px) {
             padding-left: 5%;
           }
         }
@@ -465,7 +474,7 @@ $primary-color: #3E9CDC;
         &__icon-slider {
           flex: 1;
           @include font(1.1em, "Lato", white);
-          @media only screen and (max-width : 650px){
+          @media only screen and (max-width: 650px) {
             padding-right: 4%;
           }
         }
@@ -479,7 +488,7 @@ $primary-color: #3E9CDC;
         height: 2px;
         background-color: rgba(225, 225, 225, .8);
         outline: none;
-        @media only screen and (max-width : 650px){
+        @media only screen and (max-width: 650px) {
           width: 90% !important;
           margin-left: 5%;
           margin-bottom: 5%;
@@ -500,7 +509,7 @@ $primary-color: #3E9CDC;
     //attached file
     &__attach--hide {
       padding-left: 2%;
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         padding-left: 0;
       }
       //hiding the button
@@ -524,10 +533,10 @@ $primary-color: #3E9CDC;
         border-radius: 5px;
         background-color: white;
         @include font(0.9em, "Lato", black);
-        @media only screen and (max-width : 650px){
+        @media only screen and (max-width: 650px) {
           width: 585px !important;
         }
-        @media only screen and (max-width : 380px){
+        @media only screen and (max-width: 380px) {
           width: 413px !important;
         }
       }
@@ -550,10 +559,10 @@ $primary-color: #3E9CDC;
     left: 50%;
     transform: translate(-50%, 0);
     @include font(0.9em, "Lato", white);
-    @media only screen and (max-width : 650px){
+    @media only screen and (max-width: 650px) {
       width: 585px !important;
     }
-    @media only screen and (max-width : 380px){
+    @media only screen and (max-width: 380px) {
       width: 413px !important;
     }
   }
@@ -564,13 +573,13 @@ $primary-color: #3E9CDC;
   background-image: url("../img/footer.svg");
   width: 100%;
   height: 80px;
-  @media only screen and (max-device-width : 1024px){
+  @media only screen and (max-device-width: 1024px) {
     width: 150%;
   }
-  @media only screen and (max-width : 650px){
+  @media only screen and (max-width: 650px) {
     width: 190%;
   }
-  @media only screen and (max-width : 380px){
+  @media only screen and (max-width: 380px) {
     width: 210%;
   }
 
@@ -588,11 +597,11 @@ $primary-color: #3E9CDC;
       border-right: 1px solid white;
       margin-right: 2%;
       @include font(0.9em, "Lato", white);
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         border-right: none !important;
         justify-content: center;
       }
-      @media only screen and (max-width : 380px){
+      @media only screen and (max-width: 380px) {
         display: none;
       }
     }
@@ -605,7 +614,7 @@ $primary-color: #3E9CDC;
       align-items: center;
       flex: 1;
       @include font(0.9em, "Lato", white);
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         display: none;
       }
 
@@ -628,7 +637,7 @@ $primary-color: #3E9CDC;
       border-left: 1px solid white;
       margin-left: 2%;
       @include font(0.9em, "Lato", white);
-      @media only screen and (max-width : 650px){
+      @media only screen and (max-width: 650px) {
         border-left: none !important;
         justify-content: center !important;
       }
