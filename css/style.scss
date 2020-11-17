@@ -325,6 +325,7 @@ $primary-color: #3E9CDC;
       align-items: center;
     }
 
+
     .select {
       position: relative;
       flex: 1;
@@ -374,7 +375,6 @@ $primary-color: #3E9CDC;
         }
       }
     }
-
     .is-active {
       .select__body {
         display: block;
@@ -394,6 +394,7 @@ $primary-color: #3E9CDC;
       @media only screen and (max-width: 715px) {
         width: 100%;
       }
+
 
       .select__item {
         cursor: pointer;
