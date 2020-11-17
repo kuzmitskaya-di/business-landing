@@ -14,15 +14,15 @@ window.onload = function validation() {
 
                 case "email":
                     const regEmail = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-                    if (regEmail.test(valid("email")) == false) {
+                    if (regEmail.test(valid("email")) === false) {
                         alert("Введите корректный e-mail!");
                         return false;
                     }
                     break;
                 case "name":
-                    const regName = /^[A-Za-z]+$/;
-                    let long = (valid("name"));
-                    if (regName.test(long) == false || long.length >= 5 || long.length <= 15) {
+                    const regName = /^[A-Za-zА-Яа-я-ё]+$/u;
+                    let nameValue = valid("name");
+                    if (regName.test(nameValue) === false || nameValue.length <= 5 || nameValue.length >= 15) {
                         alert("Введите корректное имя!");
                         return false;
                     }
