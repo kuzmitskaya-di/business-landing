@@ -682,7 +682,7 @@ template {
     margin-bottom: 3%;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .wrapper-input .form-select .select {
     width: 80%;
     margin-bottom: 3%;
@@ -786,7 +786,7 @@ template {
     margin-bottom: 3%;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .wrapper-input .form-select .input-email {
     width: 78%;
   }
@@ -812,7 +812,7 @@ template {
     margin-bottom: 3%;
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .wrapper-input .form-select .input-name {
     width: 78%;
   }
@@ -836,7 +836,7 @@ template {
 .wrapper-input .slider__form {
   width: 66%;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .wrapper-input .slider__form {
     width: 100%;
   }
@@ -1025,7 +1025,7 @@ template {
 .footer .container__communication--mail:hover {
   color: black;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .footer .container__communication .img-contact-vk {
     display: none;
   }
@@ -1034,7 +1034,7 @@ template {
   text-decoration: none;
   color: white;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 420px) {
   .footer .container__communication--vk {
     display: none;
   }

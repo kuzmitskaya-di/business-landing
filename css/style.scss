@@ -370,7 +370,7 @@ $primary-color: #3E9CDC;
         width: 60%;
         margin-bottom: 3%;
       }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 420px) {
         width: 80%;
         margin-bottom: 3%;
       }
@@ -472,7 +472,7 @@ $primary-color: #3E9CDC;
         flex: none;
         margin-bottom: 3%;
       }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 420px) {
         width: 78%;
       }
 
@@ -494,7 +494,7 @@ $primary-color: #3E9CDC;
         flex: none;
         margin-bottom: 3%;
       }
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 420px) {
         width: 78%;
       }
 
@@ -516,7 +516,7 @@ $primary-color: #3E9CDC;
 
     &__form {
       width: 66%;
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 420px) {
         width: 100%;
       }
 
@@ -699,14 +699,14 @@ $primary-color: #3E9CDC;
         }
       }
       .img-contact-vk {
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 420px) {
           display: none;
         }
       }
       &--vk {
         text-decoration: none;
         color: white;
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 420px) {
          display: none;
         }
 
