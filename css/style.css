@@ -788,7 +788,7 @@ template {
 }
 @media only screen and (max-width: 420px) {
   .wrapper-input .form-select .input-email {
-    width: 78%;
+    width: 70%;
   }
 }
 .wrapper-input .form-select .input-email::placeholder {
@@ -814,7 +814,7 @@ template {
 }
 @media only screen and (max-width: 420px) {
   .wrapper-input .form-select .input-name {
-    width: 78%;
+    width: 70%;
   }
 }
 .wrapper-input .form-select .input-name::placeholder {
