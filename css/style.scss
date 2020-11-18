@@ -370,6 +370,10 @@ $primary-color: #3E9CDC;
         width: 60%;
         margin-bottom: 3%;
       }
+      @media only screen and (max-width: 375px) {
+        width: 80%;
+        margin-bottom: 3%;
+      }
 
       &__header {
         @include font(0.9em, "Lato", black);
@@ -468,6 +472,9 @@ $primary-color: #3E9CDC;
         flex: none;
         margin-bottom: 3%;
       }
+      @media only screen and (max-width: 375px) {
+        width: 78%;
+      }
 
       &::placeholder {
         @include font(1em, "Lato", rgba(130, 124, 124, 1));
@@ -486,6 +493,9 @@ $primary-color: #3E9CDC;
         height: 42px;
         flex: none;
         margin-bottom: 3%;
+      }
+      @media only screen and (max-width: 375px) {
+        width: 78%;
       }
 
       &::placeholder {
@@ -506,6 +516,9 @@ $primary-color: #3E9CDC;
 
     &__form {
       width: 66%;
+      @media only screen and (max-width: 375px) {
+        width: 100%;
+      }
 
       .text {
         display: flex;
@@ -518,6 +531,7 @@ $primary-color: #3E9CDC;
           @media only screen and (max-width: 715px) {
             padding-left: 5%;
           }
+
         }
 
         &__icon-slider {
@@ -526,6 +540,7 @@ $primary-color: #3E9CDC;
           @media only screen and (max-width: 715px) {
             padding-right: 4%;
           }
+
         }
       }
 
@@ -683,10 +698,17 @@ $primary-color: #3E9CDC;
           color: black;
         }
       }
-
+      .img-contact-vk {
+        @media only screen and (max-width: 375px) {
+          display: none;
+        }
+      }
       &--vk {
         text-decoration: none;
         color: white;
+        @media only screen and (max-width: 375px) {
+         display: none;
+        }
 
         &:hover {
           color: black;
