@@ -561,20 +561,19 @@ template {
   background-color: #3E9CDC;
   border-radius: 7px;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   color: white;
   border: 1px solid white;
 }
 .description__button--secondary {
   margin-top: 5%;
   margin-left: 1%;
-  padding-left: 17px;
   height: 42px;
   width: 178px;
   border-radius: 7px;
   border: 1px solid black;
   font-family: "Lato", sans-serif;
-  font-size: 1em;
+  font-size: 0.8em;
   color: black;
 }
 
@@ -652,7 +651,7 @@ template {
 }
 .wrapper-input .description .features__title {
   font-family: "Lato", sans-serif;
-  font-size: 0.8em;
+  font-size: 1em;
   color: white;
 }
 @media only screen and (max-width: 950px) {
@@ -792,9 +791,10 @@ template {
   }
 }
 .wrapper-input .form-select .input-email::placeholder {
+  padding-left: 7px;
   font-family: "Lato", sans-serif;
   font-size: 1em;
-  color: #827c7c;
+  color: black;
 }
 .wrapper-input .form-select .input-name {
   flex: 1;
@@ -818,9 +818,10 @@ template {
   }
 }
 .wrapper-input .form-select .input-name::placeholder {
+  padding-left: 7px;
   font-family: "Lato", sans-serif;
   font-size: 1em;
-  color: #827c7c;
+  color: black;
 }
 .wrapper-input .slider {
   padding-top: 3%;
@@ -890,7 +891,7 @@ template {
   height: 25px;
   background-color: #3E9CDC;
   border-radius: 20px;
-  border: 5px solid #3E9CDC;
+  border: 4px solid #286690;
 }
 .wrapper-input .slider__attach--hide {
   padding-left: 2%;
@@ -1046,6 +1047,9 @@ template {
   padding-right: 18%;
 }
 .footer .container__communication .img-contact {
+  margin-right: 5px;
+}
+.footer .container__communication .img-contact-vk {
   margin-right: 5px;
 }
 

@@ -254,19 +254,18 @@ $primary-color: #3E9CDC;
     width: 178px;
     background-color: $primary-color;
     border-radius: 7px;
-    @include font(1em, "Lato", white);
+    @include font(0.8em, "Lato", white);
     border: 1px solid white;
   }
 
   &__button--secondary {
     margin-top: 5%;
     margin-left: 1%;
-    padding-left: 17px;
     height: 42px;
     width: 178px;
     border-radius: 7px;
     border: 1px solid black;
-    @include font(1em, "Lato", black);
+    @include font(0.8em, "Lato", black);
   }
 }
 
@@ -341,7 +340,7 @@ $primary-color: #3E9CDC;
       }
 
       &__title {
-        @include font(0.8em, "Lato", white);
+        @include font(1em, "Lato", white);
         @media only screen and (max-width: 950px) {
           font-size: 0.5em;
         }
@@ -477,7 +476,8 @@ $primary-color: #3E9CDC;
       }
 
       &::placeholder {
-        @include font(1em, "Lato", rgba(130, 124, 124, 1));
+        padding-left: 7px;
+        @include font(1em, "Lato", black);
       }
     }
 
@@ -499,7 +499,8 @@ $primary-color: #3E9CDC;
       }
 
       &::placeholder {
-        @include font(1em, "Lato", rgba(130, 124, 124, 1));
+        padding-left: 7px;
+        @include font(1em, "Lato", black);
       }
     }
   }
@@ -566,7 +567,7 @@ $primary-color: #3E9CDC;
         height: 25px;
         background-color: $primary-color;
         border-radius: 20px;
-        border: 5px solid $primary-color;
+        border: 4px solid #286690;
       }
     }
 
@@ -720,6 +721,9 @@ $primary-color: #3E9CDC;
       }
 
       .img-contact {
+        margin-right: 5px;
+      }
+      .img-contact-vk {
         margin-right: 5px;
       }
     }
