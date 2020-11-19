@@ -287,6 +287,8 @@ $primary-color: #3E9CDC;
     &__order-registration {
       @include font(2.3em, "Lato", white);
       font-weight: bold;
+      margin-top: 100px;
+
 
       &--blue {
         color: $primary-color;
@@ -353,7 +355,7 @@ $primary-color: #3E9CDC;
   //Select and Input
   .form-select {
     display: flex;
-    padding-top: 5%;
+    padding-top: 3%;
     justify-content: flex-start;
     @media only screen and (max-width: 715px) {
       display: flex;
@@ -574,6 +576,10 @@ $primary-color: #3E9CDC;
     //attached file
     &__attach--hide {
       padding-left: 2%;
+      position: relative;
+      text-align: center;
+      display: flex;
+      align-items: center;
       @media only screen and (max-width: 715px) {
         padding-left: 0;
       }
@@ -589,7 +595,7 @@ $primary-color: #3E9CDC;
 
       //stylizing the text
       .slider__attach--visible {
-        padding-top: 14px;
+        padding-top: 25px;
         text-align: center;
         border: 2px solid $primary-color;
         display: inline-block;
@@ -601,6 +607,11 @@ $primary-color: #3E9CDC;
         @media only screen and (max-width: 715px) {
           width: 228px;
         }
+      }
+      .slider__attach-icon {
+        position: absolute;
+        height: 23px;
+        left: 27%;
       }
     }
   }
@@ -674,6 +685,7 @@ $primary-color: #3E9CDC;
       }
 
       .img-payment {
+        height: 13px;
         margin-right: 5px;
       }
     }
@@ -722,9 +734,11 @@ $primary-color: #3E9CDC;
 
       .img-contact {
         margin-right: 5px;
+        height: 13px;
       }
       .img-contact-vk {
         margin-right: 5px;
+        height: 13px;
       }
     }
   }

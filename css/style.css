@@ -597,6 +597,7 @@ template {
   font-size: 2.3em;
   color: white;
   font-weight: bold;
+  margin-top: 100px;
 }
 .wrapper-input .description__order-registration--blue {
   color: #3E9CDC;
@@ -661,7 +662,7 @@ template {
 }
 .wrapper-input .form-select {
   display: flex;
-  padding-top: 5%;
+  padding-top: 3%;
   justify-content: flex-start;
 }
 @media only screen and (max-width: 715px) {
@@ -895,6 +896,10 @@ template {
 }
 .wrapper-input .slider__attach--hide {
   padding-left: 2%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__attach--hide {
@@ -910,7 +915,7 @@ template {
   opacity: 0;
 }
 .wrapper-input .slider__attach--hide .slider__attach--visible {
-  padding-top: 14px;
+  padding-top: 25px;
   text-align: center;
   border: 2px solid #3E9CDC;
   display: inline-block;
@@ -926,6 +931,11 @@ template {
   .wrapper-input .slider__attach--hide .slider__attach--visible {
     width: 228px;
   }
+}
+.wrapper-input .slider__attach--hide .slider__attach-icon {
+  position: absolute;
+  height: 23px;
+  left: 27%;
 }
 .wrapper-input .button {
   display: flex;
@@ -1000,6 +1010,7 @@ template {
   flex: 1;
 }
 .footer .container__payment .img-payment {
+  height: 13px;
   margin-right: 5px;
 }
 .footer .container__communication {
@@ -1048,9 +1059,11 @@ template {
 }
 .footer .container__communication .img-contact {
   margin-right: 5px;
+  height: 13px;
 }
 .footer .container__communication .img-contact-vk {
   margin-right: 5px;
+  height: 13px;
 }
 
 .click {
