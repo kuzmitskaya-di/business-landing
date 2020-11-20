@@ -195,12 +195,10 @@ $primary-color: #3E9CDC;
 
           &:before {
             width: 20px;
-            transform: translateY(0) rotate(45deg);
           }
 
           &:after {
             width: 20px;
-            transform: translateY(0) rotate(-45deg);
           }
 
         }
@@ -309,7 +307,7 @@ $primary-color: #3E9CDC;
       flex-direction: row;
       overflow: hidden;
       @media only screen and (max-width: 950px) {
-        width: 70%;
+        width: 100%;
       }
       @media only screen and (max-width: 715px) {
         display: none;
@@ -612,6 +610,9 @@ $primary-color: #3E9CDC;
         position: absolute;
         height: 23px;
         left: 27%;
+        @media only screen and (max-width: 715px) {
+          left: 10%;
+        }
       }
     }
   }
