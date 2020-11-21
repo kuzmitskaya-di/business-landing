@@ -380,10 +380,10 @@ template {
   font-family: "Raleway", sans-serif;
   font-size: 2em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .wrapper .header__logo {
-    font-size: 2em;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
@@ -412,6 +412,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: white;
+  font-weight: normal;
   text-transform: uppercase;
 }
 @media only screen and (max-width: 715px) {
@@ -420,11 +421,6 @@ template {
     padding-bottom: 10px;
     padding-right: 20px;
     border-radius: 10px;
-    text-decoration: none;
-    margin-left: 50px;
-    font-family: "Lato", sans-serif;
-    font-size: 1em;
-    color: white;
     text-transform: uppercase;
   }
 }
@@ -445,6 +441,7 @@ template {
     font-family: "Raleway", sans-serif;
     font-size: 1em;
     color: white;
+    font-weight: normal;
     background-color: rgba(16, 16, 29, 0.9);
   }
   .wrapper .header .navigation-and-burger .active__link:hover {
@@ -508,11 +505,9 @@ template {
 }
 .wrapper .header .navigation-and-burger .burger-active .menu-btn__open:before {
   width: 20px;
-  transform: translateY(0) rotate(45deg);
 }
 .wrapper .header .navigation-and-burger .burger-active .menu-btn__open:after {
   width: 20px;
-  transform: translateY(0) rotate(-45deg);
 }
 
 .description {
@@ -543,38 +538,36 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
   color: black;
-  color: black;
   font-weight: bold;
 }
 .description__about--content {
   margin-top: 2%;
   font-family: "Lato", sans-serif;
   font-size: 1.2em;
-  font-family: "Lato", sans-serif;
-  font-size: 1.2em;
   color: black;
+  font-weight: normal;
 }
-.description__button--order {
+.description__button {
   margin-top: 5%;
   height: 42px;
   width: 178px;
-  background-color: #3E9CDC;
   border-radius: 7px;
   font-family: "Lato", sans-serif;
   font-size: 0.8em;
   color: white;
+  font-weight: normal;
+}
+.description .button-order {
+  background-color: #3E9CDC;
   border: 1px solid white;
 }
-.description__button--secondary {
-  margin-top: 5%;
+.description .button-secondary {
   margin-left: 1%;
-  height: 42px;
-  width: 178px;
-  border-radius: 7px;
   border: 1px solid black;
   font-family: "Lato", sans-serif;
   font-size: 0.8em;
   color: black;
+  font-weight: normal;
 }
 
 .wrapper-input {
@@ -606,6 +599,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: #BBBBBB;
+  font-weight: normal;
 }
 .wrapper-input .description .features {
   padding-top: 5%;
@@ -638,22 +632,34 @@ template {
     height: 40px;
   }
 }
-.wrapper-input .description .features__icon--border-blue {
+.wrapper-input .description .features__item-img {
+  position: relative;
+}
+.wrapper-input .description .features__icon {
   width: 100px;
   height: 100px;
-  border-radius: 100%;
-  border: 5px solid #286690;
 }
 @media only screen and (max-width: 950px) {
-  .wrapper-input .description .features__icon--border-blue {
+  .wrapper-input .description .features__icon {
     width: 40px;
     height: 40px;
   }
+}
+.wrapper-input .description .features__icon--border-blue {
+  border-radius: 100%;
+  border: 5px solid #286690;
+}
+.wrapper-input .description .features__icon-mark {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 .wrapper-input .description .features__title {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 950px) {
   .wrapper-input .description .features__title {
@@ -667,7 +673,6 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -685,13 +690,13 @@ template {
 @media only screen and (max-width: 420px) {
   .wrapper-input .form-select .select {
     width: 80%;
-    margin-bottom: 3%;
   }
 }
 .wrapper-input .form-select .select__header {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: black;
+  font-weight: normal;
   justify-content: space-between;
   border: 1px solid silver;
   cursor: pointer;
@@ -710,25 +715,10 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
   background-color: #3d4050;
-  border-bottom: 0;
-  border-top: 2px solid #3E9CDC;
-  border-right: 2px solid #3E9CDC;
-  border-left: 2px solid #3E9CDC;
-  border-radius: 5px;
-}
-.wrapper-input .form-select .select__header .select__current {
-  font-size: 1.1em;
-  line-height: 24px;
-  padding: 8px;
-}
-.wrapper-input .form-select .select__header .select__icon {
-  align-items: center;
-  display: flex;
-  flex-shrink: 0;
-  justify-items: end;
-  height: 40px;
-  width: 40px;
+  border: 2px solid #3E9CDC;
+  border-bottom: none;
   border-radius: 5px;
 }
 .wrapper-input .form-select .is-active .select__body {
@@ -757,17 +747,21 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: white;
+  font-weight: normal;
 }
-.wrapper-input .form-select .select__body .select__caption {
-  cursor: pointer;
+.wrapper-input .form-select .select .select__current {
+  font-size: 1.1em;
   line-height: 24px;
   padding: 8px;
-  font-family: "Lato", sans-serif;
-  font-size: 1em;
-  color: white;
 }
-.wrapper-input .form-select .select__body .select__caption:hover {
-  color: #3E9CDC;
+.wrapper-input .form-select .select .select__icon {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  justify-items: end;
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
 }
 .wrapper-input .form-select .input-email {
   flex: 1;
@@ -781,7 +775,6 @@ template {
   .wrapper-input .form-select .input-email {
     margin-right: 0;
     width: 60%;
-    height: 42px;
     flex: none;
     margin-bottom: 3%;
   }
@@ -796,6 +789,10 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: black;
+  font-weight: normal;
+}
+.wrapper-input .form-select input[type=text] {
+  padding-left: 10px;
 }
 .wrapper-input .form-select .input-name {
   flex: 1;
@@ -808,7 +805,6 @@ template {
   .wrapper-input .form-select .input-name {
     margin-right: 0;
     width: 60%;
-    height: 42px;
     flex: none;
     margin-bottom: 3%;
   }
@@ -823,6 +819,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: black;
+  font-weight: normal;
 }
 .wrapper-input .slider {
   padding-top: 3%;
@@ -830,7 +827,6 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -853,6 +849,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__form .text__for-slider {
@@ -864,6 +861,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__form .text__icon-slider {
@@ -926,6 +924,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: black;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__attach--hide .slider__attach--visible {
@@ -959,6 +958,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .button {
@@ -986,6 +986,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 715px) {
   .footer .container__rights {
@@ -1003,6 +1004,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 950px) {
   .footer .container__payment {
@@ -1028,6 +1030,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
 }
 @media only screen and (max-width: 950px) {
   .footer .container__communication {
@@ -1086,6 +1089,7 @@ template {
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
+  font-weight: normal;
 }
 
 /*# sourceMappingURL=style.css.map */

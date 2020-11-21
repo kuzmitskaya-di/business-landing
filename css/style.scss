@@ -1,12 +1,22 @@
 @import "normalize.scss";
 
-@mixin font($font-size, $font-family, $color) {
+@mixin font($font-size, $font-family, $color, $font-weight) {
   font-family: $font-family, sans-serif;
   font-size: $font-size;
   color: $color;
+  font-weight: $font-weight;
 }
 
 $primary-color: #3E9CDC;
+
+$spacing-base: 5px;
+$spacing-xs: $spacing-base / 2;
+$spacing-sm: $spacing-base;
+$spacing-md: $spacing-base * 2;
+$spacing-lg: $spacing-base * 3;
+$spacing-xl: $spacing-base * 4;
+$spacing-xxl: $spacing-base * 5;
+
 
 
 .container {
@@ -50,9 +60,8 @@ $primary-color: #3E9CDC;
     }
 
     &__logo {
-      @include font(2em, "Raleway", white);
+      @include font(2em, "Raleway", white, normal);
       @media only screen and (max-width: 715px) {
-        font-size: 2em;
         position: relative;
         left: 50%;
         transform: translate(-50%, 0);
@@ -81,16 +90,13 @@ $primary-color: #3E9CDC;
         &__link {
           margin-left: 50px;
           text-decoration: none;
-          @include font(1em, "Lato", white);
+          @include font(1em, "Lato", white, normal);
           text-transform: uppercase;
           @media only screen and (max-width: 715px) {
-            padding-top: 20px;
-            padding-bottom: 10px;
-            padding-right: 20px;
-            border-radius: 10px;
-            text-decoration: none;
-            margin-left: 50px;
-            @include font(1em, "Lato", white);
+            padding-top: $spacing-xl;
+            padding-bottom: $spacing-md;
+            padding-right: $spacing-xl;
+            border-radius: $spacing-md;
             text-transform: uppercase;
           }
 
@@ -115,7 +121,7 @@ $primary-color: #3E9CDC;
           display: flex;
           flex-direction: column;
           position: absolute;
-          @include font(1em, "Raleway", white);
+          @include font(1em, "Raleway", white, normal);
           background-color: rgba(16, 16, 29, .9);
 
           &__link {
@@ -157,20 +163,20 @@ $primary-color: #3E9CDC;
 
         &__open {
           display: block;
-          width: 20px;
+          width: $spacing-xl;
           height: 2px;
           background-color: white;
           position: absolute;
           top: 50%;
           left: 50%;
-          margin-left: -10px;
+          margin-left: -$spacing-md;
           margin-top: -1px;
           transition: all 0.7s linear;
 
 
           &:before {
             display: block;
-            width: 20px;
+            width: $spacing-xl;
             height: 2px;
             background-color: white;
             content: " ";
@@ -179,7 +185,7 @@ $primary-color: #3E9CDC;
 
           &:after {
             display: block;
-            width: 20px;
+            width: $spacing-xl;
             height: 2px;
             background-color: white;
             content: " ";
@@ -194,11 +200,11 @@ $primary-color: #3E9CDC;
           height: 0;
 
           &:before {
-            width: 20px;
+            width: $spacing-xl;
           }
 
           &:after {
-            width: 20px;
+            width: $spacing-xl;
           }
 
         }
@@ -219,8 +225,7 @@ $primary-color: #3E9CDC;
 
   &__big-text {
     margin-top: 11%;
-    @include font(3em, "Lato", black);
-    font-weight: bold;
+    @include font(3em, "Lato", black, bold);
     @media only screen and (max-width: 715px) {
       font-size: 2em;
     }
@@ -233,37 +238,32 @@ $primary-color: #3E9CDC;
 
   &__about--content1 {
     margin-top: 2%;
-    @include font(1.2em, "Lato", black);
-    color: black;
-    font-weight: bold;
+    @include font(1.2em, "Lato", black, bold);
   }
 
   &__about--content {
     margin-top: 2%;
-    font-family: "Lato", sans-serif;
-    font-size: 1.2em;
-    @include font(1.2em, "Lato", black);
+    @include font(1.2em, "Lato", black, normal);
   }
 
   //Button
-  &__button--order {
+  &__button{
     margin-top: 5%;
     height: 42px;
     width: 178px;
-    background-color: $primary-color;
     border-radius: 7px;
-    @include font(0.8em, "Lato", white);
+    @include font(0.8em, "Lato", white, normal);
+  }
+
+  .button-order {
+    background-color: $primary-color;
     border: 1px solid white;
   }
 
-  &__button--secondary {
-    margin-top: 5%;
+  .button-secondary {
     margin-left: 1%;
-    height: 42px;
-    width: 178px;
-    border-radius: 7px;
     border: 1px solid black;
-    @include font(0.8em, "Lato", black);
+    @include font(0.8em, "Lato", black, normal);
   }
 }
 
@@ -283,8 +283,7 @@ $primary-color: #3E9CDC;
     align-items: center;
 
     &__order-registration {
-      @include font(2.3em, "Lato", white);
-      font-weight: bold;
+      @include font(2.3em, "Lato", white, bold);
       margin-top: 100px;
 
 
@@ -295,7 +294,7 @@ $primary-color: #3E9CDC;
     }
 
     &__learn {
-      @include font(1.1em, "Lato", #BBBBBB);
+      @include font(1.1em, "Lato", #BBBBBB, normal);
     }
 
     //img features
@@ -328,19 +327,32 @@ $primary-color: #3E9CDC;
         }
       }
 
-      &__icon--border-blue {
+      &__item-img {
+        position: relative;
+
+      }
+      &__icon {
         width: 100px;
         height: 100px;
-        border-radius: 100%;
-        border: 5px solid #286690;
         @media only screen and (max-width: 950px) {
           width: 40px;
           height: 40px;
         }
       }
+      &__icon--border-blue {
+        border-radius: 100%;
+        border: 5px solid #286690;
+      }
+
+      &__icon-mark {
+        position: absolute;
+        right: 50%;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
 
       &__title {
-        @include font(1em, "Lato", white);
+        @include font(1em, "Lato", white, normal);
         @media only screen and (max-width: 950px) {
           font-size: 0.5em;
         }
@@ -356,7 +368,6 @@ $primary-color: #3E9CDC;
     padding-top: 3%;
     justify-content: flex-start;
     @media only screen and (max-width: 715px) {
-      display: flex;
       flex-direction: column;
       align-items: center;
     }
@@ -371,48 +382,30 @@ $primary-color: #3E9CDC;
       }
       @media only screen and (max-width: 420px) {
         width: 80%;
-        margin-bottom: 3%;
       }
 
       &__header {
-        @include font(0.9em, "Lato", black);
+        @include font(0.9em, "Lato", black, normal);
         justify-content: space-between;
         border: 1px solid silver;
         cursor: pointer;
         display: flex;
         width: 90%;
         background-color: rgba(225, 225, 225, .8);
-        border-radius: 5px;
+        border-radius: $spacing-sm;
         height: 45px;
         @media only screen and (max-width: 715px) {
           width: 100%;
         }
 
         &:hover {
-          @include font(0.9em, "Lato", white);
+          @include font(0.9em, "Lato", white, normal);
           background-color: #3d4050;
-          border-bottom: 0;
-          border-top: 2px solid $primary-color;
-          border-right: 2px solid $primary-color;
-          border-left: 2px solid $primary-color;
-          border-radius: 5px;
+          border: 2px solid $primary-color;
+          border-bottom: none;
+          border-radius: $spacing-sm;
         }
 
-        .select__current {
-          font-size: 1.1em;
-          line-height: 24px;
-          padding: 8px;
-        }
-
-        .select__icon {
-          align-items: center;
-          display: flex;
-          flex-shrink: 0;
-          justify-items: end;
-          height: 40px;
-          width: 40px;
-          border-radius: 5px;
-        }
       }
     }
 
@@ -441,18 +434,26 @@ $primary-color: #3E9CDC;
         cursor: pointer;
         line-height: 24px;
         padding: 8px;
-        @include font(1em, "Lato", white);
+        @include font(1em, "Lato", white, normal);
       }
 
-      .select__caption {
-        cursor: pointer;
+
+    }
+    .select{
+      .select__current {
+        font-size: 1.1em;
         line-height: 24px;
         padding: 8px;
-        @include font(1em, "Lato", white);
+      }
 
-        &:hover {
-          color: $primary-color;
-        }
+      .select__icon {
+        align-items: center;
+        display: flex;
+        flex-shrink: 0;
+        justify-items: end;
+        height: 40px;
+        width: 40px;
+        border-radius: $spacing-sm;
       }
     }
 
@@ -467,7 +468,6 @@ $primary-color: #3E9CDC;
       @media only screen and (max-width: 715px) {
         margin-right: 0;
         width: 60%;
-        height: 42px;
         flex: none;
         margin-bottom: 3%;
       }
@@ -477,20 +477,19 @@ $primary-color: #3E9CDC;
 
       &::placeholder {
         padding-left: 7px;
-        @include font(1em, "Lato", black);
+        @include font(1em, "Lato", black, normal);
       }
     }
-
+    input[type="text"]{padding-left: $spacing-md};
     .input-name {
       flex: 1;
       width: 90%;
       height: 42px;
-      border-radius: 5px;
+      border-radius: $spacing-sm;
       background-color: rgba(225, 225, 225, .8);
       @media only screen and (max-width: 715px) {
         margin-right: 0;
         width: 60%;
-        height: 42px;
         flex: none;
         margin-bottom: 3%;
       }
@@ -500,7 +499,7 @@ $primary-color: #3E9CDC;
 
       &::placeholder {
         padding-left: 7px;
-        @include font(1em, "Lato", black);
+        @include font(1em, "Lato", black, normal);
       }
     }
   }
@@ -510,7 +509,6 @@ $primary-color: #3E9CDC;
     padding-top: 3%;
     display: flex;
     @media only screen and (max-width: 715px) {
-      display: flex;
       flex-direction: column;
       align-items: center;
     }
@@ -528,7 +526,7 @@ $primary-color: #3E9CDC;
 
         &__for-slider {
           flex: 15;
-          @include font(1.1em, "Lato", white);
+          @include font(1.1em, "Lato", white, normal);
           @media only screen and (max-width: 715px) {
             padding-left: 5%;
           }
@@ -537,7 +535,7 @@ $primary-color: #3E9CDC;
 
         &__icon-slider {
           flex: 1;
-          @include font(1.1em, "Lato", white);
+          @include font(1.1em, "Lato", white, normal);
           @media only screen and (max-width: 715px) {
             padding-right: 4%;
           }
@@ -548,7 +546,7 @@ $primary-color: #3E9CDC;
       .range {
         -webkit-appearance: none; //update the style and draw the range again
         border: 2px solid white;
-        border-radius: 10px;
+        border-radius: $spacing-md;
         width: 98%;
         height: 2px;
         background-color: rgba(225, 225, 225, .8);
@@ -563,10 +561,10 @@ $primary-color: #3E9CDC;
       //стилизуем ползунок
       .range::-webkit-slider-thumb {
         -webkit-appearance: none;
-        width: 25px;
-        height: 25px;
+        width: $spacing-xxl;
+        height: $spacing-xxl;
         background-color: $primary-color;
-        border-radius: 20px;
+        border-radius: $spacing-xl;
         border: 4px solid #286690;
       }
     }
@@ -593,7 +591,7 @@ $primary-color: #3E9CDC;
 
       //stylizing the text
       .slider__attach--visible {
-        padding-top: 25px;
+        padding-top: $spacing-xxl;
         text-align: center;
         border: 2px solid $primary-color;
         display: inline-block;
@@ -601,11 +599,12 @@ $primary-color: #3E9CDC;
         height: 38px;
         border-radius: 5px;
         background-color: white;
-        @include font(0.9em, "Lato", black);
+        @include font(0.9em, "Lato", black, normal);
         @media only screen and (max-width: 715px) {
           width: 228px;
         }
       }
+
       .slider__attach-icon {
         position: absolute;
         height: 23px;
@@ -632,7 +631,7 @@ $primary-color: #3E9CDC;
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    @include font(0.9em, "Lato", white);
+    @include font(0.9em, "Lato", white, normal);
     @media only screen and (max-width: 715px) {
       width: 228px;
     }
@@ -659,7 +658,7 @@ $primary-color: #3E9CDC;
       flex: 1;
       border-right: 1px solid white;
       margin-right: 2%;
-      @include font(0.9em, "Lato", white);
+      @include font(0.9em, "Lato", white, normal);
       @media only screen and (max-width: 715px) {
         border-right: none;
         justify-content: center;
@@ -674,7 +673,7 @@ $primary-color: #3E9CDC;
       justify-content: space-between;
       align-items: center;
       flex: 1;
-      @include font(0.9em, "Lato", white);
+      @include font(0.9em, "Lato", white, normal);
       @media only screen and (max-width: 950px) {
         display: none;
       }
@@ -687,7 +686,7 @@ $primary-color: #3E9CDC;
 
       .img-payment {
         height: 13px;
-        margin-right: 5px;
+        margin-right: $spacing-sm;
       }
     }
 
@@ -698,7 +697,7 @@ $primary-color: #3E9CDC;
       flex: 1;
       border-left: 1px solid white;
       margin-left: 2%;
-      @include font(0.9em, "Lato", white);
+      @include font(0.9em, "Lato", white, normal);
       @media only screen and (max-width: 950px) {
         border-left: none;
         justify-content: center;
@@ -712,16 +711,18 @@ $primary-color: #3E9CDC;
           color: black;
         }
       }
+
       .img-contact-vk {
         @media only screen and (max-width: 420px) {
           display: none;
         }
       }
+
       &--vk {
         text-decoration: none;
         color: white;
         @media only screen and (max-width: 420px) {
-         display: none;
+          display: none;
         }
 
         &:hover {
@@ -734,11 +735,12 @@ $primary-color: #3E9CDC;
       }
 
       .img-contact {
-        margin-right: 5px;
+        margin-right: $spacing-sm;
         height: 13px;
       }
+
       .img-contact-vk {
-        margin-right: 5px;
+        margin-right: $spacing-sm;
         height: 13px;
       }
     }
@@ -758,8 +760,8 @@ $primary-color: #3E9CDC;
   border-top: 2px solid $primary-color;
   border-right: 2px solid $primary-color;
   border-left: 2px solid $primary-color;
-  border-radius: 5px;
-  @include font(0.9em, "Lato", white);
+  border-radius: $spacing-sm;
+  @include font(0.9em, "Lato", white, normal);
 }
 
 
