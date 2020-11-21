@@ -236,7 +236,7 @@ $spacing-xxl: $spacing-base * 5;
     }
   }
 
-  &__about--content1 {
+  &__about--content-bold {
     margin-top: 2%;
     @include font(1.2em, "Lato", black, bold);
   }
