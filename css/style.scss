@@ -379,8 +379,11 @@ $spacing-xxl: $spacing-base * 5;
       position: relative;
       flex: 1;
       @media only screen and (max-width: 715px) {
-        width: 91%;
+        width: 89%;
         margin-bottom: 3%;
+      }
+      @media only screen and (max-width: 600px) {
+        width: 91%;
       }
 
       &__header {
@@ -400,11 +403,10 @@ $spacing-xxl: $spacing-base * 5;
         }
 
         &:hover {
-          @include font(0.9em, "Lato", white, normal);
+          color: white;
           background-color: #3d4050;
           border: 2px solid $primary-color;
           border-bottom: none;
-          border-radius: $spacing-sm;
         }
 
       }
@@ -420,7 +422,7 @@ $spacing-xxl: $spacing-base * 5;
       padding-left: 7px;
       display: none;
       position: absolute;
-      width: 90%;
+      width: 91%;
       border: 2px solid $primary-color;
       border-top: 0;
       left: 0;
@@ -428,7 +430,7 @@ $spacing-xxl: $spacing-base * 5;
       border-radius: 5px;
       background-color: rgba(39, 39, 51, .9);
       @media only screen and (max-width: 715px) {
-        width: 99%;
+        width: 98.9%;
       }
       @media only screen and (max-width: 375px){
       width: 98%;
@@ -607,6 +609,12 @@ $spacing-xxl: $spacing-base * 5;
         @media only screen and (max-width: 900px) {
             left: 16%;
         }
+        @media only screen and (max-width: 715px) {
+          left: 25%;
+        }
+        @media only screen and (max-width: 415px) {
+          left: 18%;
+        }
       }
     }
   }
@@ -622,7 +630,7 @@ $spacing-xxl: $spacing-base * 5;
     background-color: $primary-color;
     border-radius: 3px;
     width: 33%;
-    height: 47px;
+    height: 42px;
     position: relative;
     left: 48%;
     transform: translate(-50%, 0);
@@ -647,6 +655,9 @@ $spacing-xxl: $spacing-base * 5;
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media only screen and (max-width: 600px) {
+      justify-content: center;
+    }
 
 
     &__rights {
@@ -699,6 +710,9 @@ $spacing-xxl: $spacing-base * 5;
         border-left: none;
         justify-content: center;
       }
+      @media only screen and (max-width: 420px) {
+        margin-left: 0;
+      }
 
       .connection {
         text-decoration: none;
@@ -716,6 +730,9 @@ $spacing-xxl: $spacing-base * 5;
 
       .mail {
         padding-right: 18%;
+        @media only screen and (max-width: 420px) {
+          padding-right: 0;
+        }
       }
 
       .img-contact {

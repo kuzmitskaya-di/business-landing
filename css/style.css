@@ -689,8 +689,13 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select {
-    width: 91%;
+    width: 89%;
     margin-bottom: 3%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .wrapper-input .form-select .select {
+    width: 91%;
   }
 }
 .wrapper-input .form-select .select__header {
@@ -715,14 +720,10 @@ template {
   }
 }
 .wrapper-input .form-select .select__header:hover {
-  font-family: "Lato", sans-serif;
-  font-size: 0.9em;
   color: white;
-  font-weight: normal;
   background-color: #3d4050;
   border: 2px solid #3E9CDC;
   border-bottom: none;
-  border-radius: 5px;
 }
 .wrapper-input .form-select .is-active .select__body {
   display: block;
@@ -731,7 +732,7 @@ template {
   padding-left: 7px;
   display: none;
   position: absolute;
-  width: 90%;
+  width: 91%;
   border: 2px solid #3E9CDC;
   border-top: 0;
   left: 0;
@@ -741,7 +742,7 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select__body {
-    width: 99%;
+    width: 98.9%;
   }
 }
 @media only screen and (max-width: 375px) {
@@ -935,6 +936,16 @@ template {
     left: 16%;
   }
 }
+@media only screen and (max-width: 715px) {
+  .wrapper-input .slider__attach--hide .slider__attach-icon {
+    left: 25%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .wrapper-input .slider__attach--hide .slider__attach-icon {
+    left: 18%;
+  }
+}
 .wrapper-input .button {
   display: flex;
   text-align: center;
@@ -945,7 +956,7 @@ template {
   background-color: #3E9CDC;
   border-radius: 3px;
   width: 33%;
-  height: 47px;
+  height: 42px;
   position: relative;
   left: 48%;
   transform: translate(-50%, 0);
@@ -971,6 +982,11 @@ template {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .footer .container {
+    justify-content: center;
+  }
 }
 .footer .container__rights {
   display: flex;
@@ -1033,6 +1049,11 @@ template {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 420px) {
+  .footer .container__communication {
+    margin-left: 0;
+  }
+}
 .footer .container__communication .connection {
   text-decoration: none;
   color: white;
@@ -1047,6 +1068,11 @@ template {
 }
 .footer .container__communication .mail {
   padding-right: 18%;
+}
+@media only screen and (max-width: 420px) {
+  .footer .container__communication .mail {
+    padding-right: 0;
+  }
 }
 .footer .container__communication .img-contact {
   margin-right: 5px;
