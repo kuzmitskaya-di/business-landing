@@ -18,7 +18,6 @@ $spacing-xl: $spacing-base * 4;
 $spacing-xxl: $spacing-base * 5;
 
 
-
 .container {
   width: 100%;
   max-width: 1170px;
@@ -250,7 +249,7 @@ $spacing-xxl: $spacing-base * 5;
   }
 
   //Button
-  &__button{
+  &__button {
     margin-top: 5%;
     height: 42px;
     width: 178px;
@@ -310,7 +309,8 @@ $spacing-xxl: $spacing-base * 5;
       @media only screen and (max-width: 715px) {
         display: none;
       }
-      .mark-center{
+
+      .mark-center {
         right: 50%;
         top: 45%;
         transform: translate(45%, -45%);
@@ -326,7 +326,7 @@ $spacing-xxl: $spacing-base * 5;
         position: relative;
         background-color: #3E9CDC;
         border-radius: 100%;
-        border: 5px solid #286690;
+        border: $spacing-sm solid #286690;
         width: 100px;
         height: 100px;
         @media only screen and (max-width: 950px) {
@@ -335,6 +335,7 @@ $spacing-xxl: $spacing-base * 5;
         }
 
       }
+
       &__icon { //для точек
         width: 98px;
         height: 98px;
@@ -364,8 +365,9 @@ $spacing-xxl: $spacing-base * 5;
 
   //Select and Input
   .form {
-    margin-top:8%;
+    margin-top: 8%;
   }
+
   .form-select {
     display: flex;
     padding-top: 3%;
@@ -427,14 +429,14 @@ $spacing-xxl: $spacing-base * 5;
       border-top: 0;
       left: 0;
       right: 0;
-      border-radius: 5px;
+      border-radius: $spacing-sm;
       background-color: rgba(39, 39, 51, .9);
       @media only screen and (max-width: 715px) {
         width: 98.9%;
       }
-      @media only screen and (max-width: 375px){
-      width: 98%;
-    }
+      @media only screen and (max-width: 375px) {
+        width: 98%;
+      }
 
 
       .select__item {
@@ -446,7 +448,8 @@ $spacing-xxl: $spacing-base * 5;
 
 
     }
-    .select{
+
+    .select {
       &__current {
         font-size: 1.1em;
         line-height: 24px;
@@ -478,6 +481,7 @@ $spacing-xxl: $spacing-base * 5;
       &::placeholder {
         @include font(1em, "Lato", black, normal);
       }
+
       @media only screen and (max-width: 715px) {
         padding-left: 0;
         margin-right: 0;
@@ -486,13 +490,18 @@ $spacing-xxl: $spacing-base * 5;
         margin-bottom: 3%;
       }
     }
+
     .input-email {
       margin-right: 2.5%;
       @media only screen and (max-width: 715px) {
         margin-right: 0;
       }
     }
-    input[type="text"]{padding-left: 15px};
+
+    input[type="text"] {
+      padding-left: $spacing-lg
+    }
+  ;
 
   }
 
@@ -520,8 +529,7 @@ $spacing-xxl: $spacing-base * 5;
         justify-content: space-between;
 
 
-
-      &__for-slider {
+        &__for-slider {
           @include font(1.1em, "Lato", white, normal);
           @media only screen and (max-width: 715px) {
             padding-left: 5%;
@@ -607,7 +615,7 @@ $spacing-xxl: $spacing-base * 5;
         height: 23px;
         left: 24%;
         @media only screen and (max-width: 900px) {
-            left: 16%;
+          left: 16%;
         }
         @media only screen and (max-width: 715px) {
           left: 25%;
@@ -722,6 +730,7 @@ $spacing-xxl: $spacing-base * 5;
           color: black;
         }
       }
+
       .vk {
         @media only screen and (max-width: 420px) {
           display: none;
