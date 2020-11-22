@@ -92,6 +92,9 @@ $spacing-xxl: $spacing-base * 5;
           text-decoration: none;
           @include font(1em, "Lato", white, normal);
           text-transform: uppercase;
+          @media only screen and (max-width: 1000px) {
+            @include font(0.8em, "Lato", white, normal);
+          }
           @media only screen and (max-width: 715px) {
             padding-top: $spacing-xl;
             padding-bottom: $spacing-md;
@@ -219,7 +222,7 @@ $spacing-xxl: $spacing-base * 5;
 //Description
 .description {
   width: 100%;
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1000px) {
     text-align: center;
   }
 
@@ -335,7 +338,7 @@ $spacing-xxl: $spacing-base * 5;
       &__icon { //для точек
         width: 98px;
         height: 98px;
-        @media only screen and (max-width: 950px) {
+        @media only screen and (max-width: 1000px) {
           width: 60px;
         }
       }
@@ -350,7 +353,7 @@ $spacing-xxl: $spacing-base * 5;
       &__title {
         position: absolute;
         @include font(1em, "Lato", white, normal);
-        @media only screen and (max-width: 950px) {
+        @media only screen and (max-width: 1000px) {
           font-size: 0.7em;
         }
       }
@@ -376,11 +379,8 @@ $spacing-xxl: $spacing-base * 5;
       position: relative;
       flex: 1;
       @media only screen and (max-width: 715px) {
-        width: 87%;
+        width: 91%;
         margin-bottom: 3%;
-      }
-      @media only screen and (max-width: 420px) {
-        width: 80%;
       }
 
       &__header {
@@ -428,8 +428,11 @@ $spacing-xxl: $spacing-base * 5;
       border-radius: 5px;
       background-color: rgba(39, 39, 51, .9);
       @media only screen and (max-width: 715px) {
-        width: 100%;
+        width: 99%;
       }
+      @media only screen and (max-width: 375px){
+      width: 98%;
+    }
 
 
       .select__item {
@@ -471,7 +474,6 @@ $spacing-xxl: $spacing-base * 5;
       }
 
       &::placeholder {
-        padding-left: 7px;
         @include font(1em, "Lato", black, normal);
       }
       @media only screen and (max-width: 715px) {
@@ -488,7 +490,7 @@ $spacing-xxl: $spacing-base * 5;
         margin-right: 0;
       }
     }
-    input[type="text"]{padding-left: $spacing-md};
+    input[type="text"]{padding-left: 15px};
 
   }
 
@@ -505,7 +507,7 @@ $spacing-xxl: $spacing-base * 5;
     &__form {
       width: 66%;
       margin-right: 1%;
-      @media only screen and (max-width: 715px) {
+      @media only screen and (max-width: 1200px) {
         width: 100%;
       }
 
@@ -567,8 +569,13 @@ $spacing-xxl: $spacing-base * 5;
       text-align: center;
       display: flex;
       align-items: center;
+      @media only screen and (max-width: 1200px) {
+        width: 33%;
+      }
       @media only screen and (max-width: 715px) {
         padding-left: 0;
+        width: 91%;
+        justify-content: center;
       }
       //hiding the button
       .hide {
@@ -589,7 +596,7 @@ $spacing-xxl: $spacing-base * 5;
         background-color: white;
         @include font(0.9em, "Lato", black, normal);
         @media only screen and (max-width: 715px) {
-          width: 300px;
+          width: 100%;
         }
       }
 
@@ -597,8 +604,8 @@ $spacing-xxl: $spacing-base * 5;
         position: absolute;
         height: 23px;
         left: 24%;
-        @media only screen and (max-width: 715px) {
-          left: 14%;
+        @media only screen and (max-width: 900px) {
+            left: 16%;
         }
       }
     }
@@ -614,12 +621,16 @@ $spacing-xxl: $spacing-base * 5;
     border: 2px solid white;
     background-color: $primary-color;
     border-radius: 3px;
-    width: 305px;
+    width: 33%;
     height: 47px;
     position: relative;
-    left: 50%;
+    left: 48%;
     transform: translate(-50%, 0);
     @include font(0.9em, "Lato", white, normal);
+    @media only screen and (max-width: 715px) {
+      width: 91%;
+      left: 50%;
+    }
 
   }
 }
@@ -660,7 +671,7 @@ $spacing-xxl: $spacing-base * 5;
       align-items: center;
       flex: 1;
       @include font(0.9em, "Lato", white, normal);
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 1200px) {
         display: none;
       }
 
@@ -684,7 +695,7 @@ $spacing-xxl: $spacing-base * 5;
       border-left: 1px solid white;
       margin-left: 2%;
       @include font(0.9em, "Lato", white, normal);
-      @media only screen and (max-width: 950px) {
+      @media only screen and (max-width: 1200px) {
         border-left: none;
         justify-content: center;
       }

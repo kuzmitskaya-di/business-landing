@@ -415,6 +415,14 @@ template {
   font-weight: normal;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 1000px) {
+  .wrapper .header .navigation-and-burger .nav__link {
+    font-family: "Lato", sans-serif;
+    font-size: 0.8em;
+    color: white;
+    font-weight: normal;
+  }
+}
 @media only screen and (max-width: 715px) {
   .wrapper .header .navigation-and-burger .nav__link {
     padding-top: 20px;
@@ -513,7 +521,7 @@ template {
 .description {
   width: 100%;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .description {
     text-align: center;
   }
@@ -639,7 +647,7 @@ template {
   width: 98px;
   height: 98px;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .wrapper-input .description .features__icon {
     width: 60px;
   }
@@ -657,7 +665,7 @@ template {
   color: white;
   font-weight: normal;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1000px) {
   .wrapper-input .description .features__title {
     font-size: 0.7em;
   }
@@ -681,13 +689,8 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select {
-    width: 87%;
+    width: 91%;
     margin-bottom: 3%;
-  }
-}
-@media only screen and (max-width: 420px) {
-  .wrapper-input .form-select .select {
-    width: 80%;
   }
 }
 .wrapper-input .form-select .select__header {
@@ -738,7 +741,12 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select__body {
-    width: 100%;
+    width: 99%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wrapper-input .form-select .select__body {
+    width: 98%;
   }
 }
 .wrapper-input .form-select .select__body .select__item {
@@ -777,7 +785,6 @@ template {
   }
 }
 .wrapper-input .form-select .input::placeholder {
-  padding-left: 7px;
   font-family: "Lato", sans-serif;
   font-size: 1em;
   color: black;
@@ -801,7 +808,7 @@ template {
   }
 }
 .wrapper-input .form-select input[type=text] {
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .wrapper-input .slider {
   padding-top: 3%;
@@ -818,7 +825,7 @@ template {
   width: 66%;
   margin-right: 1%;
 }
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 1200px) {
   .wrapper-input .slider__form {
     width: 100%;
   }
@@ -882,9 +889,16 @@ template {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width: 1200px) {
+  .wrapper-input .slider__attach--hide {
+    width: 33%;
+  }
+}
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__attach--hide {
     padding-left: 0;
+    width: 91%;
+    justify-content: center;
   }
 }
 .wrapper-input .slider__attach--hide .hide {
@@ -908,7 +922,7 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__attach--hide .slider__attach--visible {
-    width: 300px;
+    width: 100%;
   }
 }
 .wrapper-input .slider__attach--hide .slider__attach-icon {
@@ -916,9 +930,9 @@ template {
   height: 23px;
   left: 24%;
 }
-@media only screen and (max-width: 715px) {
+@media only screen and (max-width: 900px) {
   .wrapper-input .slider__attach--hide .slider__attach-icon {
-    left: 14%;
+    left: 16%;
   }
 }
 .wrapper-input .button {
@@ -930,15 +944,21 @@ template {
   border: 2px solid white;
   background-color: #3E9CDC;
   border-radius: 3px;
-  width: 305px;
+  width: 33%;
   height: 47px;
   position: relative;
-  left: 50%;
+  left: 48%;
   transform: translate(-50%, 0);
   font-family: "Lato", sans-serif;
   font-size: 0.9em;
   color: white;
   font-weight: normal;
+}
+@media only screen and (max-width: 715px) {
+  .wrapper-input .button {
+    width: 91%;
+    left: 50%;
+  }
 }
 
 .footer {
@@ -981,7 +1001,7 @@ template {
   color: white;
   font-weight: normal;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
   .footer .container__payment {
     display: none;
   }
@@ -1007,7 +1027,7 @@ template {
   color: white;
   font-weight: normal;
 }
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1200px) {
   .footer .container__communication {
     border-left: none;
     justify-content: center;
