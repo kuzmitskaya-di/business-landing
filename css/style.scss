@@ -88,7 +88,7 @@ $spacing-xxl: $spacing-base * 5;
 
 
         &__link {
-          margin-left: 50px;
+          padding-left: 50px;
           text-decoration: none;
           @include font(1em, "Lato", white, normal);
           text-transform: uppercase;
@@ -301,47 +301,43 @@ $spacing-xxl: $spacing-base * 5;
 
     .features {
       padding-top: 5%;
-      max-width: 1170px;
+      width: 100%;
       display: flex;
-      flex-direction: row;
-      overflow: hidden;
-      @media only screen and (max-width: 950px) {
-        width: 100%;
-      }
+      justify-content: space-between;
       @media only screen and (max-width: 715px) {
         display: none;
       }
+      .mark-center{
+        right: 50%;
+        top: 45%;
+        transform: translate(45%, -45%);
+      }
 
       &__item {
-        width: 11.11%;
+        position: relative;
         text-align: center;
 
       }
 
-      &__icon {
-        width: 100px;
-        height: 100px;
-        @media only screen and (max-width: 950px) {
-          width: 40px;
-          height: 40px;
-        }
-      }
-
       &__item-img {
         position: relative;
-
-      }
-      &__icon {
+        background-color: #3E9CDC;
+        border-radius: 100%;
+        border: 5px solid #286690;
         width: 100px;
         height: 100px;
         @media only screen and (max-width: 950px) {
-          width: 40px;
-          height: 40px;
+          width: 80px;
+          height: 80px;
         }
+
       }
-      &__icon--border-blue {
-        border-radius: 100%;
-        border: 5px solid #286690;
+      &__icon { //для точек
+        width: 98px;
+        height: 98px;
+        @media only screen and (max-width: 950px) {
+          width: 60px;
+        }
       }
 
       &__icon-mark {
@@ -352,9 +348,10 @@ $spacing-xxl: $spacing-base * 5;
       }
 
       &__title {
+        position: absolute;
         @include font(1em, "Lato", white, normal);
         @media only screen and (max-width: 950px) {
-          font-size: 0.5em;
+          font-size: 0.7em;
         }
       }
 
@@ -363,10 +360,12 @@ $spacing-xxl: $spacing-base * 5;
   }
 
   //Select and Input
+  .form {
+    margin-top:8%;
+  }
   .form-select {
     display: flex;
     padding-top: 3%;
-    justify-content: flex-start;
     @media only screen and (max-width: 715px) {
       flex-direction: column;
       align-items: center;
@@ -377,7 +376,7 @@ $spacing-xxl: $spacing-base * 5;
       position: relative;
       flex: 1;
       @media only screen and (max-width: 715px) {
-        width: 60%;
+        width: 87%;
         margin-bottom: 3%;
       }
       @media only screen and (max-width: 420px) {
@@ -386,6 +385,7 @@ $spacing-xxl: $spacing-base * 5;
 
       &__header {
         @include font(0.9em, "Lato", black, normal);
+        padding-left: 10px;
         justify-content: space-between;
         border: 1px solid silver;
         cursor: pointer;
@@ -396,6 +396,7 @@ $spacing-xxl: $spacing-base * 5;
         height: 45px;
         @media only screen and (max-width: 715px) {
           width: 100%;
+          padding-left: 0;
         }
 
         &:hover {
@@ -416,6 +417,7 @@ $spacing-xxl: $spacing-base * 5;
     }
 
     .select__body {
+      padding-left: 7px;
       display: none;
       position: absolute;
       width: 90%;
@@ -440,13 +442,13 @@ $spacing-xxl: $spacing-base * 5;
 
     }
     .select{
-      .select__current {
+      &__current {
         font-size: 1.1em;
         line-height: 24px;
         padding: 8px;
       }
 
-      .select__icon {
+      &__icon {
         align-items: center;
         display: flex;
         flex-shrink: 0;
@@ -458,41 +460,12 @@ $spacing-xxl: $spacing-base * 5;
     }
 
     //Inputs with validation
-    .input-email {
-      flex: 1;
-      width: 90%;
-      height: 42px;
-      border-radius: 5px;
-      background-color: rgba(225, 225, 225, .8);
-      margin-right: 2%;
-      @media only screen and (max-width: 715px) {
-        margin-right: 0;
-        width: 60%;
-        flex: none;
-        margin-bottom: 3%;
-      }
-      @media only screen and (max-width: 420px) {
-        width: 70%;
-      }
-
-      &::placeholder {
-        padding-left: 7px;
-        @include font(1em, "Lato", black, normal);
-      }
-    }
-    input[type="text"]{padding-left: $spacing-md};
-    .input-name {
+    .input {
       flex: 1;
       width: 90%;
       height: 42px;
       border-radius: $spacing-sm;
       background-color: rgba(225, 225, 225, .8);
-      @media only screen and (max-width: 715px) {
-        margin-right: 0;
-        width: 60%;
-        flex: none;
-        margin-bottom: 3%;
-      }
       @media only screen and (max-width: 420px) {
         width: 70%;
       }
@@ -501,13 +474,29 @@ $spacing-xxl: $spacing-base * 5;
         padding-left: 7px;
         @include font(1em, "Lato", black, normal);
       }
+      @media only screen and (max-width: 715px) {
+        padding-left: 0;
+        margin-right: 0;
+        width: 87%;
+        flex: none;
+        margin-bottom: 3%;
+      }
     }
+    .input-email {
+      margin-right: 2.5%;
+      @media only screen and (max-width: 715px) {
+        margin-right: 0;
+      }
+    }
+    input[type="text"]{padding-left: $spacing-md};
+
   }
 
   //Range
   .slider {
     padding-top: 3%;
     display: flex;
+    justify-content: space-between;
     @media only screen and (max-width: 715px) {
       flex-direction: column;
       align-items: center;
@@ -515,17 +504,20 @@ $spacing-xxl: $spacing-base * 5;
 
     &__form {
       width: 66%;
-      @media only screen and (max-width: 420px) {
+      margin-right: 1%;
+      @media only screen and (max-width: 715px) {
         width: 100%;
       }
 
       .text {
         display: flex;
         flex-direction: row;
-        padding-bottom: 4%;
+        padding-bottom: 2.1%;
+        justify-content: space-between;
 
-        &__for-slider {
-          flex: 15;
+
+
+      &__for-slider {
           @include font(1.1em, "Lato", white, normal);
           @media only screen and (max-width: 715px) {
             padding-left: 5%;
@@ -534,10 +526,9 @@ $spacing-xxl: $spacing-base * 5;
         }
 
         &__icon-slider {
-          flex: 1;
           @include font(1.1em, "Lato", white, normal);
           @media only screen and (max-width: 715px) {
-            padding-right: 4%;
+            padding-right: 5%;
           }
 
         }
@@ -547,7 +538,7 @@ $spacing-xxl: $spacing-base * 5;
         -webkit-appearance: none; //update the style and draw the range again
         border: 2px solid white;
         border-radius: $spacing-md;
-        width: 98%;
+        width: 99.7%;
         height: 2px;
         background-color: rgba(225, 225, 225, .8);
         outline: none;
@@ -591,26 +582,23 @@ $spacing-xxl: $spacing-base * 5;
 
       //stylizing the text
       .slider__attach--visible {
-        padding-top: $spacing-xxl;
-        text-align: center;
         border: 2px solid $primary-color;
         display: inline-block;
-        width: 372px;
-        height: 38px;
-        border-radius: 5px;
+        width: 380px;
+        border-radius: $spacing-sm;
         background-color: white;
         @include font(0.9em, "Lato", black, normal);
         @media only screen and (max-width: 715px) {
-          width: 228px;
+          width: 300px;
         }
       }
 
       .slider__attach-icon {
         position: absolute;
         height: 23px;
-        left: 27%;
+        left: 24%;
         @media only screen and (max-width: 715px) {
-          left: 10%;
+          left: 14%;
         }
       }
     }
@@ -632,9 +620,7 @@ $spacing-xxl: $spacing-base * 5;
     left: 50%;
     transform: translate(-50%, 0);
     @include font(0.9em, "Lato", white, normal);
-    @media only screen and (max-width: 715px) {
-      width: 228px;
-    }
+
   }
 }
 
@@ -703,7 +689,7 @@ $spacing-xxl: $spacing-base * 5;
         justify-content: center;
       }
 
-      &--mail {
+      .connection {
         text-decoration: none;
         color: white;
 
@@ -711,22 +697,9 @@ $spacing-xxl: $spacing-base * 5;
           color: black;
         }
       }
-
-      .img-contact-vk {
+      .vk {
         @media only screen and (max-width: 420px) {
           display: none;
-        }
-      }
-
-      &--vk {
-        text-decoration: none;
-        color: white;
-        @media only screen and (max-width: 420px) {
-          display: none;
-        }
-
-        &:hover {
-          color: black;
         }
       }
 
@@ -739,10 +712,6 @@ $spacing-xxl: $spacing-base * 5;
         height: 13px;
       }
 
-      .img-contact-vk {
-        margin-right: $spacing-sm;
-        height: 13px;
-      }
     }
   }
 }
