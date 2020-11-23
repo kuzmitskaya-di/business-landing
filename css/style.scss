@@ -406,9 +406,6 @@ $spacing-xxl: $spacing-base * 5;
         background-color: rgba(225, 225, 225, .8);
         border-radius: $spacing-sm;
         height: 45px;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
 
         @media only screen and (max-width: 715px) {
           width: 100%;
@@ -465,6 +462,9 @@ $spacing-xxl: $spacing-base * 5;
         font-size: 1.1em;
         line-height: 24px;
         padding: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       &__icon {
@@ -485,9 +485,6 @@ $spacing-xxl: $spacing-base * 5;
       height: 42px;
       border-radius: $spacing-sm;
       background-color: rgba(225, 225, 225, .8);
-      @media only screen and (max-width: 420px) {
-        width: 70%;
-      }
 
       &::placeholder {
         @include font(1em, "Lato", black, normal);
@@ -499,6 +496,9 @@ $spacing-xxl: $spacing-base * 5;
         width: 90%;
         flex: none;
         margin-bottom: 3%;
+      }
+      @media only screen and (max-width: 415px) {
+        width: 89%;
       }
     }
 
