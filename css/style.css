@@ -576,6 +576,7 @@ template {
   font-size: 0.8em;
   color: black;
   font-weight: normal;
+  background-color: white;
 }
 
 .wrapper-input {
@@ -694,13 +695,18 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select {
-    width: 91.5%;
+    width: 92.3%;
     margin-bottom: 3%;
   }
 }
 @media only screen and (max-width: 600px) {
   .wrapper-input .form-select .select {
     width: 92.5%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .wrapper-input .form-select .select {
+    width: 94.5%;
   }
 }
 .wrapper-input .form-select .select__header {
@@ -717,6 +723,9 @@ template {
   background-color: rgba(225, 225, 225, 0.8);
   border-radius: 5px;
   height: 45px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select__header {
@@ -800,7 +809,7 @@ template {
   .wrapper-input .form-select .input {
     padding-left: 0;
     margin-right: 0;
-    width: 87%;
+    width: 90%;
     flex: none;
     margin-bottom: 3%;
   }
@@ -834,6 +843,11 @@ template {
 @media only screen and (max-width: 1200px) {
   .wrapper-input .slider__form {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 715px) {
+  .wrapper-input .slider__form {
+    width: 101%;
   }
 }
 .wrapper-input .slider__form .text {
@@ -907,6 +921,11 @@ template {
     justify-content: center;
   }
 }
+@media only screen and (max-width: 415px) {
+  .wrapper-input .slider__attach--hide {
+    width: 94%;
+  }
+}
 .wrapper-input .slider__attach--hide .hide {
   position: absolute;
   overflow: hidden;
@@ -974,6 +993,11 @@ template {
   .wrapper-input .button {
     width: 92.5%;
     left: 50%;
+  }
+}
+@media only screen and (max-width: 415px) {
+  .wrapper-input .button {
+    width: 94%;
   }
 }
 
