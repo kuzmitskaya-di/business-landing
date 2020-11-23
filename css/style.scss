@@ -381,11 +381,11 @@ $spacing-xxl: $spacing-base * 5;
       position: relative;
       flex: 1;
       @media only screen and (max-width: 715px) {
-        width: 89%;
+        width: 93%;
         margin-bottom: 3%;
       }
       @media only screen and (max-width: 600px) {
-        width: 91%;
+        width: 93%;
       }
 
       &__header {

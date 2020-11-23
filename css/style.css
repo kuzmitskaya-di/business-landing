@@ -689,13 +689,13 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select {
-    width: 89%;
+    width: 93%;
     margin-bottom: 3%;
   }
 }
 @media only screen and (max-width: 600px) {
   .wrapper-input .form-select .select {
-    width: 91%;
+    width: 93%;
   }
 }
 .wrapper-input .form-select .select__header {
