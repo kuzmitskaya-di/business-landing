@@ -689,13 +689,13 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .form-select .select {
-    width: 93%;
+    width: 91.5%;
     margin-bottom: 3%;
   }
 }
 @media only screen and (max-width: 600px) {
   .wrapper-input .form-select .select {
-    width: 93%;
+    width: 92.5%;
   }
 }
 .wrapper-input .form-select .select__header {
@@ -898,7 +898,7 @@ template {
 @media only screen and (max-width: 715px) {
   .wrapper-input .slider__attach--hide {
     padding-left: 0;
-    width: 91%;
+    width: 92.5%;
     justify-content: center;
   }
 }
@@ -967,7 +967,7 @@ template {
 }
 @media only screen and (max-width: 715px) {
   .wrapper-input .button {
-    width: 91%;
+    width: 92.5%;
     left: 50%;
   }
 }

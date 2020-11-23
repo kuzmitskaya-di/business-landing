@@ -381,11 +381,11 @@ $spacing-xxl: $spacing-base * 5;
       position: relative;
       flex: 1;
       @media only screen and (max-width: 715px) {
-        width: 93%;
+        width: 91.5%;
         margin-bottom: 3%;
       }
       @media only screen and (max-width: 600px) {
-        width: 93%;
+        width: 92.5%;
       }
 
       &__header {
@@ -584,7 +584,7 @@ $spacing-xxl: $spacing-base * 5;
       }
       @media only screen and (max-width: 715px) {
         padding-left: 0;
-        width: 91%;
+        width: 92.5%;
         justify-content: center;
       }
       //hiding the button
@@ -644,7 +644,7 @@ $spacing-xxl: $spacing-base * 5;
     transform: translate(-50%, 0);
     @include font(0.9em, "Lato", white, normal);
     @media only screen and (max-width: 715px) {
-      width: 91%;
+      width: 92.5%;
       left: 50%;
     }
 
