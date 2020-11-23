@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOREMIPSUM</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@800&display=swap"
+          rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <!--/Header-->
+    <header class="header">
+        <div class="container">
+            <div class="header__item">
+                <p class="header__logo">LOREMIPSUM.<span class="header__logo--blue">NET</span></p>
+                <div class="navigation-and-burger">
+                    <nav class="nav">
+                        <a class="nav__link nav__link--active" href="#">бизнес</a>
+                        <a class="nav__link" href="#">о нас</a>
+                        <a class="nav__link" href="#">цены</a>
+                        <a class="nav__link" href="#">оформить заказ</a>
+                    </nav>
+                    <div class="mobile-menu">
+                        <a href="" class="menu-btn">
+                            <span class="menu-btn__open"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--/Header-->
+
+    <!--Description-->
+    <div class="container">
+        <div class="description">
+            <p class="description__big-text">
+                <span class="description__big-text--blue">LOREM IPSUM</span> DOLOR SIT AMET
+                <br/>
+                CONSECTETUR <span class="description__big-text--blue"><strong>ADIPISCING</strong></span>
+            </p>
+            <p class="description__about--content-bold">At vero eos et accusamus et iusto odio dignissimos
+                ducimus!</p>
+            <p class="description__about--content">- Totam rem aperiam eaque ipsa</p>
+            <p class="description__about--content">- Sit voluptatem accusantium doloremque laudantium</p>
+            <p class="description__about--content">- Sed ut perspiciatis, unde omnis iste natus error</p>
+            <button class="description__button button-order">ЗАКАЗАТЬ</button>
+            <button class="description__button button-secondary">ПОДРОБНЕЕ</button>
+        </div>
+    </div>
+    <!--/Description-->
+</div>
+
+
+<!--Description form-->
+<div class="wrapper-input">
+    <div class="container">
+        <div class="description">
+            <span class="description__order-registration">ОФОРМЛЕНИЕ <span class="description__order-registration--blue">ЗАКАЗА</span>
+            </span>
+            <p class="description__learn">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+            <!--Переделать картинку-->
+            <div class="features">
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img class="features__icon-mark" src="img/loop.svg" alt=""/>
+                    </div>
+                    <p class="features__title">Lorem ipsum dolor<br/> sit amet</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/points.svg" alt=""/>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img class="features__icon-mark" src="img/percent.svg" alt=""/>
+                    </div>
+                    <p class="features__title">Сonsectetura dipiscing elit</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/points.svg" alt=""/>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img class="features__icon-mark mark-center" src="img/shape.svg" alt=""/>
+                    </div>
+                    <p class="features__title">Sed do eiusmod tempor</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/points.svg" alt=""/>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                        <img class="features__icon-mark" src="img/letter.svg" alt=""/>
+                    </div>
+                    <p class="features__title">Esse cillum dolore eu fugiat</p>
+                </div>
+                <div class="features__item">
+                    <img class="features__icon" src="img/points.svg" alt=""/>
+                </div>
+                <div class="features__item">
+                    <div class="features__item-img">
+                    <img class="features__icon-mark" src="img/money.svg" alt=""/>
+                    </div>
+                    <p class="features__title">Excepteur sint occaecat cupidatat non proident</p>
+                </div>
+            </div>
+
+            <!--Переделать картинку-->
+
+        </div>
+
+        <!--Input form-->
+        <form name="form-input" class="form">
+            <!--select-->
+            <div class="form-select">
+                <div class="select">
+                    <div class="select__header">
+                        <span class="select__current">Выберите тип системы</span>
+                        <div class="select__icon">&rsaquo;</div>
+                    </div>
+                    <div class="select__body">
+                        <div class="select__item">Set ut perspiciatis</div>
+                        <div class="select__item">Nemo enim ipsam</div>
+                        <div class="select__item">Et harum quidem</div>
+                        <div class="select__item">Temporibus autem</div>
+                        <div class="select__item">Itaque earum rerum</div>
+                    </div>
+                </div>
+                <!--/select-->
+                <!--validation-->
+                <input class="input input-email" type="text" placeholder="Ваш e-mail" id="email" data-rule="email"
+                       name="email">
+                <input type="text" class="input input-name" placeholder="Ваше имя" id="name" data-rule="name" name="name">
+                <!--validation-->
+            </div>
+            <!--range-->
+            <div class="slider">
+                <div class="slider__form">
+                    <div class="text" id="text">
+                        <label class="text__for-slider">Sed ut perspiciatis, unde omnis iste natus</label>
+                        <label class="text__icon-slider" id="rangeValue">75%</label>
+                    </div>
+                    <input class="range" type="range" value="75" max="100" min="0" id="range"
+                    onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
+                </div>
+                <!--/range-->
+                <!--file-->
+                <div class="slider__attach--hide">
+                    <img class="slider__attach-icon" src="img/attach.svg" alt="">
+                    <label for="file" class="slider__attach--visible"><p>ПРИКРЕПИТЬ ФАИЛ</p></label>
+                    <input type="file" id="file" class="hide">
+                </div>
+                <!--/file-->
+            </div>
+            <button class="button">Отправить</button>
+            <!--send form-->
+        </form>
+    </div>
+</div>
+<!--/Form-->
+<!--Footer-->
+<footer class="footer">
+    <div class="container">
+        <div class="container__rights">© 2018 «LOREMIPSUM.NET» Все права защищены.</div>
+        <div class="container__payment">
+            <div class="container__payment-method"><img class="img-payment" src="img/qiwi.svg" alt=""/>Qiwi wallet</div>
+            <div class="container__payment-method"><img class="img-payment" src="img/cash.svg" alt=""/>Yandex Money
+            </div>
+            <div class="container__payment-method"><img class="img-payment" src="img/webmoney.svg" alt=""/>Web Money
+            </div>
+        </div>
+        <div class="container__communication">
+            <img class="img-contact" src="img/mail.svg" alt=""/><a class="connection mail" href="">info@ipsum228.com</a>
+            <img class="img-contact vk" src="img/vk.svg" alt=""/><a class="connection vk" href="">Мы
+            вконтакте</a>
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+<script src="js/range.js"></script>
+<script src="js/select.js"></script>
+<script src="js/validation.js"></script>
+<script src="js/burger-menu.js"></script>
+</body>
+</html>
