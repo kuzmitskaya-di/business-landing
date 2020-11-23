@@ -139,11 +139,12 @@
             <!--range-->
             <div class="slider">
                 <div class="slider__form">
-                    <div class="text">
+                    <div class="text" id="text">
                         <label class="text__for-slider">Sed ut perspiciatis, unde omnis iste natus</label>
-                        <label class="text__icon-slider">75%</label>
+                        <label class="text__icon-slider" id="rangeValue">75%</label>
                     </div>
-                    <input class="range" type="range" value="75">
+                    <input class="range" type="range" value="75" max="100" min="0" id="range"
+                    onmousemove="rangeSlider(this.value)" onchange="rangeSlider(this.value)">
                 </div>
                 <!--/range-->
                 <!--file-->
@@ -179,6 +180,7 @@
     </div>
 </footer>
 <!--/Footer-->
+<script src="js/range.js"></script>
 <script src="js/select.js"></script>
 <script src="js/validation.js"></script>
 <script src="js/burger-menu.js"></script>

@@ -287,6 +287,9 @@ $spacing-xxl: $spacing-base * 5;
     &__order-registration {
       @include font(2.3em, "Lato", white, bold);
       margin-top: 100px;
+      @media only screen and (max-width: 600px) {
+        margin-top: 50px;
+      }
 
 
       &--blue {

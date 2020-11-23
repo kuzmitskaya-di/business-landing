@@ -600,6 +600,11 @@ template {
   font-weight: bold;
   margin-top: 100px;
 }
+@media only screen and (max-width: 600px) {
+  .wrapper-input .description__order-registration {
+    margin-top: 50px;
+  }
+}
 .wrapper-input .description__order-registration--blue {
   color: #3E9CDC;
 }
